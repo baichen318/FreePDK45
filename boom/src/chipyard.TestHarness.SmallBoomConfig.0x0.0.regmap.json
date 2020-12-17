@@ -1,0 +1,1287 @@
+{
+  "peripheral" : {
+    "displayName" : "deviceAt0x0",
+    "baseAddress" : "0x0",
+    "regfields" : [ {
+      "version" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 0,
+        "bitWidth" : 4,
+        "name" : "version",
+        "description" : "version",
+        "resetValue" : 2,
+        "group" : "dmi_dmstatus",
+        "groupDesc" : "debug module status register",
+        "accessType" : "R"
+      }
+    }, {
+      "confstrptrvalid" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 4,
+        "bitWidth" : 1,
+        "name" : "confstrptrvalid",
+        "description" : "confstrptrvalid",
+        "resetValue" : 0,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "hasresethaltreq" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 5,
+        "bitWidth" : 1,
+        "name" : "hasresethaltreq",
+        "description" : "hasresethaltreq",
+        "resetValue" : 1,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "authbusy" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 6,
+        "bitWidth" : 1,
+        "name" : "authbusy",
+        "description" : "authbusy",
+        "resetValue" : 0,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "authenticated" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 7,
+        "bitWidth" : 1,
+        "name" : "authenticated",
+        "description" : "authenticated",
+        "resetValue" : 1,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "anyhalted" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 8,
+        "bitWidth" : 1,
+        "name" : "anyhalted",
+        "description" : "anyhalted",
+        "resetValue" : 0,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "allhalted" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 9,
+        "bitWidth" : 1,
+        "name" : "allhalted",
+        "description" : "allhalted",
+        "resetValue" : 0,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "anyrunning" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 10,
+        "bitWidth" : 1,
+        "name" : "anyrunning",
+        "description" : "anyrunning",
+        "resetValue" : 1,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "allrunning" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 11,
+        "bitWidth" : 1,
+        "name" : "allrunning",
+        "description" : "allrunning",
+        "resetValue" : 1,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "anyunavail" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 12,
+        "bitWidth" : 1,
+        "name" : "anyunavail",
+        "description" : "anyunavail",
+        "resetValue" : 0,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "allunavail" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 13,
+        "bitWidth" : 1,
+        "name" : "allunavail",
+        "description" : "allunavail",
+        "resetValue" : 0,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "anynonexistent" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 14,
+        "bitWidth" : 1,
+        "name" : "anynonexistent",
+        "description" : "anynonexistent",
+        "resetValue" : 0,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "allnonexistent" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 15,
+        "bitWidth" : 1,
+        "name" : "allnonexistent",
+        "description" : "allnonexistent",
+        "resetValue" : 0,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "anyresumeack" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 16,
+        "bitWidth" : 1,
+        "name" : "anyresumeack",
+        "description" : "anyresumeack",
+        "resetValue" : 1,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "allresumeack" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 17,
+        "bitWidth" : 1,
+        "name" : "allresumeack",
+        "description" : "allresumeack",
+        "resetValue" : 1,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "anyhavereset" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 18,
+        "bitWidth" : 1,
+        "name" : "anyhavereset",
+        "description" : "anyhavereset",
+        "resetValue" : 0,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "allhavereset" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 19,
+        "bitWidth" : 1,
+        "name" : "allhavereset",
+        "description" : "allhavereset",
+        "resetValue" : 0,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 20,
+        "bitWidth" : 2,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "impebreak" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 22,
+        "bitWidth" : 1,
+        "name" : "impebreak",
+        "description" : "impebreak",
+        "resetValue" : 0,
+        "group" : "dmi_dmstatus",
+        "accessType" : "R"
+      }
+    }, {
+      "dataaddr" : {
+        "byteOffset" : "0x48",
+        "bitOffset" : 0,
+        "bitWidth" : 12,
+        "name" : "dataaddr",
+        "description" : "data address",
+        "resetValue" : 896,
+        "group" : "dmi_hartinfo",
+        "groupDesc" : "hart information",
+        "accessType" : "R"
+      }
+    }, {
+      "datasize" : {
+        "byteOffset" : "0x48",
+        "bitOffset" : 12,
+        "bitWidth" : 4,
+        "name" : "datasize",
+        "description" : "number of DATA registers",
+        "resetValue" : 2,
+        "group" : "dmi_hartinfo",
+        "accessType" : "R"
+      }
+    }, {
+      "dataaccess" : {
+        "byteOffset" : "0x48",
+        "bitOffset" : 16,
+        "bitWidth" : 1,
+        "name" : "dataaccess",
+        "description" : "data access type",
+        "resetValue" : 1,
+        "group" : "dmi_hartinfo",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x48",
+        "bitOffset" : 17,
+        "bitWidth" : 3,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "dmi_hartinfo",
+        "accessType" : "R"
+      }
+    }, {
+      "nscratch" : {
+        "byteOffset" : "0x48",
+        "bitOffset" : 20,
+        "bitWidth" : 4,
+        "name" : "nscratch",
+        "description" : "number of scratch registers",
+        "resetValue" : 1,
+        "group" : "dmi_hartinfo",
+        "accessType" : "R"
+      }
+    }, {
+      "dmi_haltsum0" : {
+        "byteOffset" : "0x100",
+        "bitOffset" : 0,
+        "bitWidth" : 32,
+        "name" : "dmi_haltsum0",
+        "description" : "halt summary 0",
+        "group" : "dmi_haltsum0",
+        "groupDesc" : "Halt Summary 0",
+        "accessType" : "R"
+      }
+    }, {
+      "dmi_haltsum1" : {
+        "byteOffset" : "0x4c",
+        "bitOffset" : 0,
+        "bitWidth" : 32,
+        "name" : "dmi_haltsum1",
+        "description" : "halt summary 1",
+        "group" : "dmi_haltsum1",
+        "groupDesc" : "Halt Summary 1",
+        "accessType" : "R"
+      }
+    }, {
+      "datacount" : {
+        "byteOffset" : "0x58",
+        "bitOffset" : 0,
+        "bitWidth" : 4,
+        "name" : "datacount",
+        "description" : "number of DATA registers",
+        "resetValue" : 2,
+        "group" : "dmi_abstractcs",
+        "groupDesc" : "abstract command control/status",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x58",
+        "bitOffset" : 4,
+        "bitWidth" : 4,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "dmi_abstractcs",
+        "accessType" : "R"
+      }
+    }, {
+      "cmderr" : {
+        "byteOffset" : "0x58",
+        "bitOffset" : 8,
+        "bitWidth" : 3,
+        "name" : "cmderr",
+        "description" : "command error",
+        "resetValue" : 0,
+        "group" : "dmi_abstractcs",
+        "accessType" : "RW",
+        "writeType" : "ONE_TO_CLEAR"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x58",
+        "bitOffset" : 11,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "dmi_abstractcs",
+        "accessType" : "R"
+      }
+    }, {
+      "busy" : {
+        "byteOffset" : "0x58",
+        "bitOffset" : 12,
+        "bitWidth" : 1,
+        "name" : "busy",
+        "description" : "busy",
+        "resetValue" : 0,
+        "group" : "dmi_abstractcs",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x58",
+        "bitOffset" : 13,
+        "bitWidth" : 11,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "dmi_abstractcs",
+        "accessType" : "R"
+      }
+    }, {
+      "progbufsize" : {
+        "byteOffset" : "0x58",
+        "bitOffset" : 24,
+        "bitWidth" : 5,
+        "name" : "progbufsize",
+        "description" : "number of PROGBUF registers",
+        "resetValue" : 16,
+        "group" : "dmi_abstractcs",
+        "accessType" : "R"
+      }
+    }, {
+      "autoexecdata" : {
+        "byteOffset" : "0x60",
+        "bitOffset" : 0,
+        "bitWidth" : 2,
+        "name" : "autoexecdata",
+        "description" : "abstract command data autoexec",
+        "resetValue" : 0,
+        "group" : "dmi_abstractauto",
+        "groupDesc" : "abstract command autoexec",
+        "accessType" : "RW"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x60",
+        "bitOffset" : 2,
+        "bitWidth" : 14,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "dmi_abstractauto",
+        "accessType" : "R"
+      }
+    }, {
+      "autoexecprogbuf" : {
+        "byteOffset" : "0x60",
+        "bitOffset" : 16,
+        "bitWidth" : 16,
+        "name" : "autoexecprogbuf",
+        "description" : "abstract command progbuf autoexec",
+        "resetValue" : 0,
+        "group" : "dmi_abstractauto",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_command" : {
+        "byteOffset" : "0x5c",
+        "bitOffset" : 0,
+        "bitWidth" : 32,
+        "name" : "dmi_command",
+        "description" : "abstract command register",
+        "resetValue" : 0,
+        "group" : "dmi_command",
+        "groupDesc" : "Abstract Command Register",
+        "accessType" : "RW",
+        "volatile" : true
+      }
+    }, {
+      "dmi_data_0" : {
+        "byteOffset" : "0x10",
+        "bitOffset" : 0,
+        "bitWidth" : 8,
+        "name" : "dmi_data_0",
+        "description" : "abstract command data register 0",
+        "resetValue" : 0,
+        "group" : "dmi_data",
+        "groupDesc" : "abstract command data registers",
+        "accessType" : "RW",
+        "volatile" : true
+      }
+    }, {
+      "dmi_data_1" : {
+        "byteOffset" : "0x10",
+        "bitOffset" : 8,
+        "bitWidth" : 8,
+        "name" : "dmi_data_1",
+        "description" : "abstract command data register 1",
+        "resetValue" : 0,
+        "group" : "dmi_data",
+        "groupDesc" : "abstract command data registers",
+        "accessType" : "RW",
+        "volatile" : true
+      }
+    }, {
+      "dmi_data_2" : {
+        "byteOffset" : "0x10",
+        "bitOffset" : 16,
+        "bitWidth" : 8,
+        "name" : "dmi_data_2",
+        "description" : "abstract command data register 2",
+        "resetValue" : 0,
+        "group" : "dmi_data",
+        "groupDesc" : "abstract command data registers",
+        "accessType" : "RW",
+        "volatile" : true
+      }
+    }, {
+      "dmi_data_3" : {
+        "byteOffset" : "0x10",
+        "bitOffset" : 24,
+        "bitWidth" : 8,
+        "name" : "dmi_data_3",
+        "description" : "abstract command data register 3",
+        "resetValue" : 0,
+        "group" : "dmi_data",
+        "groupDesc" : "abstract command data registers",
+        "accessType" : "RW",
+        "volatile" : true
+      }
+    }, {
+      "dmi_data_4" : {
+        "byteOffset" : "0x10",
+        "bitOffset" : 32,
+        "bitWidth" : 8,
+        "name" : "dmi_data_4",
+        "description" : "abstract command data register 4",
+        "resetValue" : 0,
+        "group" : "dmi_data",
+        "groupDesc" : "abstract command data registers",
+        "accessType" : "RW",
+        "volatile" : true
+      }
+    }, {
+      "dmi_data_5" : {
+        "byteOffset" : "0x10",
+        "bitOffset" : 40,
+        "bitWidth" : 8,
+        "name" : "dmi_data_5",
+        "description" : "abstract command data register 5",
+        "resetValue" : 0,
+        "group" : "dmi_data",
+        "groupDesc" : "abstract command data registers",
+        "accessType" : "RW",
+        "volatile" : true
+      }
+    }, {
+      "dmi_data_6" : {
+        "byteOffset" : "0x10",
+        "bitOffset" : 48,
+        "bitWidth" : 8,
+        "name" : "dmi_data_6",
+        "description" : "abstract command data register 6",
+        "resetValue" : 0,
+        "group" : "dmi_data",
+        "groupDesc" : "abstract command data registers",
+        "accessType" : "RW",
+        "volatile" : true
+      }
+    }, {
+      "dmi_data_7" : {
+        "byteOffset" : "0x10",
+        "bitOffset" : 56,
+        "bitWidth" : 8,
+        "name" : "dmi_data_7",
+        "description" : "abstract command data register 7",
+        "resetValue" : 0,
+        "group" : "dmi_data",
+        "groupDesc" : "abstract command data registers",
+        "accessType" : "RW",
+        "volatile" : true
+      }
+    }, {
+      "dmi_progbuf_0" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 0,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_0",
+        "description" : "abstract command progbuf register 0",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_1" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 8,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_1",
+        "description" : "abstract command progbuf register 1",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_2" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 16,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_2",
+        "description" : "abstract command progbuf register 2",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_3" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 24,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_3",
+        "description" : "abstract command progbuf register 3",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_4" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 32,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_4",
+        "description" : "abstract command progbuf register 4",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_5" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 40,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_5",
+        "description" : "abstract command progbuf register 5",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_6" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 48,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_6",
+        "description" : "abstract command progbuf register 6",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_7" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 56,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_7",
+        "description" : "abstract command progbuf register 7",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_8" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 64,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_8",
+        "description" : "abstract command progbuf register 8",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_9" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 72,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_9",
+        "description" : "abstract command progbuf register 9",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_10" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 80,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_10",
+        "description" : "abstract command progbuf register 10",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_11" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 88,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_11",
+        "description" : "abstract command progbuf register 11",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_12" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 96,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_12",
+        "description" : "abstract command progbuf register 12",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_13" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 104,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_13",
+        "description" : "abstract command progbuf register 13",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_14" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 112,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_14",
+        "description" : "abstract command progbuf register 14",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_15" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 120,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_15",
+        "description" : "abstract command progbuf register 15",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_16" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 128,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_16",
+        "description" : "abstract command progbuf register 16",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_17" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 136,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_17",
+        "description" : "abstract command progbuf register 17",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_18" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 144,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_18",
+        "description" : "abstract command progbuf register 18",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_19" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 152,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_19",
+        "description" : "abstract command progbuf register 19",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_20" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 160,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_20",
+        "description" : "abstract command progbuf register 20",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_21" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 168,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_21",
+        "description" : "abstract command progbuf register 21",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_22" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 176,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_22",
+        "description" : "abstract command progbuf register 22",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_23" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 184,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_23",
+        "description" : "abstract command progbuf register 23",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_24" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 192,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_24",
+        "description" : "abstract command progbuf register 24",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_25" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 200,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_25",
+        "description" : "abstract command progbuf register 25",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_26" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 208,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_26",
+        "description" : "abstract command progbuf register 26",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_27" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 216,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_27",
+        "description" : "abstract command progbuf register 27",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_28" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 224,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_28",
+        "description" : "abstract command progbuf register 28",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_29" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 232,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_29",
+        "description" : "abstract command progbuf register 29",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_30" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 240,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_30",
+        "description" : "abstract command progbuf register 30",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_31" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 248,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_31",
+        "description" : "abstract command progbuf register 31",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_32" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 256,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_32",
+        "description" : "abstract command progbuf register 32",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_33" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 264,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_33",
+        "description" : "abstract command progbuf register 33",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_34" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 272,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_34",
+        "description" : "abstract command progbuf register 34",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_35" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 280,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_35",
+        "description" : "abstract command progbuf register 35",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_36" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 288,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_36",
+        "description" : "abstract command progbuf register 36",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_37" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 296,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_37",
+        "description" : "abstract command progbuf register 37",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_38" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 304,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_38",
+        "description" : "abstract command progbuf register 38",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_39" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 312,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_39",
+        "description" : "abstract command progbuf register 39",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_40" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 320,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_40",
+        "description" : "abstract command progbuf register 40",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_41" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 328,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_41",
+        "description" : "abstract command progbuf register 41",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_42" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 336,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_42",
+        "description" : "abstract command progbuf register 42",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_43" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 344,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_43",
+        "description" : "abstract command progbuf register 43",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_44" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 352,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_44",
+        "description" : "abstract command progbuf register 44",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_45" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 360,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_45",
+        "description" : "abstract command progbuf register 45",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_46" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 368,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_46",
+        "description" : "abstract command progbuf register 46",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_47" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 376,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_47",
+        "description" : "abstract command progbuf register 47",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_48" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 384,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_48",
+        "description" : "abstract command progbuf register 48",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_49" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 392,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_49",
+        "description" : "abstract command progbuf register 49",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_50" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 400,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_50",
+        "description" : "abstract command progbuf register 50",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_51" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 408,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_51",
+        "description" : "abstract command progbuf register 51",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_52" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 416,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_52",
+        "description" : "abstract command progbuf register 52",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_53" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 424,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_53",
+        "description" : "abstract command progbuf register 53",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_54" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 432,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_54",
+        "description" : "abstract command progbuf register 54",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_55" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 440,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_55",
+        "description" : "abstract command progbuf register 55",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_56" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 448,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_56",
+        "description" : "abstract command progbuf register 56",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_57" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 456,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_57",
+        "description" : "abstract command progbuf register 57",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_58" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 464,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_58",
+        "description" : "abstract command progbuf register 58",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_59" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 472,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_59",
+        "description" : "abstract command progbuf register 59",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_60" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 480,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_60",
+        "description" : "abstract command progbuf register 60",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_61" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 488,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_61",
+        "description" : "abstract command progbuf register 61",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_62" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 496,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_62",
+        "description" : "abstract command progbuf register 62",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    }, {
+      "dmi_progbuf_63" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 504,
+        "bitWidth" : 8,
+        "name" : "dmi_progbuf_63",
+        "description" : "abstract command progbuf register 63",
+        "resetValue" : 0,
+        "group" : "dmi_progbuf",
+        "groupDesc" : "abstract command progbuf registers",
+        "accessType" : "RW"
+      }
+    } ]
+  }
+}

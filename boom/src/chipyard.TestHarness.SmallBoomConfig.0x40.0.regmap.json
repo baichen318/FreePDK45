@@ -1,0 +1,145 @@
+{
+  "peripheral" : {
+    "displayName" : "deviceAt0x40",
+    "baseAddress" : "0x40",
+    "regfields" : [ {
+      "dmactive" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 0,
+        "bitWidth" : 1,
+        "name" : "dmactive",
+        "description" : "debug module active",
+        "resetValue" : 0,
+        "group" : "dmcontrol",
+        "groupDesc" : "debug module control register",
+        "accessType" : "RW"
+      }
+    }, {
+      "ndmreset" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 1,
+        "bitWidth" : 1,
+        "name" : "ndmreset",
+        "description" : "debug module reset output",
+        "resetValue" : 0,
+        "group" : "dmcontrol",
+        "accessType" : "RW"
+      }
+    }, {
+      "clrresethaltreq" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 2,
+        "bitWidth" : 1,
+        "name" : "clrresethaltreq",
+        "description" : "clear reset halt request",
+        "resetValue" : 0,
+        "group" : "dmcontrol",
+        "accessType" : "W"
+      }
+    }, {
+      "setresethaltreq" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 3,
+        "bitWidth" : 1,
+        "name" : "setresethaltreq",
+        "description" : "set reset halt request",
+        "resetValue" : 0,
+        "group" : "dmcontrol",
+        "accessType" : "W"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 4,
+        "bitWidth" : 12,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "dmcontrol",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 16,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "dmcontrol",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 17,
+        "bitWidth" : 9,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "dmcontrol",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 26,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "dmcontrol",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 27,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "dmcontrol",
+        "accessType" : "R"
+      }
+    }, {
+      "ackhavereset" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 28,
+        "bitWidth" : 1,
+        "name" : "ackhavereset",
+        "description" : "acknowledge reset",
+        "resetValue" : 0,
+        "group" : "dmcontrol",
+        "accessType" : "W"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 29,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "dmcontrol",
+        "accessType" : "R"
+      }
+    }, {
+      "resumereq" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 30,
+        "bitWidth" : 1,
+        "name" : "resumereq",
+        "description" : "resume request",
+        "resetValue" : 0,
+        "group" : "dmcontrol",
+        "accessType" : "W"
+      }
+    }, {
+      "haltreq" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 31,
+        "bitWidth" : 1,
+        "name" : "haltreq",
+        "description" : "halt request",
+        "resetValue" : 0,
+        "group" : "dmcontrol",
+        "accessType" : "RW"
+      }
+    } ]
+  }
+}

@@ -1,0 +1,11 @@
+#define PLUSARG_USAGE_OPTIONS "EMULATOR VERILOG PLUSARGS\n\
+       +tilelink_timeout=INT\n\
+                           Kill emulation after INT waiting TileLink cycles. Off if 0.\n\
+                             (default=0)\n\
+       +uart_tx=INT\n\
+                           Enable/disable the TX to speed up simulation\n\
+                             (default=1)"
+static const char * verilog_plusargs [] = {\
+                                            "tilelink_timeout",\
+                                            "uart_tx",\
+                                            0};
