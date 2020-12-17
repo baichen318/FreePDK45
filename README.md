@@ -3,16 +3,17 @@ This is the FreePDK45 V1.4 Process Development Kit for the 45 nm technology
 
 ## A Tutorial for MIPS with FreePDK45
 
-- Go to the workstation
-
+- Clone this repo.
 ```bash
-cd mips
+git clone https://github.com/baichen318/FreePDK45.git && cd FreePDK45
 ```
 
-- Environment setup (only valid for CUHK servers)
+- Set the environment variables
 
 ```bash
-bash setup.sh
+cd FreePDK45
+export PDK_DIR=$PWD
+cd ../mips
 ```
 
 - Push MIPS to the synthesis stage with DC
