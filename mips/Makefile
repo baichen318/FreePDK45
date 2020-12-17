@@ -2,9 +2,12 @@
 
 default: all
 
+log_dir ?= logs
+
 all: mips.v
-	dc_shell-t -f compile_dc.tcl
+	mkdir -p $(log_dir)
+	dc_shell-t -f compile_dc.tcl | tee -i $(log_dir)/dc.log
 
 .PHONY: clean
 clean:
-	rm -rf command.log default.svf reports WORK
+	rm -rf command.log default.svf reports WORK $(log_dir)
