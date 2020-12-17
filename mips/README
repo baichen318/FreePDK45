@@ -1,0 +1,22 @@
+# A Tutorial for MIPS with FreePDK45
+
+## Environment setup (only valid for CUHK server)
+
+```bash
+bash setup.sh
+```
+
+## Steps
+- Push MIPS to the synthesis stage with DC
+```bash
+make
+```
+
+- Check the result
+Please view results in reports/
+
+- Clean the workstation
+```bash
+make clean
+```
+
