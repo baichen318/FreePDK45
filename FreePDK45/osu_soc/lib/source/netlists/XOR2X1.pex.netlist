@@ -1,0 +1,32 @@
+* File: XOR2X1.pex.netlist
+* Created: Wed Jan  2 19:04:36 2008
+* Program "Calibre xRC"
+* Version "v2007.2_34.24"
+* 
+.subckt XOR2X1  B Y A VDD GND
+* 
+MM11 a_13_43# B GND GND NMOS_VTL L=5e-08 W=5e-07
+MM10 GND B a_35_6# GND NMOS_VTL L=5e-08 W=5e-07
+MM9 a_35_6# A Y GND NMOS_VTL L=5e-08 W=5e-07
+MM8 Y a_2_6# a_18_6# GND NMOS_VTL L=5e-08 W=5e-07
+MM7 a_18_6# a_13_43# GND GND NMOS_VTL L=5e-08 W=5e-07
+MM6 GND A a_2_6# GND NMOS_VTL L=5e-08 W=5e-07
+MM5 a_13_43# B VDD VDD PMOS_VTL L=5e-08 W=1e-06
+MM4 VDD B a_35_54# VDD PMOS_VTL L=5e-08 W=1e-06
+MM3 a_35_54# a_2_6# Y VDD PMOS_VTL L=5e-08 W=1e-06
+MM2 Y A a_18_54# VDD PMOS_VTL L=5e-08 W=1e-06
+MM1 a_18_54# a_13_43# VDD VDD PMOS_VTL L=5e-08 W=1e-06
+MM0 VDD A a_2_6# VDD PMOS_VTL L=5e-08 W=1e-06
+c_7 B 0 0.268706f
+c_12 Y 0 0.0282611f
+c_19 a_13_43# 0 0.303557f
+c_24 GND 0 0.149284f
+c_29 VDD 0 0.167715f
+c_36 A 0 0.288858f
+c_43 a_2_6# 0 0.202235f
+*
+.include "XOR2X1.pex.netlist.XOR2X1.pxi"
+*
+.ends
+*
+*

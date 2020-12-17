@@ -1,0 +1,7 @@
+cUiSelectCellP {DFFNEGX1}
+cUiSetViewStatus {DFFNEGX1} {layout} {1}
+cUiSetViewStatus {DFFNEGX1} {logical} {0}
+cUiSetViewStatus {DFFNEGX1} {abstract.pin} {3}
+cUiSetViewStatus {DFFNEGX1} {abstract.ext} {1}
+cUiSetViewStatus {DFFNEGX1} {abstract} {1}
+cUiSetViewStatus {DFFNEGX1} {abstract.ver} {0}

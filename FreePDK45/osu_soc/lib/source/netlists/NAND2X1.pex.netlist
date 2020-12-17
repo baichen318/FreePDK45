@@ -1,0 +1,22 @@
+* File: NAND2X1.pex.netlist
+* Created: Wed Jan  2 18:50:18 2008
+* Program "Calibre xRC"
+* Version "v2007.2_34.24"
+* 
+.subckt NAND2X1  A GND B Y VDD
+* 
+MM2 a_9_6# A GND GND NMOS_VTL L=5e-08 W=5e-07
+MM3 Y B a_9_6# GND NMOS_VTL L=5e-08 W=5e-07
+MM0 Y A VDD VDD PMOS_VTL L=5e-08 W=5e-07
+MM1 VDD B Y VDD PMOS_VTL L=5e-08 W=5e-07
+c_5 A 0 0.110167f
+c_9 GND 0 0.0763275f
+c_14 B 0 0.10534f
+c_19 Y 0 0.0641968f
+c_23 VDD 0 0.166265f
+*
+.include "NAND2X1.pex.netlist.NAND2X1.pxi"
+*
+.ends
+*
+*

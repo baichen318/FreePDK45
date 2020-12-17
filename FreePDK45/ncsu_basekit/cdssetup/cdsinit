@@ -1,0 +1,62 @@
+; FreePDK 45nm Initialization File (.cdsinit)
+; Customizations can be made at the end of this file
+
+; Load display.drf
+envSetVal( "graphic" "drfPath" 'string strcat( getShellEnvVar("PDK_DIR") "/ncsu_basekit/cdssetup/display.drf"))
+
+; Load Bind Keys
+loadi( strcat( getShellEnvVar("PDK_DIR") "/ncsu_basekit/cdssetup/common_bindkeys.il"))
+
+; Setup Calibre
+if( getShellEnvVar("MGC_HOME") then
+  loadi( strcat( getShellEnvVar("MGC_HOME") "/shared/pkgs/icv/tools/queryskl/calibre.OA.skl"))
+) ;if
+
+; Load SKILL code in /ncsu_basekit/skill directory
+loadi( strcat( getShellEnvVar("PDK_DIR") "/ncsu_basekit/skill/loadSkill.il"))
+
+; Load default .cdsenv file
+(envLoadVals ?envFile  strcat( getShellEnvVar("PDK_DIR") "/ncsu_basekit/" "cdssetup/cdsenv") ?tool "layout")
+
+printf( strcat( 
+"---------------------------------------------------------------------------\n"
+"Welcome to the FreePDK 45nm Free, Open-Source Process Design Kit\n"
+"\n"
+"This initiative is brought to you by the Semiconductor Research\n"
+"Corporation (SRC), the National Science Foundation (NSF), Silicon\n" 
+"Integration Initiative (Si2), Mentor Graphics, and Synopsys.\n"
+"\n"
+"This version of the kit was created by Rhett Davis, Paul Franzon,\n"
+"Michael Bucher, Sunil Basavarajaiah, and Harun Demircioglu\n"
+"of North Carolina State University, and James Stine and Ivan Castellanos\n"
+"of Oklahoma State University.\n"
+"\n"
+"Contributions and modifications to this kit are welcomed and encouraged.\n"
+"\n"
+"Copyright 2007 - W. Rhett Davis, Paul Franzon, Michael Bucher,\n"
+"                 and Sunil Basavarajaiah, North Carolina State University\n"
+"Copyright 2008 - W. Rhett Davis, Michael Bucher, and Sunil Basavarajaiah,\n"
+"                 North Carolina State University (ncsu_basekit subtree)\n"
+"                 James Stine, and Ivan Castellanos,\n"
+"                 and Oklahoma State University (osu_soc subtree)\n"
+"Copyright 2011 - W. Rhett Davis, and Harun Demircioglu,\n"
+"                 North Carolina State University\n"
+"\n"
+"Licensed under the Apache License, Version 2.0 (the \"License\");\n"
+"you may not use this file except in compliance with the License.\n"
+"You may obtain a copy of the License at\n"
+"\n"
+"    http://www.apache.org/licenses/LICENSE-2.0\n"
+"\n"
+"Unless required by applicable law or agreed to in writing, software\n"
+"distributed under the License is distributed on an \"AS IS\" BASIS,\n"
+"WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n"
+"See the License for the specific language governing permissions and\n"
+"limitations under the License.\n"
+"---------------------------------------------------------------------------\n"
+"\n"
+"Done loading FreePDK customizations.\n"
+))
+
+; Comment the line below to disable auto opening of the Library Manager 
+ddsOpenLibManager()

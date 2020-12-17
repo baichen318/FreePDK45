@@ -1,0 +1,19 @@
+* File: INVX1.pex.netlist
+* Created: Wed Jan  2 18:42:35 2008
+* Program "Calibre xRC"
+* Version "v2007.2_34.24"
+* 
+.subckt INVX1  A GND VDD Y
+* 
+MM1 Y A GND GND NMOS_VTL L=5e-08 W=2.5e-07
+MM0 Y A VDD VDD PMOS_VTL L=5e-08 W=5e-07
+c_4 A 0 0.13599f
+c_7 GND 0 0.057208f
+c_10 VDD 0 0.0986293f
+c_14 Y 0 0.0799346f
+*
+.include "INVX1.pex.netlist.INVX1.pxi"
+*
+.ends
+*
+*

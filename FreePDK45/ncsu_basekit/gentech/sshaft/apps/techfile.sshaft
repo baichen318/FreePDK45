@@ -1,0 +1,227 @@
+# SSHAFT Technology File
+# created 8/12/04 by Rhett Davis
+#
+
+namespace Sshaft {
+  SshaftTechDir =	$SSHAFT_HOME/dist/tech/FreePDK45
+  namespace Env {
+    namespace cadence {
+      NewEnvVars =	CDS_LIC_FILE CNI_LOG_DEFAULT CDS_Netlisting_Mode CDSHOME OA_HOME PYTHONHOME PYTHONPATH CNI_PLAT_ROOT LD_ASSUME_KERNEL CNI_ROOT
+      PrependEnvVars = PATH
+      AppendEnvVars =	LD_LIBRARY_PATH
+      CNI_LOG_DEFAULT = /dev/null
+      CDS_LIC_FILE = 5280@license2.ece.ncsu.edu:5280@license3.ece.ncsu.edu:5280@license1.ece.ncsu.edu
+      PYTHONHOME = /afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/3rd
+      CDSHOME = /afs/eos/dist/cadence2007/ic
+      OA_HOME = /afs/eos/dist/cadence2007/oa
+      PYTHONPATH = /afs/bp/contrib/pycell420/.install/lnx86/pylib:/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/pyext:/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/lib:.
+      CNI_PLAT_ROOT = /afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32
+      CDS_Netlisting_Mode = Analog
+      LD_ASSUME_KERNEL = 2.4.1
+      CNI_ROOT = /afs/bp/contrib/pycell420/.install/lnx86
+      PATH = /afs/eos/dist/cadence2007/soc/bin:/afs/bp/contrib/pycell420/.install/lnx86/bin:/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/bin:/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/3rd/oa/bin/linux_rhel30_32/opt:/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/3rd/bin:/afs/eos/dist/cadence2007/oa/bin:/afs/eos/dist/cadence2007/ic/tools/dfII/bin:/afs/eos/dist/cadence2007/ic/tools/bin:
+      LD_LIBRARY_PATH = :/afs/eos/dist/cadence2007/ic/tools/lib:/afs/eos/dist/cadence2007/oa/lib:/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/3rd/lib:/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/3rd/oa/lib/linux_rhel30_32/opt:/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/lib
+    }
+    namespace synopsys {
+      NewEnvVars =	SYNOPSYS SNPSLMD_LICENSE_FILE LM_LICENSE_FILE 
+      AppendEnvVars =	MANPATH 
+      PrependEnvVars =	PATH 
+      SYNOPSYS = /afs/bp/dist/synopsys_syn
+      SNPSLMD_LICENSE_FILE = 2012@license1.ece.ncsu.edu,2012@license2.ece.ncsu.edu,2012@license3.ece.ncsu.edu
+      LM_LICENSE_FILE = 2012@license1.ece.ncsu.edu,2012@license2.ece.ncsu.edu,2012@license3.ece.ncsu.edu
+      MANPATH = :/afs/bp/dist/synopsys_syn/doc/syn/man
+      PATH = /afs/bp/dist/synopsys_syn/bin/SUN.64:/afs/bp/dist/synopsys_syn/bin/SUN.32:/afs/bp/dist/synopsys_syn/bin:
+    }
+    namespace synopsys_tools {
+      NewEnvVars =	SNPS_SIMIF SYNOPSYS_CCSS DDD_SESSIONS MTI_PLI VCS_ARCH_OVERRIDE SNPSLMD_LICENSE_FILE LM_LICENSE_FILE VERA_HOME VCS_HOME SYN_TOOLS PIONEER_HOME CCSS_HOME MTB_TPATH CCSS_KEYS DDD_HOME 
+      AppendEnvVars =	
+      PrependEnvVars =	PATH LD_LIBRARY_PATH MANPATH 
+      SNPS_SIMIF = /afs/bp.ncsu.edu/dist/synopsys_tools/simif
+      SYNOPSYS_CCSS = /afs/bp/dist/synopsys_tools/css/sparcOS5/ccss
+      DDD_SESSIONS = .
+      MTI_PLI = /afs/bp/dist/synopsys_tools/pioneer_ntb/sparcOS5/lib/libpioneer_pli_mti.so
+      VCS_ARCH_OVERRIDE = sparcOS5
+      SNPSLMD_LICENSE_FILE = 2012@license1.ece.ncsu.edu,2012@license2.ece.ncsu.edu,2012@license3.ece.ncsu.edu
+      LM_LICENSE_FILE = 2012@license1.ece.ncsu.edu,2012@license2.ece.ncsu.edu,2012@license3.ece.ncsu.edu
+      VERA_HOME = /afs/bp/dist/synopsys_tools/vera/@sys
+      VCS_HOME = /afs/bp/dist/synopsys_tools/vcs-mx
+      SYN_TOOLS = /afs/bp/dist/synopsys_tools
+      PIONEER_HOME = /afs/bp/dist/synopsys_tools/pioneer_ntb
+      CCSS_HOME = /afs/bp/dist/synopsys_tools/css
+      MTB_TPATH = /afs/bp/dist/synopsys_tools/nanochar/nanochar/sparcOS5
+      CCSS_KEYS = 2012@license1.ece.ncsu.edu,2012@license2.ece.ncsu.edu,2012@license3.ece.ncsu.edu
+      DDD_HOME = /afs/bp/dist/synopsys_tools/css/sparcOS5/gnupackages/ddd-3.3.1/share/ddd-3.3.1
+      PATH = /afs/bp/dist/synopsys_tools/css/sparcOS5/gnupackages/bin:/afs/bp/dist/synopsys_tools/css/sparcOS5/ccss/bin:/afs/bp/dist/synopsys_tools/pioneer_ntb/bin:/afs/bp.ncsu.edu/dist/synopsys_tools/ns/sparc64/ns/bin:/afs/bp/dist/synopsys_tools/nanochar/nanochar/sparcOS5:/afs/bp/dist/synopsys_tools/vcs-mx/bin:/afs/bp/dist/synopsys_tools/star-rcxt/bin:/afs/bp/dist/synopsys_tools/saber/ai_bin:/afs/bp/dist/synopsys_tools/pts/bin:/afs/bp/dist/synopsys_tools/pps/bin:
+      LD_LIBRARY_PATH = /afs/bp/dist/synopsys_tools/pioneer_ntb/sparcOS5/lib:
+      MANPATH = /afs/bp/dist/synopsys_tools/css/sparcOS5/gnupackages/man:/afs/bp.ncsu.edu/dist/synopsys_tools/ns/doc/ns/man:
+    }
+    namespace oa22 {
+      NewEnvVars = 	OA_BIT
+      AppendEnvVars =   
+      PrependEnvVars =  LD_LIBRARY_PATH PATH
+      LD_LIBRARY_PATH = /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tools/oa/OpenAccess-2.2.4/lib/linux_rhel30_32/opt:
+      OA_BIT = 32
+      PATH = /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tools/oa/OpenAccess-2.2.4/bin/linux_rhel30_32/opt:
+    }
+    namespace oa {
+      NewEnvVars = 	
+      AppendEnvVars = 	PYTHONPATH
+      PrependEnvVars = 	LD_LIBRARY_PATH PATH
+      LD_LIBRARY_PATH = /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tools/oa/pyoa/20021209/LSI/oa/tools.sun4v/lib:/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tools/oa/oa/2.00.p068/tools.sun4v/lib:/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tools/oa/oa/2.00.p068/tools.sun4v/oa/lib:
+      PATH = /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tools/oa/pyoa/20021209/LSI/oa/tools.sun4v/bin:/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tools/oa/oa/2.00.p068/tools.sun4v/bin:
+      PYTHONPATH = :/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tools/oa/pyoa/20021209/LSI/python
+    }
+    namespace pycell {
+      NewEnvVars = 	CNI_ROOT CNI_PLAT_ROOT CNI_LOG_DEFAULT \
+                        PYTHONHOME PYTHONPATH 
+      AppendEnvVars =   LD_LIBRARY_PATH
+      PrependEnvVars =  PATH
+      LD_LIBRARY_PATH = :/afs/bp/contrib/pycell411/.install/linux32/plat_linux_32/3rd/lib:/afs/bp/contrib/pycell411/.install/linux32/plat_linux_32/3rd/oa/lib/linux_rhel30_32/opt:/afs/bp/contrib/pycell411/.install/linux32/plat_linux_32/lib
+      CNI_LOG_DEFAULT = /dev/null
+      PYTHONHOME = /afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/3rd
+      PYTHONPATH = /afs/bp/contrib/pycell420/.install/lnx86/pylib:/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/pyext:/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/lib:${PDK_DIR}/ncsu_basekit/techfile/cni:.
+      CNI_PLAT_ROOT = /afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32
+      CNI_ROOT = /afs/bp/contrib/pycell420/.install/lnx86
+      PATH = /afs/bp/contrib/pycell420/.install/lnx86/bin:/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/bin:/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/3rd/oa/bin/linux_rhel30_32/opt:/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/3rd/bin:
+      LD_LIBRARY_PATH = :/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/3rd/lib:/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/3rd/oa/lib/linux_rhel30_32/opt:/afs/bp/contrib/pycell420/.install/lnx86/plat_linux_32/lib
+    }
+    namespace calibre {
+      NewEnvVars = 	MGC_HOME MGC_STAT_HOME LM_LICENSE_FILE
+      AppendEnvVars =   
+      PrependEnvVars =  PATH
+      MGC_HOME =	/afs/bp.ncsu.edu/dist/calibre20073
+      MGC_STAT_HOME =	/afs/bp.ncsu.edu/dist/calibre20073
+      LM_LICENSE_FILE = /afs/bp.ncsu.edu/dist/calibre20073/licenses/license.dat
+      PATH = 		/afs/bp.ncsu.edu/dist/calibre20073/bin:
+    }
+  }
+  namespace Apps {
+    AppList =				cds enc dc
+    ScriptAppList =			tcl py
+    namespace dc {
+      TemplateDir =	$::Sshaft::SshaftTechDir/dc
+      InitSrcFiles = 	synopsys_dc.setup synopsys_dc.setup.tcl \
+			synopsys_pt.setup synopsys_pt.setup
+      InitDestFiles = 	.synopsys_dc.setup .synopsys_dc.setup.tcl \
+			.synopsys_pt.setup .synopsys_pp.setup
+      Environment =	synopsys
+      CmdParseRegExp = 	^(.*)$$
+      CmdLogFormat =	%s -log %s -la -ll %d -li %d -tol %s
+      CmdNoLogFormat =	%s -ll %d -li %d -tol %s
+      TestCmd =		substep3
+      Language = 	tcl
+      ExeHeaderFile =	exe.hdr
+      ExeFooterFile = 	exe.ftr
+      ExecuteCommand =	dc_shell-t -f exe.tcl
+      LogCapture =	dc.out
+      LogCheck = 	dc.out
+      LogCheckRegExp =	Error
+      LogCheckMode = 	fail
+    }
+    namespace pt {
+      TemplateDir =	$::Sshaft::SshaftTechDir/dc
+      InitSrcFiles = 	synopsys_dc.setup synopsys_dc.setup.tcl \
+			synopsys_pt.setup synopsys_pt.setup
+      InitDestFiles = 	.synopsys_dc.setup .synopsys_dc.setup.tcl \
+			.synopsys_pt.setup .synopsys_pp.setup
+      Environment =	synopsys_tools
+      CmdParseRegExp = 	^(.*)$$
+      CmdLogFormat =	%s -log %s -la -ll %d -li %d -tol %s
+      CmdNoLogFormat =	%s -ll %d -li %d -tol %s
+      TestCmd =		substep3
+      Language = 	tcl
+      ExeHeaderFile =	exe.hdr
+      ExeFooterFile = 	exe.ftr
+      ExecuteCommand =	pt_shell -f exe.tcl
+      LogCapture =	pt.out
+      LogCheck = 	pt.out
+      LogCheckRegExp =	Error
+      LogCheckMode = 	fail
+    }
+    namespace pp {
+      TemplateDir =	$::Sshaft::SshaftTechDir/dc
+      InitSrcFiles = 	synopsys_dc.setup synopsys_dc.setup.tcl \
+			synopsys_pt.setup synopsys_pt.setup
+      InitDestFiles = 	.synopsys_dc.setup .synopsys_dc.setup.tcl \
+			.synopsys_pt.setup .synopsys_pp.setup
+      Environment =	synopsys_tools
+      CmdParseRegExp = 	^(.*)$$
+      CmdLogFormat =	%s -log %s -la -ll %d -li %d -tol %s
+      CmdNoLogFormat =	%s -ll %d -li %d -tol %s
+      TestCmd =		substep3
+      Language = 	tcl
+      ExeHeaderFile =	exe.hdr
+      ExeFooterFile = 	exe.ftr
+      ExecuteCommand =	pp_shell -f exe.tcl
+      LogCapture =	pp.out
+      LogCheck = 	pp.out
+      LogCheckRegExp =	Error
+      LogCheckMode = 	fail
+    }
+    namespace enc {
+      TemplateDir =	$::Sshaft::SshaftTechDir/enc
+      InitSrcFiles = 	encrc add_cadence
+      InitDestFiles = 	.encrc add_cadence
+      Environment = 	cadence
+      CmdParseRegExp = 	^(.*)$$
+      CmdLogFormat =	set errorflag [catch {%s -log %s -la -ll %d -li %d -tol %s} retval]
+      CmdNoLogFormat =	set errorflag [catch {%s -ll %d -li %d -tol %s} retval]
+      TestCmd =		substep3
+      Language = 	tcl
+      ExeHeaderFile =	exe.hdr
+      ExeFooterFile = 	exe.ftr
+      ExecuteCommand =	encounter -log encounter.log -nowin -overwrite \
+			-replay exe.tcl
+      LogCapture = 	encounter.out
+      LogCheck = 	encounter.log
+      LogCheckRegExp =	\*\*ERROR
+      LogCheckMode = 	fail
+    }
+    namespace cds {
+      TemplateDir =	$::Sshaft::SshaftTechDir/cds
+      InitSrcFiles = 	cdsinit cds.lib lib.defs
+      InitDestFiles = 	.cdsinit cds.lib lib.defs
+      Environment = 	cadence
+      CmdParseRegExp = 	^(.*)\)\s*$$
+      CmdLogFormat =	%s ?stepargs list( "%s" t %d %d "%s"))
+      CmdNoLogFormat =	%s ?stepargs list( nil nil %d %d "%s"))
+      TestCmd =		substep3()
+      Language = 	il
+      ExeHeaderFile =	exe.hdr
+      ExeFooterFile = 	exe.ftr
+      ExecuteCommand =	icfb -log CDS.log -nograph -replay exe.il
+      LogCapture = 	icfb.out
+      LogCheck = 	CDS.log
+      LogCheckRegExp =	^\\t t
+      LogCheckMode = 	pass      
+    }
+    namespace oa {
+      TemplateDir =	$::Sshaft::SshaftTechDir/oa
+      InitSrcFiles = 	cds.lib
+      InitDestFiles = 	cds.lib
+      Environment = 	oa
+      CmdParseRegExp = 	^(.*)\)\s*$$
+      CmdLogFormat =	%s ?stepargs list( "%s" t %d %d "%s"))
+      CmdNoLogFormat =	%s ?stepargs list( nil nil %d %d "%s"))
+      TestCmd =		substep3
+      Language = 	py
+      ExeHeaderFile =	exe.hdr
+      ExeFooterFile = 	exe.ftr
+      ExecuteCommand =	icfb -log CDS.log -nograph -replay exe.il
+      LogCapture = 	icfb.out
+      LogCheck = 	CDS.log
+      LogCheckRegExp =	^\\t t
+      LogCheckMode = 	pass      
+    }
+    namespace tcl {
+      Path =				/usr/local/bin
+      Executable = 			tclsh
+    }
+  }
+}
+
+namespace GenTech {
+  CdsTechData = 	FreePDK45
+  TechLibName = 	NCSU_TechLib_FreePDK45
+  CdsTechFile = 	FreePDK45.tf
+}

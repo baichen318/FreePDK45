@@ -1,0 +1,1938 @@
+# Run as: /import/cadence1/TSI41_ISR050511/tools.lnx86/slc/bin/32bit/slc -S ss_script
+
+slc>  # Run as: /import/cadence1/TSI41_ISR050511/tools.lnx86/slc/bin/32bit/slc -S ss_script
+-------------------------------------------------------------------------------------------------------
+SignalStorm - Library Characterization - Version v04.10-s042_1 - linux_x86 32-bit (10/22/2004 20:51:06)
+-------------------------------------------------------------------------------------------------------
+[2000-2004] Cadence Design Systems, Inc. All rights reserved.
+This work may not be copied, modified, re-published, uploaded, executed, or
+distributed in any way, in any medium, whether in whole or in part, without
+prior written permission from Cadence Design Systems, Inc.
+slc>  db_open gscl45nm
+
+Database : gscl45nm is now opened
+slc>  db_install -subckt ./cells/AND2X1.pex.netlist   -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/AND2X1.pex.netlist ( #size = 609 )
+
+Reading SUBCKT:AND2X1
+- including ./cells/AND2X1.pex.netlist.AND2X1.pxi : 
+Expanding Parameter of SUBCKT:AND2X1
+Writing : gscl45nm.ipdb/AND2X1.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/AND2X2.pex.netlist   -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/AND2X2.pex.netlist ( #size = 608 )
+
+Reading SUBCKT:AND2X2
+- including ./cells/AND2X2.pex.netlist.AND2X2.pxi : 
+Expanding Parameter of SUBCKT:AND2X2
+Writing : gscl45nm.ipdb/AND2X2.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/AOI21X1.pex.netlist  -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/AOI21X1.pex.netlist ( #size = 630 )
+
+Reading SUBCKT:AOI21X1
+- including ./cells/AOI21X1.pex.netlist.AOI21X1.pxi : 
+Expanding Parameter of SUBCKT:AOI21X1
+Writing : gscl45nm.ipdb/AOI21X1.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/AOI22X1.pex.netlist  -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/AOI22X1.pex.netlist ( #size = 744 )
+
+Reading SUBCKT:AOI22X1
+- including ./cells/AOI22X1.pex.netlist.AOI22X1.pxi : 
+Expanding Parameter of SUBCKT:AOI22X1
+Writing : gscl45nm.ipdb/AOI22X1.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/BUFX2.pex.netlist    -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/BUFX2.pex.netlist ( #size = 489 )
+
+Reading SUBCKT:BUFX2
+- including ./cells/BUFX2.pex.netlist.BUFX2.pxi : 
+Expanding Parameter of SUBCKT:BUFX2
+Writing : gscl45nm.ipdb/BUFX2.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/BUFX4.pex.netlist    -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/BUFX4.pex.netlist ( #size = 683 )
+
+Reading SUBCKT:BUFX4
+- including ./cells/BUFX4.pex.netlist.BUFX4.pxi : 
+Expanding Parameter of SUBCKT:BUFX4
+Writing : gscl45nm.ipdb/BUFX4.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/CLKBUF1.pex.netlist  -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/CLKBUF1.pex.netlist ( #size = 1157 )
+
+Reading SUBCKT:CLKBUF1
+- including ./cells/CLKBUF1.pex.netlist.CLKBUF1.pxi : 
+Expanding Parameter of SUBCKT:CLKBUF1
+Writing : gscl45nm.ipdb/CLKBUF1.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/CLKBUF2.pex.netlist  -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/CLKBUF2.pex.netlist ( #size = 1638 )
+
+Reading SUBCKT:CLKBUF2
+- including ./cells/CLKBUF2.pex.netlist.CLKBUF2.pxi : 
+Expanding Parameter of SUBCKT:CLKBUF2
+Writing : gscl45nm.ipdb/CLKBUF2.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/CLKBUF3.pex.netlist  -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/CLKBUF3.pex.netlist ( #size = 2130 )
+
+Reading SUBCKT:CLKBUF3
+- including ./cells/CLKBUF3.pex.netlist.CLKBUF3.pxi : 
+Expanding Parameter of SUBCKT:CLKBUF3
+Writing : gscl45nm.ipdb/CLKBUF3.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/DFFNEGX1.pex.netlist -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/DFFNEGX1.pex.netlist ( #size = 1639 )
+
+Reading SUBCKT:DFFNEGX1
+- including ./cells/DFFNEGX1.pex.netlist.DFFNEGX1.pxi : 
+Expanding Parameter of SUBCKT:DFFNEGX1
+Writing : gscl45nm.ipdb/DFFNEGX1.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/DFFPOSX1.pex.netlist -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/DFFPOSX1.pex.netlist ( #size = 1640 )
+
+Reading SUBCKT:DFFPOSX1
+- including ./cells/DFFPOSX1.pex.netlist.DFFPOSX1.pxi : 
+Expanding Parameter of SUBCKT:DFFPOSX1
+Writing : gscl45nm.ipdb/DFFPOSX1.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/DFFSR.pex.netlist    -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/DFFSR.pex.netlist ( #size = 2335 )
+
+Reading SUBCKT:DFFSR
+- including ./cells/DFFSR.pex.netlist.DFFSR.pxi : 
+Expanding Parameter of SUBCKT:DFFSR
+Writing : gscl45nm.ipdb/DFFSR.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/FAX1.pex.netlist     -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/FAX1.pex.netlist ( #size = 1905 )
+
+Reading SUBCKT:FAX1
+- including ./cells/FAX1.pex.netlist.FAX1.pxi : 
+Expanding Parameter of SUBCKT:FAX1
+Writing : gscl45nm.ipdb/FAX1.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/HAX1.pex.netlist     -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/HAX1.pex.netlist ( #size = 1100 )
+
+Reading SUBCKT:HAX1
+- including ./cells/HAX1.pex.netlist.HAX1.pxi : 
+Expanding Parameter of SUBCKT:HAX1
+Writing : gscl45nm.ipdb/HAX1.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/INVX1.pex.netlist    -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/INVX1.pex.netlist ( #size = 361 )
+
+Reading SUBCKT:INVX1
+- including ./cells/INVX1.pex.netlist.INVX1.pxi : 
+Expanding Parameter of SUBCKT:INVX1
+Writing : gscl45nm.ipdb/INVX1.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/INVX2.pex.netlist    -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/INVX2.pex.netlist ( #size = 361 )
+
+Reading SUBCKT:INVX2
+- including ./cells/INVX2.pex.netlist.INVX2.pxi : 
+Expanding Parameter of SUBCKT:INVX2
+Writing : gscl45nm.ipdb/INVX2.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/INVX4.pex.netlist    -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/INVX4.pex.netlist ( #size = 441 )
+
+Reading SUBCKT:INVX4
+- including ./cells/INVX4.pex.netlist.INVX4.pxi : 
+Expanding Parameter of SUBCKT:INVX4
+Writing : gscl45nm.ipdb/INVX4.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/INVX8.pex.netlist    -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/INVX8.pex.netlist ( #size = 574 )
+
+Reading SUBCKT:INVX8
+- including ./cells/INVX8.pex.netlist.INVX8.pxi : 
+Expanding Parameter of SUBCKT:INVX8
+Writing : gscl45nm.ipdb/INVX8.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/LATCH.pex.netlist    -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/LATCH.pex.netlist ( #size = 966 )
+
+Reading SUBCKT:LATCH
+- including ./cells/LATCH.pex.netlist.LATCH.pxi : 
+Expanding Parameter of SUBCKT:LATCH
+Writing : gscl45nm.ipdb/LATCH.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/MUX2X1.pex.netlist   -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/MUX2X1.pex.netlist ( #size = 831 )
+
+Reading SUBCKT:MUX2X1
+- including ./cells/MUX2X1.pex.netlist.MUX2X1.pxi : 
+Expanding Parameter of SUBCKT:MUX2X1
+Writing : gscl45nm.ipdb/MUX2X1.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/NAND2X1.pex.netlist  -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/NAND2X1.pex.netlist ( #size = 478 )
+
+Reading SUBCKT:NAND2X1
+- including ./cells/NAND2X1.pex.netlist.NAND2X1.pxi : 
+Expanding Parameter of SUBCKT:NAND2X1
+Writing : gscl45nm.ipdb/NAND2X1.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/NAND3X1.pex.netlist  -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/NAND3X1.pex.netlist ( #size = 599 )
+
+Reading SUBCKT:NAND3X1
+- including ./cells/NAND3X1.pex.netlist.NAND3X1.pxi : 
+Expanding Parameter of SUBCKT:NAND3X1
+Writing : gscl45nm.ipdb/NAND3X1.design
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/NOR2X1.pex.netlist   -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/NOR2X1.pex.netlist ( #size = 481 )
+
+Reading SUBCKT:NOR2X1
+- including ./cells/NOR2X1.pex.netlist.NOR2X1.pxi : 
+Expanding Parameter of SUBCKT:NOR2X1
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/NOR2X1.design
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/NOR3X1.pex.netlist   -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/NOR3X1.pex.netlist ( #size = 605 )
+
+Reading SUBCKT:NOR3X1
+- including ./cells/NOR3X1.pex.netlist.NOR3X1.pxi : 
+Expanding Parameter of SUBCKT:NOR3X1
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/NOR3X1.design
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/OAI21X1.pex.netlist  -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/OAI21X1.pex.netlist ( #size = 620 )
+
+Reading SUBCKT:OAI21X1
+- including ./cells/OAI21X1.pex.netlist.OAI21X1.pxi : 
+Expanding Parameter of SUBCKT:OAI21X1
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/OAI21X1.design
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/OAI22X1.pex.netlist  -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/OAI22X1.pex.netlist ( #size = 742 )
+
+Reading SUBCKT:OAI22X1
+- including ./cells/OAI22X1.pex.netlist.OAI22X1.pxi : 
+Expanding Parameter of SUBCKT:OAI22X1
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/OAI22X1.design
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/OR2X1.pex.netlist    -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/OR2X1.pex.netlist ( #size = 616 )
+
+Reading SUBCKT:OR2X1
+- including ./cells/OR2X1.pex.netlist.OR2X1.pxi : 
+Expanding Parameter of SUBCKT:OR2X1
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/OR2X1.design
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/OR2X2.pex.netlist    -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/OR2X2.pex.netlist ( #size = 612 )
+
+Reading SUBCKT:OR2X2
+- including ./cells/OR2X2.pex.netlist.OR2X2.pxi : 
+Expanding Parameter of SUBCKT:OR2X2
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/OR2X2.design
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+slc>  db_install -subckt ./cells/TBUFX1.pex.netlist   -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/TBUFX1.pex.netlist ( #size = 617 )
+
+Reading SUBCKT:TBUFX1
+- including ./cells/TBUFX1.pex.netlist.TBUFX1.pxi : 
+Expanding Parameter of SUBCKT:TBUFX1
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+Writing : gscl45nm.ipdb/TBUFX1.design
+slc>  db_install -subckt ./cells/TBUFX2.pex.netlist   -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/TBUFX2.pex.netlist ( #size = 819 )
+
+Reading SUBCKT:TBUFX2
+- including ./cells/TBUFX2.pex.netlist.TBUFX2.pxi : 
+Expanding Parameter of SUBCKT:TBUFX2
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+Writing : gscl45nm.ipdb/TBUFX2.design
+slc>  db_install -subckt ./cells/XNOR2X1.pex.netlist  -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/XNOR2X1.pex.netlist ( #size = 943 )
+
+Reading SUBCKT:XNOR2X1
+- including ./cells/XNOR2X1.pex.netlist.XNOR2X1.pxi : 
+Expanding Parameter of SUBCKT:XNOR2X1
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+Writing : gscl45nm.ipdb/XNOR2X1.design
+slc>  db_install -subckt ./cells/XOR2X1.pex.netlist   -model gpdk45nm.m
+
+Got database lock.
+
+MODEL FILE: gpdk45nm.m ( #size = 9579 )
+
+Reading MODEL: NMOS_VTL
+Reading MODEL: PMOS_VTL
+
+SUBCKT FILE: ./cells/XOR2X1.pex.netlist ( #size = 939 )
+
+Reading SUBCKT:XOR2X1
+- including ./cells/XOR2X1.pex.netlist.XOR2X1.pxi : 
+Expanding Parameter of SUBCKT:XOR2X1
+Writing : gscl45nm.ipdb/NMOS_VTL.device
+Writing : gscl45nm.ipdb/PMOS_VTL.device
+Writing : gscl45nm.ipdb/XOR2X1.design
+slc>  db_gsim
+
+=============================================
+ ENVIROMENT PARAMETERS FOR VECTOR GENERATION 
+=============================================
+     DS_REDUCT_DELAY_FLAG      : true
+     DS_REDUCT_RACE_FLAG       : true
+     DS_MEASURE_HOLD_FLAG      : true
+     DS_MEASURE_REMOVABLE_FLAG : true
+     DS_INTERNAL_RACE_FLAG     : true
+=============================================
+
+Reading : gscl45nm.ipdb/AND2X1.design
+
+==============================
+      DESIGN : AND2X1
+==============================
+----------------------------------
+        A   B  :  Y  
+----------------------------------
+D0000:  R   1  :  R  : DELAY(A)
+D0001:  F   1  :  F  : DELAY(A)
+D0002:  1   R  :  R  : DELAY(B)
+D0003:  1   F  :  F  : DELAY(B)
+----------------------------------
+=> 4 vectors generated
+Writing : gscl45nm.ipdb/AND2X1.design/simulate/spec
+Writing : gscl45nm.ipdb/AND2X1.design/simulate/subckt
+Reading : gscl45nm.ipdb/AND2X2.design
+
+==============================
+      DESIGN : AND2X2
+==============================
+----------------------------------
+        A   B  :  Y  
+----------------------------------
+D0000:  R   1  :  R  : DELAY(A)
+D0001:  F   1  :  F  : DELAY(A)
+D0002:  1   R  :  R  : DELAY(B)
+D0003:  1   F  :  F  : DELAY(B)
+----------------------------------
+=> 4 vectors generated
+Writing : gscl45nm.ipdb/AND2X2.design/simulate/spec
+Writing : gscl45nm.ipdb/AND2X2.design/simulate/subckt
+Reading : gscl45nm.ipdb/AOI21X1.design
+
+==============================
+      DESIGN : AOI21X1
+==============================
+--------------------------------------
+        A   B   C  :  Y  
+--------------------------------------
+D0000:  R   1   0  :  F  : DELAY(A)
+D0001:  F   1   0  :  R  : DELAY(A)
+D0002:  1   R   0  :  F  : DELAY(B)
+D0003:  1   F   0  :  R  : DELAY(B)
+D0004:  0   0   R  :  F  : DELAY(C)
+D0005:  0   1   R  :  F  : DELAY(C)
+D0006:  1   0   R  :  F  : DELAY(C)
+D0007:  0   0   F  :  R  : DELAY(C)
+D0008:  0   1   F  :  R  : DELAY(C)
+D0009:  1   0   F  :  R  : DELAY(C)
+--------------------------------------
+=> 10 vectors generated
+Writing : gscl45nm.ipdb/AOI21X1.design/simulate/spec
+Writing : gscl45nm.ipdb/AOI21X1.design/simulate/subckt
+Reading : gscl45nm.ipdb/AOI22X1.design
+
+==============================
+      DESIGN : AOI22X1
+==============================
+------------------------------------------
+        C   D   B   A  :  Y  
+------------------------------------------
+D0000:  R   1   0   0  :  F  : DELAY(C)
+D0001:  R   1   0   1  :  F  : DELAY(C)
+D0002:  R   1   1   0  :  F  : DELAY(C)
+D0003:  F   1   0   0  :  R  : DELAY(C)
+D0004:  F   1   0   1  :  R  : DELAY(C)
+D0005:  F   1   1   0  :  R  : DELAY(C)
+D0006:  1   R   0   0  :  F  : DELAY(D)
+D0007:  1   R   0   1  :  F  : DELAY(D)
+D0008:  1   R   1   0  :  F  : DELAY(D)
+D0009:  1   F   0   0  :  R  : DELAY(D)
+D0010:  1   F   0   1  :  R  : DELAY(D)
+D0011:  1   F   1   0  :  R  : DELAY(D)
+D0012:  0   0   R   1  :  F  : DELAY(B)
+D0013:  0   1   R   1  :  F  : DELAY(B)
+D0014:  1   0   R   1  :  F  : DELAY(B)
+D0015:  0   0   F   1  :  R  : DELAY(B)
+D0016:  0   1   F   1  :  R  : DELAY(B)
+D0017:  1   0   F   1  :  R  : DELAY(B)
+D0018:  0   0   1   R  :  F  : DELAY(A)
+D0019:  0   1   1   R  :  F  : DELAY(A)
+D0020:  1   0   1   R  :  F  : DELAY(A)
+D0021:  0   0   1   F  :  R  : DELAY(A)
+D0022:  0   1   1   F  :  R  : DELAY(A)
+D0023:  1   0   1   F  :  R  : DELAY(A)
+------------------------------------------
+=> 24 vectors generated
+Writing : gscl45nm.ipdb/AOI22X1.design/simulate/spec
+Writing : gscl45nm.ipdb/AOI22X1.design/simulate/subckt
+Reading : gscl45nm.ipdb/BUFX2.design
+
+==============================
+      DESIGN : BUFX2
+==============================
+------------------------------
+        A  :  Y  
+------------------------------
+D0000:  R  :  R  : DELAY(A)
+D0001:  F  :  F  : DELAY(A)
+------------------------------
+=> 2 vectors generated
+Writing : gscl45nm.ipdb/BUFX2.design/simulate/spec
+Writing : gscl45nm.ipdb/BUFX2.design/simulate/subckt
+Reading : gscl45nm.ipdb/BUFX4.design
+
+==============================
+      DESIGN : BUFX4
+==============================
+------------------------------
+        A  :  Y  
+------------------------------
+D0000:  R  :  R  : DELAY(A)
+D0001:  F  :  F  : DELAY(A)
+------------------------------
+=> 2 vectors generated
+Writing : gscl45nm.ipdb/BUFX4.design/simulate/spec
+Writing : gscl45nm.ipdb/BUFX4.design/simulate/subckt
+Reading : gscl45nm.ipdb/CLKBUF1.design
+
+==============================
+      DESIGN : CLKBUF1
+==============================
+------------------------------
+        A  :  Y  
+------------------------------
+D0000:  R  :  R  : DELAY(A)
+D0001:  F  :  F  : DELAY(A)
+------------------------------
+=> 2 vectors generated
+Writing : gscl45nm.ipdb/CLKBUF1.design/simulate/spec
+Writing : gscl45nm.ipdb/CLKBUF1.design/simulate/subckt
+Reading : gscl45nm.ipdb/CLKBUF2.design
+
+==============================
+      DESIGN : CLKBUF2
+==============================
+------------------------------
+        A  :  Y  
+------------------------------
+D0000:  R  :  R  : DELAY(A)
+D0001:  F  :  F  : DELAY(A)
+------------------------------
+=> 2 vectors generated
+Writing : gscl45nm.ipdb/CLKBUF2.design/simulate/spec
+Writing : gscl45nm.ipdb/CLKBUF2.design/simulate/subckt
+Reading : gscl45nm.ipdb/CLKBUF3.design
+
+==============================
+      DESIGN : CLKBUF3
+==============================
+------------------------------
+        A  :  Y  
+------------------------------
+D0000:  R  :  R  : DELAY(A)
+D0001:  F  :  F  : DELAY(A)
+------------------------------
+=> 2 vectors generated
+Writing : gscl45nm.ipdb/CLKBUF3.design/simulate/spec
+Writing : gscl45nm.ipdb/CLKBUF3.design/simulate/subckt
+Reading : gscl45nm.ipdb/DFFNEGX1.design
+
+==============================
+      DESIGN : DFFNEGX1
+==============================
+----------------------------------------------------
+       CLK  D  :  Q  :  Q  P0000 P0001 P0002 
+----------------------------------------------------
+D0000:  R   0  :  1  :  1   0   F   R  : POWER(CLK)
+D0001:  R   1  :  0  :  0   1   R   F  : POWER(CLK)
+D0002:  R   0  :  0  :  0   1   0   1  : POWER(CLK)
+D0003:  F   0  :  F  :  F   R   0   1  : DELAY(CLK)
+D0004:  F   1  :  R  :  R   F   1   0  : DELAY(CLK)
+D0005:  F   0  :  0  :  0   1   0   1  : POWER(CLK)
+D0006:  1   R  :  0  :  0   1   R   F  : POWER(D)
+D0007:  1   F  :  0  :  0   1   F   R  : POWER(D)
+R0000:  F  0-1 : <R> : <R> <F> <R> <F> : SETUP(D<=CLK)
+R0001:  F  0-1 : <F> : <F> <R> <0> <1> : HOLD(CLK=>D)
+R0002:  F  1-0 : <R> : <R> <F> <1> <0> : HOLD(CLK=>D)
+R0003:  F  1-0 : <F> : <F> <R> <F> <R> : SETUP(D<=CLK)
+----------------------------------------------------
+- node name changed for spice : A_66_6# => P0000
+- node name changed for spice : A_34_4# => P0001
+- node name changed for spice : A_23_6# => P0002
+
+=> 12 vectors generated
+Writing : gscl45nm.ipdb/DFFNEGX1.design/simulate/spec
+Writing : gscl45nm.ipdb/DFFNEGX1.design/simulate/subckt
+Reading : gscl45nm.ipdb/DFFPOSX1.design
+
+==============================
+      DESIGN : DFFPOSX1
+==============================
+----------------------------------------------------
+       CLK  D  :  Q  :  Q  P0000 P0001 P0002 
+----------------------------------------------------
+D0000:  R   0  :  F  :  F   R   0   1  : DELAY(CLK)
+D0001:  R   1  :  R  :  R   F   1   0  : DELAY(CLK)
+D0002:  R   0  :  0  :  0   1   0   1  : POWER(CLK)
+D0003:  F   0  :  1  :  1   0   F   R  : POWER(CLK)
+D0004:  F   1  :  0  :  0   1   R   F  : POWER(CLK)
+D0005:  F   0  :  0  :  0   1   0   1  : POWER(CLK)
+D0006:  0   R  :  0  :  0   1   R   F  : POWER(D)
+D0007:  0   F  :  0  :  0   1   F   R  : POWER(D)
+R0000:  R  0-1 : <R> : <R> <F> <R> <F> : SETUP(D<=CLK)
+R0001:  R  0-1 : <F> : <F> <R> <0> <1> : HOLD(CLK=>D)
+R0002:  R  1-0 : <R> : <R> <F> <1> <0> : HOLD(CLK=>D)
+R0003:  R  1-0 : <F> : <F> <R> <F> <R> : SETUP(D<=CLK)
+----------------------------------------------------
+- node name changed for spice : A_66_6# => P0000
+- node name changed for spice : A_34_4# => P0001
+- node name changed for spice : A_22_6# => P0002
+
+=> 12 vectors generated
+Writing : gscl45nm.ipdb/DFFPOSX1.design/simulate/spec
+Writing : gscl45nm.ipdb/DFFPOSX1.design/simulate/subckt
+Reading : gscl45nm.ipdb/DFFSR.design
+
+==============================
+      DESIGN : DFFSR
+==============================
+------------------------------------------------------------
+       CLK  D   S   R  :  Q  : P0000 P0001 P0002 P0003 
+------------------------------------------------------------
+D0000:  R   0   1   1  :  F  :  1   0   F   R  : DELAY(CLK)
+D0001:  R   1   1   1  :  R  :  0   1   R   F  : DELAY(CLK)
+D0002:  R   0   1   1  :  0  :  1   0   0   1  : POWER(CLK)
+D0003:  F   0   1   1  :  1  :  R   F   1   0  : POWER(CLK)
+D0004:  F   1   1   1  :  0  :  F   R   0   1  : POWER(CLK)
+D0005:  F   0   1   1  :  0  :  1   0   0   1  : POWER(CLK)
+D0006:  0   R   1   1  :  1  :  F   R   1   0  : POWER(D)
+D0007:  0   F   1   1  :  1  :  R   F   1   0  : POWER(D)
+D0008:  0   1   R   1  :  1  :  0   1   1   0  : POWER(S)
+D0009:  0   0   F   1  :  R  :  F   R   R   F  : DELAY(S)
+D0010:  0   1   F   1  :  R  :  0   1   R   F  : DELAY(S)
+D0011:  0   0   0   R  :  R  :  F   1   1   F  : DELAY(R)
+D0012:  0   0   0   F  :  F  :  R   1   1   R  : DELAY(R)
+D0013:  0   0   1   F  :  F  :  1   0   F   R  : DELAY(R)
+D0014:  0   1   1   F  :  F  :  R   1   F   R  : DELAY(R)
+D0015:  1   0   1   F  :  F  :  R   F   F   R  : DELAY(R)
+R0000:  0   0   R  0-1 : <0> :  1   F  <F> <1> : RECOVER(S=>R)
+R0001:  1   0   R  0-1 : <0> : <1> <F> <F> <1> : RECOVER(S=>R)
+R0002:  R   1   1  0-1 : <0> : <1> <F> <0> <1> : REMOVABLE(CLK=>R)
+R0003:  R   1   1  0-1 : <R> : <F> <1> <R> <F> : RELEASE(R<=CLK)
+R0004:  0   0  0-1  R  : <R> :  1   F  <1> <F> : RECOVER(R=>S)
+R0005:  1   0  0-1  R  : <R> : <F> <1> <1> <F> : RECOVER(R=>S)
+R0006:  R   0  0-1  1  : <1> : <0> <1> <1> <0> : REMOVABLE(CLK=>S)
+R0007:  R   0  0-1  1  : <F> : <R> <F> <F> <R> : RELEASE(S<=CLK)
+R0008:  R  0-1  1   1  : <R> : <F> <R> <R> <F> : SETUP(D<=CLK)
+R0009:  R  0-1  1   1  : <F> : <1> <0> <F> <R> : HOLD(CLK=>D)
+R0010:  R  1-0  1   1  : <R> : <0> <1> <R> <F> : HOLD(CLK=>D)
+R0011:  R  1-0  1   1  : <F> : <R> <F> <F> <R> : SETUP(D<=CLK)
+------------------------------------------------------------
+- node name changed for spice : A_2_6# => P0000
+- node name changed for spice : A_10_61# => P0001
+- node name changed for spice : A_113_6# => P0002
+- node name changed for spice : A_122_6# => P0003
+
+=> 28 vectors generated
+Writing : gscl45nm.ipdb/DFFSR.design/simulate/spec
+Writing : gscl45nm.ipdb/DFFSR.design/simulate/subckt
+Reading : gscl45nm.ipdb/FAX1.design
+
+==============================
+      DESIGN : FAX1
+==============================
+------------------------------------------
+        B   C   A  : YC  YS  
+------------------------------------------
+D0000:  R   0   0  :  0   R  : DELAY(B)
+D0001:  R   0   1  :  R   F  : DELAY(B)
+D0002:  R   1   0  :  R   F  : DELAY(B)
+D0003:  R   1   1  :  1   R  : DELAY(B)
+D0004:  F   0   0  :  0   F  : DELAY(B)
+D0005:  F   0   1  :  F   R  : DELAY(B)
+D0006:  F   1   0  :  F   R  : DELAY(B)
+D0007:  F   1   1  :  1   F  : DELAY(B)
+D0008:  0   R   0  :  0   R  : DELAY(C)
+D0009:  0   R   1  :  R   F  : DELAY(C)
+D0010:  1   R   0  :  R   F  : DELAY(C)
+D0011:  1   R   1  :  1   R  : DELAY(C)
+D0012:  0   F   0  :  0   F  : DELAY(C)
+D0013:  0   F   1  :  F   R  : DELAY(C)
+D0014:  1   F   0  :  F   R  : DELAY(C)
+D0015:  1   F   1  :  1   F  : DELAY(C)
+D0016:  0   0   R  :  0   R  : DELAY(A)
+D0017:  0   1   R  :  R   F  : DELAY(A)
+D0018:  1   0   R  :  R   F  : DELAY(A)
+D0019:  1   1   R  :  1   R  : DELAY(A)
+D0020:  0   0   F  :  0   F  : DELAY(A)
+D0021:  0   1   F  :  F   R  : DELAY(A)
+D0022:  1   0   F  :  F   R  : DELAY(A)
+D0023:  1   1   F  :  1   F  : DELAY(A)
+------------------------------------------
+=> 24 vectors generated
+Writing : gscl45nm.ipdb/FAX1.design/simulate/spec
+Writing : gscl45nm.ipdb/FAX1.design/simulate/subckt
+Reading : gscl45nm.ipdb/HAX1.design
+
+==============================
+      DESIGN : HAX1
+==============================
+--------------------------------------
+        B   A  : YS  YC  
+--------------------------------------
+D0000:  R   0  :  R   0  : DELAY(B)
+D0001:  R   1  :  F   R  : DELAY(B)
+D0002:  F   0  :  F   0  : DELAY(B)
+D0003:  F   1  :  R   F  : DELAY(B)
+D0004:  0   R  :  R   0  : DELAY(A)
+D0005:  1   R  :  F   R  : DELAY(A)
+D0006:  0   F  :  F   0  : DELAY(A)
+D0007:  1   F  :  R   F  : DELAY(A)
+--------------------------------------
+=> 8 vectors generated
+Writing : gscl45nm.ipdb/HAX1.design/simulate/spec
+Writing : gscl45nm.ipdb/HAX1.design/simulate/subckt
+Reading : gscl45nm.ipdb/INVX1.design
+
+==============================
+      DESIGN : INVX1
+==============================
+------------------------------
+        A  :  Y  
+------------------------------
+D0000:  R  :  F  : DELAY(A)
+D0001:  F  :  R  : DELAY(A)
+------------------------------
+=> 2 vectors generated
+Writing : gscl45nm.ipdb/INVX1.design/simulate/spec
+Writing : gscl45nm.ipdb/INVX1.design/simulate/subckt
+Reading : gscl45nm.ipdb/INVX2.design
+
+==============================
+      DESIGN : INVX2
+==============================
+------------------------------
+        A  :  Y  
+------------------------------
+D0000:  R  :  F  : DELAY(A)
+D0001:  F  :  R  : DELAY(A)
+------------------------------
+=> 2 vectors generated
+Writing : gscl45nm.ipdb/INVX2.design/simulate/spec
+Writing : gscl45nm.ipdb/INVX2.design/simulate/subckt
+Reading : gscl45nm.ipdb/INVX4.design
+
+==============================
+      DESIGN : INVX4
+==============================
+------------------------------
+        A  :  Y  
+------------------------------
+D0000:  R  :  F  : DELAY(A)
+D0001:  F  :  R  : DELAY(A)
+------------------------------
+=> 2 vectors generated
+Writing : gscl45nm.ipdb/INVX4.design/simulate/spec
+Writing : gscl45nm.ipdb/INVX4.design/simulate/subckt
+Reading : gscl45nm.ipdb/INVX8.design
+
+==============================
+      DESIGN : INVX8
+==============================
+------------------------------
+        A  :  Y  
+------------------------------
+D0000:  R  :  F  : DELAY(A)
+D0001:  F  :  R  : DELAY(A)
+------------------------------
+=> 2 vectors generated
+Writing : gscl45nm.ipdb/INVX8.design/simulate/spec
+Writing : gscl45nm.ipdb/INVX8.design/simulate/subckt
+Reading : gscl45nm.ipdb/LATCH.design
+
+==============================
+      DESIGN : LATCH
+==============================
+--------------------------------------------
+        D  CLK :  Q  :  Q  P0000 
+--------------------------------------------
+D0000:  R   1  :  R  :  R   F  : DELAY(D)
+D0001:  F   1  :  F  :  F   R  : DELAY(D)
+D0002:  0   R  :  F  :  F   R  : DELAY(CLK)
+D0003:  1   R  :  R  :  R   F  : DELAY(CLK)
+D0004:  0   R  :  0  :  0   1  : POWER(CLK)
+D0005:  0   F  :  0  :  0   1  : POWER(CLK)
+R0000: 0-1  F  : <0> : <0> <1> : HOLD(CLK=>D)
+R0001: 0-1  F  : <R> : <R> <F> : SETUP(D<=CLK)
+R0002: 1-0  F  : <1> : <1> <0> : HOLD(CLK=>D)
+R0003: 1-0  F  : <F> : <F> <R> : SETUP(D<=CLK)
+--------------------------------------------
+- node name changed for spice : A_23_6# => P0000
+
+=> 10 vectors generated
+Writing : gscl45nm.ipdb/LATCH.design/simulate/spec
+Writing : gscl45nm.ipdb/LATCH.design/simulate/subckt
+Reading : gscl45nm.ipdb/MUX2X1.design
+
+==============================
+      DESIGN : MUX2X1
+==============================
+--------------------------------------
+        A   S   B  :  Y  
+--------------------------------------
+D0000:  R   1   0  :  F  : DELAY(A)
+D0001:  F   1   0  :  R  : DELAY(A)
+D0002:  0   R   1  :  R  : DELAY(S)
+D0003:  1   R   0  :  F  : DELAY(S)
+D0004:  0   F   1  :  F  : DELAY(S)
+D0005:  1   F   0  :  R  : DELAY(S)
+D0006:  0   0   R  :  F  : DELAY(B)
+D0007:  0   0   F  :  R  : DELAY(B)
+--------------------------------------
+=> 8 vectors generated
+Writing : gscl45nm.ipdb/MUX2X1.design/simulate/spec
+Writing : gscl45nm.ipdb/MUX2X1.design/simulate/subckt
+Reading : gscl45nm.ipdb/NAND2X1.design
+
+==============================
+      DESIGN : NAND2X1
+==============================
+----------------------------------
+        A   B  :  Y  
+----------------------------------
+D0000:  R   1  :  F  : DELAY(A)
+D0001:  F   1  :  R  : DELAY(A)
+D0002:  1   R  :  F  : DELAY(B)
+D0003:  1   F  :  R  : DELAY(B)
+----------------------------------
+=> 4 vectors generated
+Writing : gscl45nm.ipdb/NAND2X1.design/simulate/spec
+Writing : gscl45nm.ipdb/NAND2X1.design/simulate/subckt
+Reading : gscl45nm.ipdb/NAND3X1.design
+
+==============================
+      DESIGN : NAND3X1
+==============================
+--------------------------------------
+        A   B   C  :  Y  
+--------------------------------------
+D0000:  R   1   1  :  F  : DELAY(A)
+D0001:  F   1   1  :  R  : DELAY(A)
+D0002:  1   R   1  :  F  : DELAY(B)
+D0003:  1   F   1  :  R  : DELAY(B)
+D0004:  1   1   R  :  F  : DELAY(C)
+D0005:  1   1   F  :  R  : DELAY(C)
+--------------------------------------
+=> 6 vectors generated
+Writing : gscl45nm.ipdb/NAND3X1.design/simulate/spec
+Writing : gscl45nm.ipdb/NAND3X1.design/simulate/subckt
+Reading : gscl45nm.ipdb/NOR2X1.design
+
+==============================
+      DESIGN : NOR2X1
+==============================
+----------------------------------
+        A   B  :  Y  
+----------------------------------
+D0000:  R   0  :  F  : DELAY(A)
+D0001:  F   0  :  R  : DELAY(A)
+D0002:  0   R  :  F  : DELAY(B)
+D0003:  0   F  :  R  : DELAY(B)
+----------------------------------
+=> 4 vectors generated
+Writing : gscl45nm.ipdb/NOR2X1.design/simulate/spec
+Writing : gscl45nm.ipdb/NOR2X1.design/simulate/subckt
+Reading : gscl45nm.ipdb/NOR3X1.design
+
+==============================
+      DESIGN : NOR3X1
+==============================
+--------------------------------------
+        A   B   C  :  Y  
+--------------------------------------
+D0000:  R   0   0  :  F  : DELAY(A)
+D0001:  F   0   0  :  R  : DELAY(A)
+D0002:  0   R   0  :  F  : DELAY(B)
+D0003:  0   F   0  :  R  : DELAY(B)
+D0004:  0   0   R  :  F  : DELAY(C)
+D0005:  0   0   F  :  R  : DELAY(C)
+--------------------------------------
+=> 6 vectors generated
+Writing : gscl45nm.ipdb/NOR3X1.design/simulate/spec
+Writing : gscl45nm.ipdb/NOR3X1.design/simulate/subckt
+Reading : gscl45nm.ipdb/OAI21X1.design
+
+==============================
+      DESIGN : OAI21X1
+==============================
+--------------------------------------
+        A   B   C  :  Y  
+--------------------------------------
+D0000:  R   0   1  :  F  : DELAY(A)
+D0001:  F   0   1  :  R  : DELAY(A)
+D0002:  0   R   1  :  F  : DELAY(B)
+D0003:  0   F   1  :  R  : DELAY(B)
+D0004:  0   1   R  :  F  : DELAY(C)
+D0005:  1   0   R  :  F  : DELAY(C)
+D0006:  1   1   R  :  F  : DELAY(C)
+D0007:  0   1   F  :  R  : DELAY(C)
+D0008:  1   0   F  :  R  : DELAY(C)
+D0009:  1   1   F  :  R  : DELAY(C)
+--------------------------------------
+=> 10 vectors generated
+Writing : gscl45nm.ipdb/OAI21X1.design/simulate/spec
+Writing : gscl45nm.ipdb/OAI21X1.design/simulate/subckt
+Reading : gscl45nm.ipdb/OAI22X1.design
+
+==============================
+      DESIGN : OAI22X1
+==============================
+------------------------------------------
+        C   D   B   A  :  Y  
+------------------------------------------
+D0000:  R   0   0   1  :  F  : DELAY(C)
+D0001:  R   0   1   0  :  F  : DELAY(C)
+D0002:  R   0   1   1  :  F  : DELAY(C)
+D0003:  F   0   0   1  :  R  : DELAY(C)
+D0004:  F   0   1   0  :  R  : DELAY(C)
+D0005:  F   0   1   1  :  R  : DELAY(C)
+D0006:  0   R   0   1  :  F  : DELAY(D)
+D0007:  0   R   1   0  :  F  : DELAY(D)
+D0008:  0   R   1   1  :  F  : DELAY(D)
+D0009:  0   F   0   1  :  R  : DELAY(D)
+D0010:  0   F   1   0  :  R  : DELAY(D)
+D0011:  0   F   1   1  :  R  : DELAY(D)
+D0012:  0   1   R   0  :  F  : DELAY(B)
+D0013:  1   0   R   0  :  F  : DELAY(B)
+D0014:  1   1   R   0  :  F  : DELAY(B)
+D0015:  0   1   F   0  :  R  : DELAY(B)
+D0016:  1   0   F   0  :  R  : DELAY(B)
+D0017:  1   1   F   0  :  R  : DELAY(B)
+D0018:  0   1   0   R  :  F  : DELAY(A)
+D0019:  1   0   0   R  :  F  : DELAY(A)
+D0020:  1   1   0   R  :  F  : DELAY(A)
+D0021:  0   1   0   F  :  R  : DELAY(A)
+D0022:  1   0   0   F  :  R  : DELAY(A)
+D0023:  1   1   0   F  :  R  : DELAY(A)
+------------------------------------------
+=> 24 vectors generated
+Writing : gscl45nm.ipdb/OAI22X1.design/simulate/spec
+Writing : gscl45nm.ipdb/OAI22X1.design/simulate/subckt
+Reading : gscl45nm.ipdb/OR2X1.design
+
+==============================
+      DESIGN : OR2X1
+==============================
+----------------------------------
+        A   B  :  Y  
+----------------------------------
+D0000:  R   0  :  R  : DELAY(A)
+D0001:  F   0  :  F  : DELAY(A)
+D0002:  0   R  :  R  : DELAY(B)
+D0003:  0   F  :  F  : DELAY(B)
+----------------------------------
+=> 4 vectors generated
+Writing : gscl45nm.ipdb/OR2X1.design/simulate/spec
+Writing : gscl45nm.ipdb/OR2X1.design/simulate/subckt
+Reading : gscl45nm.ipdb/OR2X2.design
+
+==============================
+      DESIGN : OR2X2
+==============================
+----------------------------------
+        A   B  :  Y  
+----------------------------------
+D0000:  R   0  :  R  : DELAY(A)
+D0001:  F   0  :  F  : DELAY(A)
+D0002:  0   R  :  R  : DELAY(B)
+D0003:  0   F  :  F  : DELAY(B)
+----------------------------------
+=> 4 vectors generated
+Writing : gscl45nm.ipdb/OR2X2.design/simulate/spec
+Writing : gscl45nm.ipdb/OR2X2.design/simulate/subckt
+Reading : gscl45nm.ipdb/TBUFX1.design
+
+==============================
+      DESIGN : TBUFX1
+==============================
+--------------------------------------------
+       EN   A   Y  :  Y  : P0000 
+--------------------------------------------
+D0000:  R   0   Z  :  Z1 :  F  : DELAY(EN)
+D0001:  R   1   Z  :  Z0 :  F  : DELAY(EN)
+D0002:  F   0   Z  :  1Z :  R  : DELAY(EN)
+D0003:  F   1   Z  :  0Z :  R  : DELAY(EN)
+D0004:  1   R   Z  :  F  :  0  : DELAY(A)
+D0005:  1   F   Z  :  R  :  0  : DELAY(A)
+D0006:  0   0   R  :  Z  :  1  : POWER(Y)
+D0007:  0   0   F  :  Z  :  1  : POWER(Y)
+--------------------------------------------
+- node name changed for spice : A_9_6# => P0000
+
+=> 8 vectors generated
+Writing : gscl45nm.ipdb/TBUFX1.design/simulate/spec
+Writing : gscl45nm.ipdb/TBUFX1.design/simulate/subckt
+Reading : gscl45nm.ipdb/TBUFX2.design
+
+==============================
+      DESIGN : TBUFX2
+==============================
+--------------------------------------------
+       EN   Y   A  :  Y  : P0000 
+--------------------------------------------
+D0000:  R   Z   0  :  Z1 :  F  : DELAY(EN)
+D0001:  R   Z   1  :  Z0 :  F  : DELAY(EN)
+D0002:  F   Z   0  :  1Z :  R  : DELAY(EN)
+D0003:  F   Z   1  :  0Z :  R  : DELAY(EN)
+D0004:  0   R   0  :  Z  :  1  : POWER(Y)
+D0005:  0   F   0  :  Z  :  1  : POWER(Y)
+D0006:  1   Z   R  :  F  :  0  : DELAY(A)
+D0007:  1   Z   F  :  R  :  0  : DELAY(A)
+--------------------------------------------
+- node name changed for spice : A_9_6# => P0000
+
+=> 8 vectors generated
+Writing : gscl45nm.ipdb/TBUFX2.design/simulate/spec
+Writing : gscl45nm.ipdb/TBUFX2.design/simulate/subckt
+Reading : gscl45nm.ipdb/XNOR2X1.design
+
+==============================
+      DESIGN : XNOR2X1
+==============================
+----------------------------------
+        B   A  :  Y  
+----------------------------------
+D0000:  R   0  :  F  : DELAY(B)
+D0001:  R   1  :  R  : DELAY(B)
+D0002:  F   0  :  R  : DELAY(B)
+D0003:  F   1  :  F  : DELAY(B)
+D0004:  0   R  :  F  : DELAY(A)
+D0005:  1   R  :  R  : DELAY(A)
+D0006:  0   F  :  R  : DELAY(A)
+D0007:  1   F  :  F  : DELAY(A)
+----------------------------------
+=> 8 vectors generated
+Writing : gscl45nm.ipdb/XNOR2X1.design/simulate/spec
+Writing : gscl45nm.ipdb/XNOR2X1.design/simulate/subckt
+Reading : gscl45nm.ipdb/XOR2X1.design
+
+==============================
+      DESIGN : XOR2X1
+==============================
+----------------------------------
+        B   A  :  Y  
+----------------------------------
+D0000:  R   0  :  R  : DELAY(B)
+D0001:  R   1  :  F  : DELAY(B)
+D0002:  F   0  :  F  : DELAY(B)
+D0003:  F   1  :  R  : DELAY(B)
+D0004:  0   R  :  R  : DELAY(A)
+D0005:  1   R  :  F  : DELAY(A)
+D0006:  0   F  :  F  : DELAY(A)
+D0007:  1   F  :  R  : DELAY(A)
+----------------------------------
+=> 8 vectors generated
+Writing : gscl45nm.ipdb/XOR2X1.design/simulate/spec
+Writing : gscl45nm.ipdb/XOR2X1.design/simulate/subckt
+
+================================
+  stimulus generation  summary  
+================================
+Name		#MOS	#DVEC	#RVEC
+----------------------------------------
+AND2X1		6	4	0	
+AND2X2		6	4	0	
+AOI21X1		6	10	0	
+AOI22X1		8	24	0	
+BUFX2		4	2	0	
+BUFX4		8	2	0	
+CLKBUF1		16	2	0	
+CLKBUF2		24	2	0	
+CLKBUF3		32	2	0	
+DFFNEGX1	22	8	4	
+DFFPOSX1	22	8	4	
+DFFSR		32	16	12	
+FAX1		28	24	0	
+HAX1		14	8	0	
+INVX1		2	2	0	
+INVX2		2	2	0	
+INVX4		4	2	0	
+INVX8		7	2	0	
+LATCH		12	6	4	
+MUX2X1		10	8	0	
+NAND2X1		4	4	0	
+NAND3X1		6	6	0	
+NOR2X1		4	4	0	
+NOR3X1		6	6	0	
+OAI21X1		6	10	0	
+OAI22X1		8	24	0	
+OR2X1		6	4	0	
+OR2X2		6	4	0	
+TBUFX1		6	8	0	
+TBUFX2		10	8	0	
+XNOR2X1		12	8	0	
+XOR2X1		12	8	0	
+----------------------------------------
+			232	24
+slc>  db_setup -s setup.ss
+
+ Reading setup file : setup.ss
+ -       AND2X1 (CELL) -      typical - 2008-01-02 20:06:25 (2008-01-03 02:06:25 GMT)
+ -       AND2X2 (CELL) -      typical - 2008-01-02 20:06:26 (2008-01-03 02:06:26 GMT)
+ -      AOI21X1 (CELL) -      typical - 2008-01-02 20:06:26 (2008-01-03 02:06:26 GMT)
+ -      AOI22X1 (CELL) -      typical - 2008-01-02 20:06:26 (2008-01-03 02:06:26 GMT)
+ -        BUFX2 (CELL) -      typical - 2008-01-02 20:06:26 (2008-01-03 02:06:26 GMT)
+ -        BUFX4 (CELL) -      typical - 2008-01-02 20:06:27 (2008-01-03 02:06:27 GMT)
+ -      CLKBUF1 (CELL) -      typical - 2008-01-02 20:06:27 (2008-01-03 02:06:27 GMT)
+ -      CLKBUF2 (CELL) -      typical - 2008-01-02 20:06:27 (2008-01-03 02:06:27 GMT)
+ -      CLKBUF3 (CELL) -      typical - 2008-01-02 20:06:28 (2008-01-03 02:06:28 GMT)
+ -     DFFNEGX1 (CELL) -      typical - 2008-01-02 20:06:28 (2008-01-03 02:06:28 GMT)
+ -     DFFPOSX1 (CELL) -      typical - 2008-01-02 20:06:28 (2008-01-03 02:06:28 GMT)
+ -        DFFSR (CELL) -      typical - 2008-01-02 20:06:28 (2008-01-03 02:06:28 GMT)
+ -         FAX1 (CELL) -      typical - 2008-01-02 20:06:29 (2008-01-03 02:06:29 GMT)
+ -         HAX1 (CELL) -      typical - 2008-01-02 20:06:29 (2008-01-03 02:06:29 GMT)
+ -        INVX1 (CELL) -      typical - 2008-01-02 20:06:30 (2008-01-03 02:06:30 GMT)
+ -        INVX2 (CELL) -      typical - 2008-01-02 20:06:30 (2008-01-03 02:06:30 GMT)
+ -        INVX4 (CELL) -      typical - 2008-01-02 20:06:30 (2008-01-03 02:06:30 GMT)
+ -        INVX8 (CELL) -      typical - 2008-01-02 20:06:30 (2008-01-03 02:06:30 GMT)
+ -        LATCH (CELL) -      typical - 2008-01-02 20:06:31 (2008-01-03 02:06:31 GMT)
+ -       MUX2X1 (CELL) -      typical - 2008-01-02 20:06:31 (2008-01-03 02:06:31 GMT)
+ -      NAND2X1 (CELL) -      typical - 2008-01-02 20:06:31 (2008-01-03 02:06:31 GMT)
+ -      NAND3X1 (CELL) -      typical - 2008-01-02 20:06:32 (2008-01-03 02:06:32 GMT)
+ -       NOR2X1 (CELL) -      typical - 2008-01-02 20:06:32 (2008-01-03 02:06:32 GMT)
+ -       NOR3X1 (CELL) -      typical - 2008-01-02 20:06:32 (2008-01-03 02:06:32 GMT)
+ -      OAI21X1 (CELL) -      typical - 2008-01-02 20:06:32 (2008-01-03 02:06:32 GMT)
+ -      OAI22X1 (CELL) -      typical - 2008-01-02 20:06:33 (2008-01-03 02:06:33 GMT)
+ -        OR2X1 (CELL) -      typical - 2008-01-02 20:06:33 (2008-01-03 02:06:33 GMT)
+ -        OR2X2 (CELL) -      typical - 2008-01-02 20:06:33 (2008-01-03 02:06:33 GMT)
+ -       TBUFX1 (CELL) -      typical - 2008-01-02 20:06:34 (2008-01-03 02:06:34 GMT)
+ -       TBUFX2 (CELL) -      typical - 2008-01-02 20:06:34 (2008-01-03 02:06:34 GMT)
+ -      XNOR2X1 (CELL) -      typical - 2008-01-02 20:06:34 (2008-01-03 02:06:34 GMT)
+ -       XOR2X1 (CELL) -      typical - 2008-01-02 20:06:35 (2008-01-03 02:06:35 GMT)
+slc>  db_spice -p typical -force
+
+   DESIGN       PROCESS      #ID        STATUS    
+------------+------------+---------+--------------
+AND2X1       typical      D0000         SIMULATE
+AND2X1       typical      D0001         SIMULATE
+AND2X1       typical      D0002         SIMULATE
+AND2X1       typical      D0003         SIMULATE
+============|============|=========|==============
+AND2X1       typical      4         4            
+AND2X2       typical      D0000         SIMULATE
+AND2X2       typical      D0001         SIMULATE
+AND2X2       typical      D0002         SIMULATE
+AND2X2       typical      D0003         SIMULATE
+============|============|=========|==============
+AND2X2       typical      4         4            
+AOI21X1      typical      D0000         SIMULATE
+AOI21X1      typical      D0001         SIMULATE
+AOI21X1      typical      D0002         SIMULATE
+AOI21X1      typical      D0003         SIMULATE
+AOI21X1      typical      D0004         SIMULATE
+AOI21X1      typical      D0005         SIMULATE
+AOI21X1      typical      D0006         SIMULATE
+AOI21X1      typical      D0007         SIMULATE
+AOI21X1      typical      D0008         SIMULATE
+AOI21X1      typical      D0009         SIMULATE
+============|============|=========|==============
+AOI21X1      typical      10        10           
+AOI22X1      typical      D0000         SIMULATE
+AOI22X1      typical      D0001         SIMULATE
+AOI22X1      typical      D0002         SIMULATE
+AOI22X1      typical      D0003         SIMULATE
+AOI22X1      typical      D0004         SIMULATE
+AOI22X1      typical      D0005         SIMULATE
+AOI22X1      typical      D0006         SIMULATE
+AOI22X1      typical      D0007         SIMULATE
+AOI22X1      typical      D0008         SIMULATE
+AOI22X1      typical      D0009         SIMULATE
+AOI22X1      typical      D0010         SIMULATE
+AOI22X1      typical      D0011         SIMULATE
+AOI22X1      typical      D0012         SIMULATE
+AOI22X1      typical      D0013         SIMULATE
+AOI22X1      typical      D0014         SIMULATE
+AOI22X1      typical      D0015         SIMULATE
+AOI22X1      typical      D0016         SIMULATE
+AOI22X1      typical      D0017         SIMULATE
+AOI22X1      typical      D0018         SIMULATE
+AOI22X1      typical      D0019         SIMULATE
+AOI22X1      typical      D0020         SIMULATE
+AOI22X1      typical      D0021         SIMULATE
+AOI22X1      typical      D0022         SIMULATE
+AOI22X1      typical      D0023         SIMULATE
+============|============|=========|==============
+AOI22X1      typical      24        24           
+BUFX2        typical      D0000         SIMULATE
+BUFX2        typical      D0001         SIMULATE
+============|============|=========|==============
+BUFX2        typical      2         2            
+BUFX4        typical      D0000         SIMULATE
+BUFX4        typical      D0001         SIMULATE
+============|============|=========|==============
+BUFX4        typical      2         2            
+CLKBUF1      typical      D0000         SIMULATE
+CLKBUF1      typical      D0001         SIMULATE
+============|============|=========|==============
+CLKBUF1      typical      2         2            
+CLKBUF2      typical      D0000         SIMULATE
+CLKBUF2      typical      D0001         SIMULATE
+============|============|=========|==============
+CLKBUF2      typical      2         2            
+CLKBUF3      typical      D0000         SIMULATE
+CLKBUF3      typical      D0001         SIMULATE
+============|============|=========|==============
+CLKBUF3      typical      2         2            
+DFFNEGX1     typical      D0000         SIMULATE
+DFFNEGX1     typical      D0001         SIMULATE
+DFFNEGX1     typical      D0002         SIMULATE
+DFFNEGX1     typical      D0003         SIMULATE
+DFFNEGX1     typical      D0004         SIMULATE
+DFFNEGX1     typical      D0005         SIMULATE
+DFFNEGX1     typical      D0006         SIMULATE
+DFFNEGX1     typical      D0007         SIMULATE
+DFFNEGX1     typical      R0000         SIMULATE
+DFFNEGX1     typical      R0001         SIMULATE
+DFFNEGX1     typical      R0002         SIMULATE
+DFFNEGX1     typical      R0003         SIMULATE
+============|============|=========|==============
+DFFNEGX1     typical      12        12           
+DFFPOSX1     typical      D0000         SIMULATE
+DFFPOSX1     typical      D0001         SIMULATE
+DFFPOSX1     typical      D0002         SIMULATE
+DFFPOSX1     typical      D0003         SIMULATE
+DFFPOSX1     typical      D0004         SIMULATE
+DFFPOSX1     typical      D0005         SIMULATE
+DFFPOSX1     typical      D0006         SIMULATE
+DFFPOSX1     typical      D0007         SIMULATE
+DFFPOSX1     typical      R0000         SIMULATE
+DFFPOSX1     typical      R0001         SIMULATE
+DFFPOSX1     typical      R0002         SIMULATE
+DFFPOSX1     typical      R0003         SIMULATE
+============|============|=========|==============
+DFFPOSX1     typical      12        12           
+DFFSR        typical      D0000         SIMULATE
+DFFSR        typical      D0001         SIMULATE
+DFFSR        typical      D0002         SIMULATE
+DFFSR        typical      D0003         SIMULATE
+DFFSR        typical      D0004         SIMULATE
+DFFSR        typical      D0005         SIMULATE
+DFFSR        typical      D0006         SIMULATE
+DFFSR        typical      D0007         SIMULATE
+DFFSR        typical      D0008         SIMULATE
+DFFSR        typical      D0009         SIMULATE
+DFFSR        typical      D0010         SIMULATE
+DFFSR        typical      D0011         SIMULATE
+DFFSR        typical      D0012         SIMULATE
+DFFSR        typical      D0013         SIMULATE
+DFFSR        typical      D0014         SIMULATE
+DFFSR        typical      D0015         SIMULATE
+DFFSR        typical      R0000         SIMULATE
+DFFSR        typical      R0001         SIMULATE
+DFFSR        typical      R0002         SIMULATE
+DFFSR        typical      R0003         SIMULATE
+DFFSR        typical      R0004         SIMULATE
+DFFSR        typical      R0005         SIMULATE
+DFFSR        typical      R0006         SIMULATE
+DFFSR        typical      R0007         SIMULATE
+DFFSR        typical      R0008         SIMULATE
+DFFSR        typical      R0009         SIMULATE
+DFFSR        typical      R0010         SIMULATE
+DFFSR        typical      R0011         SIMULATE
+============|============|=========|==============
+DFFSR        typical      28        28           
+FAX1         typical      D0000         SIMULATE
+FAX1         typical      D0001         SIMULATE
+FAX1         typical      D0002         SIMULATE
+FAX1         typical      D0003         SIMULATE
+FAX1         typical      D0004         SIMULATE
+FAX1         typical      D0005         SIMULATE
+FAX1         typical      D0006         SIMULATE
+FAX1         typical      D0007         SIMULATE
+FAX1         typical      D0008         SIMULATE
+FAX1         typical      D0009         SIMULATE
+FAX1         typical      D0010         SIMULATE
+FAX1         typical      D0011         SIMULATE
+FAX1         typical      D0012         SIMULATE
+FAX1         typical      D0013         SIMULATE
+FAX1         typical      D0014         SIMULATE
+FAX1         typical      D0015         SIMULATE
+FAX1         typical      D0016         SIMULATE
+FAX1         typical      D0017         SIMULATE
+FAX1         typical      D0018         SIMULATE
+FAX1         typical      D0019         SIMULATE
+FAX1         typical      D0020         SIMULATE
+FAX1         typical      D0021         SIMULATE
+FAX1         typical      D0022         SIMULATE
+FAX1         typical      D0023         SIMULATE
+============|============|=========|==============
+FAX1         typical      24        24           
+HAX1         typical      D0000         SIMULATE
+HAX1         typical      D0001         SIMULATE
+HAX1         typical      D0002         SIMULATE
+HAX1         typical      D0003         SIMULATE
+HAX1         typical      D0004         SIMULATE
+HAX1         typical      D0005         SIMULATE
+HAX1         typical      D0006         SIMULATE
+HAX1         typical      D0007         SIMULATE
+============|============|=========|==============
+HAX1         typical      8         8            
+INVX1        typical      D0000         SIMULATE
+INVX1        typical      D0001         SIMULATE
+============|============|=========|==============
+INVX1        typical      2         2            
+INVX2        typical      D0000         SIMULATE
+INVX2        typical      D0001         SIMULATE
+============|============|=========|==============
+INVX2        typical      2         2            
+INVX4        typical      D0000         SIMULATE
+INVX4        typical      D0001         SIMULATE
+============|============|=========|==============
+INVX4        typical      2         2            
+INVX8        typical      D0000         SIMULATE
+INVX8        typical      D0001         SIMULATE
+============|============|=========|==============
+INVX8        typical      2         2            
+LATCH        typical      D0000         SIMULATE
+LATCH        typical      D0001         SIMULATE
+LATCH        typical      D0002         SIMULATE
+LATCH        typical      D0003         SIMULATE
+LATCH        typical      D0004         SIMULATE
+LATCH        typical      D0005         SIMULATE
+LATCH        typical      R0000         SIMULATE
+LATCH        typical      R0001         SIMULATE
+LATCH        typical      R0002         SIMULATE
+LATCH        typical      R0003         SIMULATE
+============|============|=========|==============
+LATCH        typical      10        10           
+MUX2X1       typical      D0000         SIMULATE
+MUX2X1       typical      D0001         SIMULATE
+MUX2X1       typical      D0002         SIMULATE
+MUX2X1       typical      D0003         SIMULATE
+MUX2X1       typical      D0004         SIMULATE
+MUX2X1       typical      D0005         SIMULATE
+MUX2X1       typical      D0006         SIMULATE
+MUX2X1       typical      D0007         SIMULATE
+============|============|=========|==============
+MUX2X1       typical      8         8            
+NAND2X1      typical      D0000         SIMULATE
+NAND2X1      typical      D0001         SIMULATE
+NAND2X1      typical      D0002         SIMULATE
+NAND2X1      typical      D0003         SIMULATE
+============|============|=========|==============
+NAND2X1      typical      4         4            
+NAND3X1      typical      D0000         SIMULATE
+NAND3X1      typical      D0001         SIMULATE
+NAND3X1      typical      D0002         SIMULATE
+NAND3X1      typical      D0003         SIMULATE
+NAND3X1      typical      D0004         SIMULATE
+NAND3X1      typical      D0005         SIMULATE
+============|============|=========|==============
+NAND3X1      typical      6         6            
+NOR2X1       typical      D0000         SIMULATE
+NOR2X1       typical      D0001         SIMULATE
+NOR2X1       typical      D0002         SIMULATE
+NOR2X1       typical      D0003         SIMULATE
+============|============|=========|==============
+NOR2X1       typical      4         4            
+NOR3X1       typical      D0000         SIMULATE
+NOR3X1       typical      D0001         SIMULATE
+NOR3X1       typical      D0002         SIMULATE
+NOR3X1       typical      D0003         SIMULATE
+NOR3X1       typical      D0004         SIMULATE
+NOR3X1       typical      D0005         SIMULATE
+============|============|=========|==============
+NOR3X1       typical      6         6            
+OAI21X1      typical      D0000         SIMULATE
+OAI21X1      typical      D0001         SIMULATE
+OAI21X1      typical      D0002         SIMULATE
+OAI21X1      typical      D0003         SIMULATE
+OAI21X1      typical      D0004         SIMULATE
+OAI21X1      typical      D0005         SIMULATE
+OAI21X1      typical      D0006         SIMULATE
+OAI21X1      typical      D0007         SIMULATE
+OAI21X1      typical      D0008         SIMULATE
+OAI21X1      typical      D0009         SIMULATE
+============|============|=========|==============
+OAI21X1      typical      10        10           
+OAI22X1      typical      D0000         SIMULATE
+OAI22X1      typical      D0001         SIMULATE
+OAI22X1      typical      D0002         SIMULATE
+OAI22X1      typical      D0003         SIMULATE
+OAI22X1      typical      D0004         SIMULATE
+OAI22X1      typical      D0005         SIMULATE
+OAI22X1      typical      D0006         SIMULATE
+OAI22X1      typical      D0007         SIMULATE
+OAI22X1      typical      D0008         SIMULATE
+OAI22X1      typical      D0009         SIMULATE
+OAI22X1      typical      D0010         SIMULATE
+OAI22X1      typical      D0011         SIMULATE
+OAI22X1      typical      D0012         SIMULATE
+OAI22X1      typical      D0013         SIMULATE
+OAI22X1      typical      D0014         SIMULATE
+OAI22X1      typical      D0015         SIMULATE
+OAI22X1      typical      D0016         SIMULATE
+OAI22X1      typical      D0017         SIMULATE
+OAI22X1      typical      D0018         SIMULATE
+OAI22X1      typical      D0019         SIMULATE
+OAI22X1      typical      D0020         SIMULATE
+OAI22X1      typical      D0021         SIMULATE
+OAI22X1      typical      D0022         SIMULATE
+OAI22X1      typical      D0023         SIMULATE
+============|============|=========|==============
+OAI22X1      typical      24        24           
+OR2X1        typical      D0000         SIMULATE
+OR2X1        typical      D0001         SIMULATE
+OR2X1        typical      D0002         SIMULATE
+OR2X1        typical      D0003         SIMULATE
+============|============|=========|==============
+OR2X1        typical      4         4            
+OR2X2        typical      D0000         SIMULATE
+OR2X2        typical      D0001         SIMULATE
+OR2X2        typical      D0002         SIMULATE
+OR2X2        typical      D0003         SIMULATE
+============|============|=========|==============
+OR2X2        typical      4         4            
+TBUFX1       typical      D0000         SIMULATE
+TBUFX1       typical      D0001         SIMULATE
+TBUFX1       typical      D0002         SIMULATE
+TBUFX1       typical      D0003         SIMULATE
+TBUFX1       typical      D0004         SIMULATE
+TBUFX1       typical      D0005         SIMULATE
+TBUFX1       typical      D0006         SIMULATE
+TBUFX1       typical      D0007         SIMULATE
+============|============|=========|==============
+TBUFX1       typical      8         8            
+TBUFX2       typical      D0000         SIMULATE
+TBUFX2       typical      D0001         SIMULATE
+TBUFX2       typical      D0002         SIMULATE
+TBUFX2       typical      D0003         SIMULATE
+TBUFX2       typical      D0004         SIMULATE
+TBUFX2       typical      D0005         SIMULATE
+TBUFX2       typical      D0006         SIMULATE
+TBUFX2       typical      D0007         SIMULATE
+============|============|=========|==============
+TBUFX2       typical      8         8            
+XNOR2X1      typical      D0000         SIMULATE
+XNOR2X1      typical      D0001         SIMULATE
+XNOR2X1      typical      D0002         SIMULATE
+XNOR2X1      typical      D0003         SIMULATE
+XNOR2X1      typical      D0004         SIMULATE
+XNOR2X1      typical      D0005         SIMULATE
+XNOR2X1      typical      D0006         SIMULATE
+XNOR2X1      typical      D0007         SIMULATE
+============|============|=========|==============
+XNOR2X1      typical      8         8            
+XOR2X1       typical      D0000         SIMULATE
+XOR2X1       typical      D0001         SIMULATE
+XOR2X1       typical      D0002         SIMULATE
+XOR2X1       typical      D0003         SIMULATE
+XOR2X1       typical      D0004         SIMULATE
+XOR2X1       typical      D0005         SIMULATE
+XOR2X1       typical      D0006         SIMULATE
+XOR2X1       typical      D0007         SIMULATE
+============|============|=========|==============
+XOR2X1       typical      8         8            
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+               Simulation Summary                
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+------------+------------+---------+------------+----------
+   DESIGN   |   PROCESS  |   #ID   |   STAGE    |  STATUS  
+------------+------------+---------+------------+----------
+AND2X1       typical      D0000     VERIFICATE   PASS  
+AND2X1       typical      D0001     VERIFICATE   PASS  
+AND2X1       typical      D0002     VERIFICATE   PASS  
+AND2X1       typical      D0003     VERIFICATE   PASS  
+AND2X2       typical      D0000     VERIFICATE   PASS  
+AND2X2       typical      D0001     VERIFICATE   PASS  
+AND2X2       typical      D0002     VERIFICATE   PASS  
+AND2X2       typical      D0003     VERIFICATE   PASS  
+AOI21X1      typical      D0000     VERIFICATE   PASS  
+AOI21X1      typical      D0001     VERIFICATE   PASS  
+AOI21X1      typical      D0002     VERIFICATE   PASS  
+AOI21X1      typical      D0003     VERIFICATE   PASS  
+AOI21X1      typical      D0004     VERIFICATE   PASS  
+AOI21X1      typical      D0005     VERIFICATE   PASS  
+AOI21X1      typical      D0006     VERIFICATE   PASS  
+AOI21X1      typical      D0007     VERIFICATE   PASS  
+AOI21X1      typical      D0008     VERIFICATE   PASS  
+AOI21X1      typical      D0009     VERIFICATE   PASS  
+AOI22X1      typical      D0000     VERIFICATE   PASS  
+AOI22X1      typical      D0001     VERIFICATE   PASS  
+AOI22X1      typical      D0002     VERIFICATE   PASS  
+AOI22X1      typical      D0003     VERIFICATE   PASS  
+AOI22X1      typical      D0004     VERIFICATE   PASS  
+AOI22X1      typical      D0005     VERIFICATE   PASS  
+AOI22X1      typical      D0006     VERIFICATE   PASS  
+AOI22X1      typical      D0007     VERIFICATE   PASS  
+AOI22X1      typical      D0008     VERIFICATE   PASS  
+AOI22X1      typical      D0009     VERIFICATE   PASS  
+AOI22X1      typical      D0010     VERIFICATE   PASS  
+AOI22X1      typical      D0011     VERIFICATE   PASS  
+AOI22X1      typical      D0012     VERIFICATE   PASS  
+AOI22X1      typical      D0013     VERIFICATE   PASS  
+AOI22X1      typical      D0014     VERIFICATE   PASS  
+AOI22X1      typical      D0015     VERIFICATE   PASS  
+AOI22X1      typical      D0016     VERIFICATE   PASS  
+AOI22X1      typical      D0017     VERIFICATE   PASS  
+AOI22X1      typical      D0018     VERIFICATE   PASS  
+AOI22X1      typical      D0019     VERIFICATE   PASS  
+AOI22X1      typical      D0020     VERIFICATE   PASS  
+AOI22X1      typical      D0021     VERIFICATE   PASS  
+AOI22X1      typical      D0022     VERIFICATE   PASS  
+AOI22X1      typical      D0023     VERIFICATE   PASS  
+BUFX2        typical      D0000     VERIFICATE   PASS  
+BUFX2        typical      D0001     VERIFICATE   PASS  
+BUFX4        typical      D0000     VERIFICATE   PASS  
+BUFX4        typical      D0001     VERIFICATE   PASS  
+CLKBUF1      typical      D0000     VERIFICATE   PASS  
+CLKBUF1      typical      D0001     VERIFICATE   PASS  
+CLKBUF2      typical      D0000     VERIFICATE   PASS  
+CLKBUF2      typical      D0001     VERIFICATE   PASS  
+CLKBUF3      typical      D0000     VERIFICATE   PASS  
+CLKBUF3      typical      D0001     VERIFICATE   PASS  
+DFFNEGX1     typical      D0000     VERIFICATE   PASS  
+DFFNEGX1     typical      D0001     VERIFICATE   PASS  
+DFFNEGX1     typical      D0002     VERIFICATE   PASS  
+DFFNEGX1     typical      D0003     VERIFICATE   PASS  
+DFFNEGX1     typical      D0004     VERIFICATE   PASS  
+DFFNEGX1     typical      D0005     VERIFICATE   PASS  
+DFFNEGX1     typical      D0006     VERIFICATE   PASS  
+DFFNEGX1     typical      D0007     VERIFICATE   PASS  
+DFFNEGX1     typical      R0000     VERIFICATE   PASS  
+DFFNEGX1     typical      R0001     VERIFICATE   PASS  
+DFFNEGX1     typical      R0002     VERIFICATE   PASS  
+DFFNEGX1     typical      R0003     VERIFICATE   PASS  
+DFFPOSX1     typical      D0000     VERIFICATE   PASS  
+DFFPOSX1     typical      D0001     VERIFICATE   PASS  
+DFFPOSX1     typical      D0002     VERIFICATE   PASS  
+DFFPOSX1     typical      D0003     VERIFICATE   PASS  
+DFFPOSX1     typical      D0004     VERIFICATE   PASS  
+DFFPOSX1     typical      D0005     VERIFICATE   PASS  
+DFFPOSX1     typical      D0006     VERIFICATE   PASS  
+DFFPOSX1     typical      D0007     VERIFICATE   PASS  
+DFFPOSX1     typical      R0000     VERIFICATE   PASS  
+DFFPOSX1     typical      R0001     VERIFICATE   PASS  
+DFFPOSX1     typical      R0002     VERIFICATE   PASS  
+DFFPOSX1     typical      R0003     VERIFICATE   PASS  
+DFFSR        typical      D0000     VERIFICATE   PASS  
+DFFSR        typical      D0001     VERIFICATE   PASS  
+DFFSR        typical      D0002     VERIFICATE   PASS  
+DFFSR        typical      D0003     VERIFICATE   PASS  
+DFFSR        typical      D0004     VERIFICATE   PASS  
+DFFSR        typical      D0005     VERIFICATE   PASS  
+DFFSR        typical      D0006     VERIFICATE   PASS  
+DFFSR        typical      D0007     VERIFICATE   PASS  
+DFFSR        typical      D0008     VERIFICATE   PASS  
+DFFSR        typical      D0009     VERIFICATE   PASS  
+DFFSR        typical      D0010     VERIFICATE   PASS  
+DFFSR        typical      D0011     VERIFICATE   PASS  
+DFFSR        typical      D0012     VERIFICATE   PASS  
+DFFSR        typical      D0013     VERIFICATE   PASS  
+DFFSR        typical      D0014     VERIFICATE   PASS  
+DFFSR        typical      D0015     VERIFICATE   PASS  
+DFFSR        typical      R0000     VERIFICATE   PASS  
+DFFSR        typical      R0001     VERIFICATE   PASS  
+DFFSR        typical      R0002     VERIFICATE   PASS  
+DFFSR        typical      R0003     VERIFICATE   PASS  
+DFFSR        typical      R0004     VERIFICATE   PASS  
+DFFSR        typical      R0005     VERIFICATE   PASS  
+DFFSR        typical      R0006     VERIFICATE   PASS  
+DFFSR        typical      R0007     VERIFICATE   PASS  
+DFFSR        typical      R0008     VERIFICATE   PASS  
+DFFSR        typical      R0009     VERIFICATE   PASS  
+DFFSR        typical      R0010     VERIFICATE   PASS  
+DFFSR        typical      R0011     VERIFICATE   PASS  
+FAX1         typical      D0000     VERIFICATE   PASS  
+FAX1         typical      D0001     VERIFICATE   PASS  
+FAX1         typical      D0002     VERIFICATE   PASS  
+FAX1         typical      D0003     VERIFICATE   PASS  
+FAX1         typical      D0004     VERIFICATE   PASS  
+FAX1         typical      D0005     VERIFICATE   PASS  
+FAX1         typical      D0006     VERIFICATE   PASS  
+FAX1         typical      D0007     VERIFICATE   PASS  
+FAX1         typical      D0008     VERIFICATE   PASS  
+FAX1         typical      D0009     VERIFICATE   PASS  
+FAX1         typical      D0010     VERIFICATE   PASS  
+FAX1         typical      D0011     VERIFICATE   PASS  
+FAX1         typical      D0012     VERIFICATE   PASS  
+FAX1         typical      D0013     VERIFICATE   PASS  
+FAX1         typical      D0014     VERIFICATE   PASS  
+FAX1         typical      D0015     VERIFICATE   PASS  
+FAX1         typical      D0016     VERIFICATE   PASS  
+FAX1         typical      D0017     VERIFICATE   PASS  
+FAX1         typical      D0018     VERIFICATE   PASS  
+FAX1         typical      D0019     VERIFICATE   PASS  
+FAX1         typical      D0020     VERIFICATE   PASS  
+FAX1         typical      D0021     VERIFICATE   PASS  
+FAX1         typical      D0022     VERIFICATE   PASS  
+FAX1         typical      D0023     VERIFICATE   PASS  
+HAX1         typical      D0000     VERIFICATE   PASS  
+HAX1         typical      D0001     VERIFICATE   PASS  
+HAX1         typical      D0002     VERIFICATE   PASS  
+HAX1         typical      D0003     VERIFICATE   PASS  
+HAX1         typical      D0004     VERIFICATE   PASS  
+HAX1         typical      D0005     VERIFICATE   PASS  
+HAX1         typical      D0006     VERIFICATE   PASS  
+HAX1         typical      D0007     VERIFICATE   PASS  
+INVX1        typical      D0000     VERIFICATE   PASS  
+INVX1        typical      D0001     VERIFICATE   PASS  
+INVX2        typical      D0000     VERIFICATE   PASS  
+INVX2        typical      D0001     VERIFICATE   PASS  
+INVX4        typical      D0000     VERIFICATE   PASS  
+INVX4        typical      D0001     VERIFICATE   PASS  
+INVX8        typical      D0000     VERIFICATE   PASS  
+INVX8        typical      D0001     VERIFICATE   PASS  
+LATCH        typical      D0000     VERIFICATE   PASS  
+LATCH        typical      D0001     VERIFICATE   PASS  
+LATCH        typical      D0002     VERIFICATE   PASS  
+LATCH        typical      D0003     VERIFICATE   PASS  
+LATCH        typical      D0004     VERIFICATE   PASS  
+LATCH        typical      D0005     VERIFICATE   PASS  
+LATCH        typical      R0000     VERIFICATE   PASS  
+LATCH        typical      R0001     VERIFICATE   PASS  
+LATCH        typical      R0002     VERIFICATE   PASS  
+LATCH        typical      R0003     VERIFICATE   PASS  
+MUX2X1       typical      D0000     VERIFICATE   PASS  
+MUX2X1       typical      D0001     VERIFICATE   PASS  
+MUX2X1       typical      D0002     VERIFICATE   PASS  
+MUX2X1       typical      D0003     VERIFICATE   PASS  
+MUX2X1       typical      D0004     VERIFICATE   PASS  
+MUX2X1       typical      D0005     VERIFICATE   PASS  
+MUX2X1       typical      D0006     VERIFICATE   PASS  
+MUX2X1       typical      D0007     VERIFICATE   PASS  
+NAND2X1      typical      D0000     VERIFICATE   PASS  
+NAND2X1      typical      D0001     VERIFICATE   PASS  
+NAND2X1      typical      D0002     VERIFICATE   PASS  
+NAND2X1      typical      D0003     VERIFICATE   PASS  
+NAND3X1      typical      D0000     VERIFICATE   PASS  
+NAND3X1      typical      D0001     VERIFICATE   PASS  
+NAND3X1      typical      D0002     VERIFICATE   PASS  
+NAND3X1      typical      D0003     VERIFICATE   PASS  
+NAND3X1      typical      D0004     VERIFICATE   PASS  
+NAND3X1      typical      D0005     VERIFICATE   PASS  
+NOR2X1       typical      D0000     VERIFICATE   PASS  
+NOR2X1       typical      D0001     VERIFICATE   PASS  
+NOR2X1       typical      D0002     VERIFICATE   PASS  
+NOR2X1       typical      D0003     VERIFICATE   PASS  
+NOR3X1       typical      D0000     VERIFICATE   PASS  
+NOR3X1       typical      D0001     VERIFICATE   PASS  
+NOR3X1       typical      D0002     VERIFICATE   PASS  
+NOR3X1       typical      D0003     VERIFICATE   PASS  
+NOR3X1       typical      D0004     VERIFICATE   PASS  
+NOR3X1       typical      D0005     VERIFICATE   PASS  
+OAI21X1      typical      D0000     VERIFICATE   PASS  
+OAI21X1      typical      D0001     VERIFICATE   PASS  
+OAI21X1      typical      D0002     VERIFICATE   PASS  
+OAI21X1      typical      D0003     VERIFICATE   PASS  
+OAI21X1      typical      D0004     VERIFICATE   PASS  
+OAI21X1      typical      D0005     VERIFICATE   PASS  
+OAI21X1      typical      D0006     VERIFICATE   PASS  
+OAI21X1      typical      D0007     VERIFICATE   PASS  
+OAI21X1      typical      D0008     VERIFICATE   PASS  
+OAI21X1      typical      D0009     VERIFICATE   PASS  
+OAI22X1      typical      D0000     VERIFICATE   PASS  
+OAI22X1      typical      D0001     VERIFICATE   PASS  
+OAI22X1      typical      D0002     VERIFICATE   PASS  
+OAI22X1      typical      D0003     VERIFICATE   PASS  
+OAI22X1      typical      D0004     VERIFICATE   PASS  
+OAI22X1      typical      D0005     VERIFICATE   PASS  
+OAI22X1      typical      D0006     VERIFICATE   PASS  
+OAI22X1      typical      D0007     VERIFICATE   PASS  
+OAI22X1      typical      D0008     VERIFICATE   PASS  
+OAI22X1      typical      D0009     VERIFICATE   PASS  
+OAI22X1      typical      D0010     VERIFICATE   PASS  
+OAI22X1      typical      D0011     VERIFICATE   PASS  
+OAI22X1      typical      D0012     VERIFICATE   PASS  
+OAI22X1      typical      D0013     VERIFICATE   PASS  
+OAI22X1      typical      D0014     VERIFICATE   PASS  
+OAI22X1      typical      D0015     VERIFICATE   PASS  
+OAI22X1      typical      D0016     VERIFICATE   PASS  
+OAI22X1      typical      D0017     VERIFICATE   PASS  
+OAI22X1      typical      D0018     VERIFICATE   PASS  
+OAI22X1      typical      D0019     VERIFICATE   PASS  
+OAI22X1      typical      D0020     VERIFICATE   PASS  
+OAI22X1      typical      D0021     VERIFICATE   PASS  
+OAI22X1      typical      D0022     VERIFICATE   PASS  
+OAI22X1      typical      D0023     VERIFICATE   PASS  
+OR2X1        typical      D0000     VERIFICATE   PASS  
+OR2X1        typical      D0001     VERIFICATE   PASS  
+OR2X1        typical      D0002     VERIFICATE   PASS  
+OR2X1        typical      D0003     VERIFICATE   PASS  
+OR2X2        typical      D0000     VERIFICATE   PASS  
+OR2X2        typical      D0001     VERIFICATE   PASS  
+OR2X2        typical      D0002     VERIFICATE   PASS  
+OR2X2        typical      D0003     VERIFICATE   PASS  
+TBUFX1       typical      D0000     VERIFICATE   PASS  
+TBUFX1       typical      D0001     VERIFICATE   PASS  
+TBUFX1       typical      D0002     VERIFICATE   PASS  
+TBUFX1       typical      D0003     VERIFICATE   PASS  
+TBUFX1       typical      D0004     VERIFICATE   PASS  
+TBUFX1       typical      D0005     VERIFICATE   PASS  
+TBUFX1       typical      D0006     VERIFICATE   PASS  
+TBUFX1       typical      D0007     VERIFICATE   PASS  
+TBUFX2       typical      D0000     VERIFICATE   PASS  
+TBUFX2       typical      D0001     VERIFICATE   PASS  
+TBUFX2       typical      D0002     VERIFICATE   PASS  
+TBUFX2       typical      D0003     VERIFICATE   PASS  
+TBUFX2       typical      D0004     VERIFICATE   PASS  
+TBUFX2       typical      D0005     VERIFICATE   PASS  
+TBUFX2       typical      D0006     VERIFICATE   PASS  
+TBUFX2       typical      D0007     VERIFICATE   PASS  
+XNOR2X1      typical      D0000     VERIFICATE   PASS  
+XNOR2X1      typical      D0001     VERIFICATE   PASS  
+XNOR2X1      typical      D0002     VERIFICATE   PASS  
+XNOR2X1      typical      D0003     VERIFICATE   PASS  
+XNOR2X1      typical      D0004     VERIFICATE   PASS  
+XNOR2X1      typical      D0005     VERIFICATE   PASS  
+XNOR2X1      typical      D0006     VERIFICATE   PASS  
+XNOR2X1      typical      D0007     VERIFICATE   PASS  
+XOR2X1       typical      D0000     VERIFICATE   PASS  
+XOR2X1       typical      D0001     VERIFICATE   PASS  
+XOR2X1       typical      D0002     VERIFICATE   PASS  
+XOR2X1       typical      D0003     VERIFICATE   PASS  
+XOR2X1       typical      D0004     VERIFICATE   PASS  
+XOR2X1       typical      D0005     VERIFICATE   PASS  
+XOR2X1       typical      D0006     VERIFICATE   PASS  
+XOR2X1       typical      D0007     VERIFICATE   PASS  
+------------+------------+---------+------------+----------
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+ - Total Simulation : 256
+ - Total Passed     : 256(100%)
+ - Total Failed     : 0(0%)
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+slc>  db_output -r gscl45nm.rep -alf gscl45nm.alf -p typical
+
+AND2X1         typical   2008-01-02 20:07:40 (2008-01-03 02:07:40 GMT) 4 (100%)
+AND2X2         typical   2008-01-02 20:08:25 (2008-01-03 02:08:25 GMT) 4 (100%)
+AOI21X1        typical   2008-01-02 20:11:25 (2008-01-03 02:11:25 GMT) 10 (100%)
+AOI22X1        typical   2008-01-02 20:17:56 (2008-01-03 02:17:56 GMT) 24 (100%)
+BUFX2          typical   2008-01-02 20:18:17 (2008-01-03 02:18:17 GMT) 2 (100%)
+BUFX4          typical   2008-01-02 20:18:38 (2008-01-03 02:18:38 GMT) 2 (100%)
+CLKBUF1        typical   2008-01-02 20:19:07 (2008-01-03 02:19:07 GMT) 2 (100%)
+CLKBUF2        typical   2008-01-02 20:19:37 (2008-01-03 02:19:37 GMT) 2 (100%)
+CLKBUF3        typical   2008-01-02 20:20:10 (2008-01-03 02:20:10 GMT) 2 (100%)
+DFFNEGX1       typical   2008-01-02 20:25:54 (2008-01-03 02:25:54 GMT) 12 (100%)
+DFFPOSX1       typical   2008-01-02 20:31:32 (2008-01-03 02:31:32 GMT) 12 (100%)
+DFFSR          typical   2008-01-02 20:55:05 (2008-01-03 02:55:05 GMT) 28 (100%)
+FAX1           typical   2008-01-02 21:01:49 (2008-01-03 03:01:49 GMT) 24 (100%)
+HAX1           typical   2008-01-02 21:03:48 (2008-01-03 03:03:48 GMT) 8 (100%)
+INVX1          typical   2008-01-02 21:04:17 (2008-01-03 03:04:17 GMT) 2 (100%)
+INVX2          typical   2008-01-02 21:04:39 (2008-01-03 03:04:39 GMT) 2 (100%)
+INVX4          typical   2008-01-02 21:04:59 (2008-01-03 03:04:59 GMT) 2 (100%)
+INVX8          typical   2008-01-02 21:05:19 (2008-01-03 03:05:19 GMT) 2 (100%)
+LATCH          typical   2008-01-02 21:10:51 (2008-01-03 03:10:51 GMT) 10 (100%)
+MUX2X1         typical   2008-01-02 21:12:53 (2008-01-03 03:12:53 GMT) 8 (100%)
+NAND2X1        typical   2008-01-02 21:13:53 (2008-01-03 03:13:53 GMT) 4 (100%)
+NAND3X1        typical   2008-01-02 21:15:23 (2008-01-03 03:15:23 GMT) 6 (100%)
+NOR2X1         typical   2008-01-02 21:16:23 (2008-01-03 03:16:23 GMT) 4 (100%)
+NOR3X1         typical   2008-01-02 21:17:53 (2008-01-03 03:17:53 GMT) 6 (100%)
+OAI21X1        typical   2008-01-02 21:20:23 (2008-01-03 03:20:23 GMT) 10 (100%)
+OAI22X1        typical   2008-01-02 21:26:23 (2008-01-03 03:26:23 GMT) 24 (100%)
+OR2X1          typical   2008-01-02 21:27:23 (2008-01-03 03:27:23 GMT) 4 (100%)
+OR2X2          typical   2008-01-02 21:28:05 (2008-01-03 03:28:05 GMT) 4 (100%)
+TBUFX1         typical   2008-01-02 21:29:36 (2008-01-03 03:29:36 GMT) 8 (100%)
+TBUFX2         typical   2008-01-02 21:30:45 (2008-01-03 03:30:45 GMT) 8 (100%)
+XNOR2X1        typical   2008-01-02 21:32:43 (2008-01-03 03:32:43 GMT) 8 (100%)
+XOR2X1         typical   2008-01-02 21:34:43 (2008-01-03 03:34:43 GMT) 8 (100%)
+slc>  db_close
+
+Database : gscl45nm is closed
+slc>  exit
+
+
+Memory : 1.23M
+Time   : 1.75 (user), 1.49 (sys), 3.24 (cpu), 5627.54 (real)

@@ -1,0 +1,24 @@
+* File: OAI22X1.pex.netlist.OAI22X1.pxi
+* Created: Wed Jan  2 18:55:58 2008
+* 
+cc_1 D C 0.0557299f
+cc_2 Y C 0.0329334f
+cc_3 a_2_6# C 0.0268364f
+cc_4 VDD C 0.0246682f
+cc_5 Y D 0.0598748f
+cc_6 B D 0.0805749f
+cc_7 a_2_6# D 0.0201093f
+cc_8 VDD D 0.00286431f
+cc_9 B Y 0.00811317f
+cc_10 A Y 9.65099e-19
+cc_11 a_2_6# Y 0.0950953f
+cc_12 VDD Y 0.038674f
+cc_13 GND B 0.0036203f
+cc_14 A B 0.0805749f
+cc_15 a_2_6# B 0.029469f
+cc_16 VDD B 0.00328833f
+cc_17 A GND 0.00397152f
+cc_18 a_2_6# GND 0.136777f
+cc_19 a_2_6# A 0.0415428f
+cc_20 VDD A 0.0270846f
+cc_21 VDD a_2_6# 3.02953e-19

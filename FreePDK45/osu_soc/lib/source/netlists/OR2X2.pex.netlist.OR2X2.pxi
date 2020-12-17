@@ -1,0 +1,16 @@
+* File: OR2X2.pex.netlist.OR2X2.pxi
+* Created: Wed Jan  2 18:58:07 2008
+* 
+cc_1 B A 0.0860951f
+cc_2 a_2_54# A 0.0476794f
+cc_3 GND A 0.029456f
+cc_4 VDD A 0.00330921f
+cc_5 a_2_54# B 0.12263f
+cc_6 GND B 0.00516789f
+cc_7 VDD B 0.0124707f
+cc_8 Y B 0.00244923f
+cc_9 GND a_2_54# 0.0976615f
+cc_10 VDD a_2_54# 0.0441176f
+cc_11 Y a_2_54# 0.159676f
+cc_12 Y GND 0.077225f
+cc_13 Y VDD 0.0797716f

@@ -1,0 +1,25 @@
+* File: OR2X1.pex.netlist
+* Created: Wed Jan  2 18:56:59 2008
+* Program "Calibre xRC"
+* Version "v2007.2_34.24"
+* 
+.subckt OR2X1  A B VDD GND Y
+* 
+MM3 a_2_54# A GND GND NMOS_VTL L=5e-08 W=2.5e-07
+MM4 GND B a_2_54# GND NMOS_VTL L=5e-08 W=2.5e-07
+MM5 Y a_2_54# GND GND NMOS_VTL L=5e-08 W=2.5e-07
+MM0 a_9_54# A a_2_54# VDD PMOS_VTL L=5e-08 W=1e-06
+MM1 VDD B a_9_54# VDD PMOS_VTL L=5e-08 W=1e-06
+MM2 Y a_2_54# VDD VDD PMOS_VTL L=5e-08 W=5e-07
+c_5 A 0 0.111279f
+c_11 B 0 0.102464f
+c_16 VDD 0 0.120654f
+c_22 a_2_54# 0 0.184486f
+c_27 GND 0 0.127853f
+c_32 Y 0 0.0507368f
+*
+.include "OR2X1.pex.netlist.OR2X1.pxi"
+*
+.ends
+*
+*

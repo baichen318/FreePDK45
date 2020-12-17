@@ -1,0 +1,33 @@
+syn2tlf g dev Tue Feb 28 07:35:57 PST 2006  sjlin34 
+
+About the messages:
+1) Every message has a unique identifier, referred to as "message_id".
+2) Every message falls into one of the following categories, referred to as
+   "category_id":
+     "LI" : messages falling into this category highlight the inconsistencies
+            of the source library. e.g. syntax errors and library deficiencies
+     "DI" : messages falling into this category highlight the issues that might
+            cause problems when the generated TLF library is used by the tools
+            in a flow. e.g. zero input-pin-capacitance
+     "OI" : all other messages fall into this category. e.g. command line
+            errors and system messages.
+3) The message_id and category_id are printed on the extreme right on the first
+   line of every message below. They appear as:
+       [<category_id>-<message_id>]
+4) To get extended help on any message below, invoke the following from the
+   command line:
+       syn2tlf -h <message_id>...
+
+
+Warning!  Slew derate from library would be assumed to be 1 and the     [LI-SDNU]
+          derating would be applied using this value as slew
+          thresholds are specified on the command line and not
+          specified in the library.
+
+Warning!  Thresholds specified both in library and on command line.     [LI-CTOLT]
+          Command line values will be used.
+
+Warning!  slew_derate_from_library not specifed in the library, using   [LI-SDFLND]
+          .lib default of 1.
+Warning: Property 'Slew_Measure_Lower_Threshold_Pct' is being redefined, previous value overwritten
+Warning: Property 'Slew_Measure_Upper_Threshold_Pct' is being redefined, previous value overwritten

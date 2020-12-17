@@ -1,0 +1,19 @@
+DefLayer	Layer1	Layer2	DefOp	DefOpRel	Layer1Op	Layer2Op
+gate	active	poly	geomAnd			
+well	nwell	pwell	geomOr			
+implant	nimplant	pimplant	geomOr			
+fieldpoly	poly	active	geomAndNot			
+polyEdge	poly		geomGetEdge			
+activeEdge	active		geomGetEdge			
+contactEdge	contact		geomGetEdge			
+metal1Edge	metal1		geomGetEdge			
+contenc1	contact	angle==90	geomGetAngledEdge			
+contenc2	contenc1	0.025 edges raw	geomSize			
+contenc3	contenc2	contact	geomOr			
+contenc4	contenc3	metal1	geomStraddle			
+contenc5	contact	contenc4	geomButtOrOver			
+contenc6	contenc5	angle==0	geomGetAngledEdge			
+contenc7	contenc6	0.025 edges raw	geomSize			
+contenc8	contenc7	contact	geomOr
+contenc9	contenc8	metal1	geomStraddle
+vt	vtg	vth	geomOr

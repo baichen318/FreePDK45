@@ -1,0 +1,197 @@
+==================================================================
+Process: Generic 45 nm
+Contents: FreePDK45 Manual
+File: FreePDK45_Manual.txt
+Created: June 4, 2007
+==================================================================
+
+Update History
+   Date        who                   Details
+------------------------------------------------------------------
+2007-6-4       mdbucher    First version of manual, including
+               & wdavis    notes on design rules and P-Cells.
+2007-9-19      wdavis      Updated for version 1.1 of the kit.
+2008-3-10      wdavis      Updated for version 1.2 of kit,
+                           added section on HSPICE models
+2011-4-7       wdavis      Updated for version 1.4 of kit.
+               & hdemirc
+
+------------------------------------------------------------------
+
+***** Please send all questions and comments to eda_help@ncsu.edu! *****
+
+Contents:
+
+I.     Introduction
+II.    Setup Files
+III.   Design Rule Notes
+IV.    LVS & PEX Notes
+V.     P-Cells
+VI.    HSPICE Models
+
+
+--------------------------------------------------------------------------
+I.     Introduction
+--------------------------------------------------------------------------
+
+This kit contains the technology library NCSU_TechLib_FreePDK45.  It
+supplies techfiles, display resources, design rules and scripts to
+permit layout design and rule checking for a generic 45 nanometer
+process.  The technology information contained in this kit has been
+compiled from published papers, predictive technology models and rule
+scaling.  This information may be freely used, modified, and
+distributed under the open-source Apache License (see the file
+APACHE-LICENSE-2.0.txt in the root install directory for the complete
+text).  Previous versions of this kit used the Gnu Public License
+(GPL), but this was discontinued, because the user community felt that
+GPL was too restrictive.
+
+This technology is intended to work with the 45nm BSIM4 Predictive
+Technology Model from Arizona State University
+(http://www.eas.asu.edu/~ptm).  See the HSPICE Models section of this
+file for details about these models.  Schematic creation and HSPICE
+simulation for these models is supported through Cadence Virtuoso
+and the Cadence Analog Design Environment (ADE), when using the
+NCSU_Devices_FreePDK45 library, also distributed with this kit.
+
+This manual is intended as an introduction to the kit, but it is by no
+means comprehensive.  Please see the FreePDK Wiki for complete
+documentation:
+
+http://www.eda.ncsu.edu/wiki/FreePDK
+
+--------------------------------------------------------------------------
+II.    Setup Files
+--------------------------------------------------------------------------
+
+To use the kit, copy the following files from the cdssetup directory
+to the directory where you start Virtuoso:
+
+cdsinit             - Should be named .cdsinit
+cds.lib             - Cadence Library Manager library list
+lib.defs            - Open Access library list
+.runset.calibre.drc - Calibre DRC runset file, with the rules path included.
+.runset.calibre.lvs - Calibre LVS runset file, with the rules path included.
+.runset.calibre.pex - Calibre xRC runset file, with the rules path included.
+.runset.calibre.lfd - Calibre LFD runset file, with the rules path included.
+                      (requires installation of LithoSim kit v1.2)
+
+Sourcing the script setup.csh (in the cdssetup directory) will copy these 
+files into the current directory if they do not exist and set the necessary
+environment variables to ensure that they are used by Calibre Interactive.
+
+--------------------------------------------------------------------------
+III.   Design Rule Notes
+--------------------------------------------------------------------------
+
+The design-rules currently support layers up to and including metal 10.
+See the "Layers" page on the FreePDK Wiki for a complete list of
+layers.  These design rules are not comprehensive, but represent our
+current state of understanding about how to design generic logic in
+45nm for high yield.  Some design rules (such as antenna rules) are
+still under development.
+
+Design rule checking is currently supported with Calibre.  The drc rules
+can be found in techfile/calibre/calibreDRC.rul.  See "Layout Tutorial #1"
+on the NCSU EDA Wiki Tutorials page for an introduction on running 
+Calibre DRC from Virtuoso.  There are currently no plans to support 
+Diva for DRC.
+
+See the "Design Rules" pages on the FreePDK Wiki for illustrations of 
+all design rules, and the "Design Rule Development" page for notes on
+how each rule was created.  Please also see the file 
+FreePDK45_Release_Notes.txt for notes on specific design rule changes 
+in this release.
+
+---------------------------------------------------------------------------
+IV.    LVS & PEX Notes
+--------------------------------------------------------------------------
+
+Layout vs. Schematic (LVS) Checks and Parasitic Extraction (PEX) are
+supported for all metal layers and devices in the
+NCSU_Devices_FreePDK45 library.  This functionality is supported with
+Calibre.  The rules can be found in the calibreLVS.rul and
+calibrexRC.rul files in the $PDK_DIR/ncsu_basekit/techfile/calibre
+directory.  See "Layout Tutorial #2" on the NCSU EDA Wiki Tutorials
+page for an introduction on running Calibre LVS and PEX from Virtuoso.
+
+Currently, there is no variation information in the PEX rules.  All
+extracted parasitics assume the widths and spaces as drawn, with
+thicknesses, resistances, and permittivities given on the "Metal
+Layers" page on the FreePDK Wiki.
+
+-------------------------------------------------------------------------
+V.     P-Cells
+--------------------------------------------------------------------------
+
+Two P-Cells are available in the NCSU_TechLib_FreePDK45 library,
+named "nmos" and "pmos" with the extensions "_vtl", "_vtg", "_vth" and
+"_thkox", indicating the four different types of supported devices.  
+These P-Cells will generate design-rule correct layouts for NMOS and PMOS 
+transistors.
+
+These P-Cells are implemented with the CiraNova PyCell v4.2.5 plugin
+for Virtuoso.  This plugin is available for free download from
+http://www.ciranova.com.  It is known to be compatible with
+Cadence Virtuoso 6.1.4 (OpenAccess 22.04.064).
+
+In order to work properly, the PyCell environment setup must be
+included in the Virtuoso environment setup.  See the file
+cdssetup/icoa_setup.csh for an example setup script (not including the
+required setup for this kit).  In addition, ensure that files
+cnDloPcell.plg and cnPcellProxy.plg have been copied from the CiraNova
+quickstart directory to the oa/data/plugins directory (which should be
+located at the same level as the main Virtuoso installation
+directory).  After performing these tasks, the PyCells should behave
+like standard SKILL P-Cells.
+
+--------------------------------------------------------------------------
+VI.   HSPICE Models
+--------------------------------------------------------------------------
+
+These models were generated using the 45nm Nano-CMOS Predictive
+Technology Model (PTM).  These models can be obtained directly from
+http://www.eas.asu.edu/~ptm.  Many thanks to Kevin Cao at Arizona
+State University for maintaining these models!  These models were 
+tuned according to the Bulk-Si, poly-gate technology from Fujitsu
+referenced below.  The performance of this technology is roughly
+average among all published technologies investigated.
+
+T. Miyashita, et al., "High Performance Low Power Bulk Logic Platform
+Utilizing FET Specific Multiple-Stressors with Highly Enhanced Strain and
+Full-Porous Low-k Interconnects for 45-nm CMOS Technology," IEDM, pp.
+251-2544, 2007.
+
+Four types of devices are supported, corresponding the low, general,
+and high threshold voltage devices (VTL, VTG, and VTH).  These devices
+were intented to roughly follow the high-performance, low operating
+power, and low standby-power technologies respectively for the 2007
+node in the 2005 International Technology Roadmap for Semiconductors
+(ITRS), available at http://www.itrs.net.  There is also a thick-oxide
+device (THKOX) for high-voltage off-chip IO.
+
+Simulation of these models with a supply voltage of 1.0V yields the
+following currents:
+
+Nominal        VTL     VTG      VTH    |   VTL      VTG        VTH
+                                       |
+Ion   (uA/um) 1246   975.5      570    |  -801   -650.3     -379.2
+Ioff  (nA/um)  100      10      0.2    |  -100      -10       -0.2
+Igate (A/cm2) 15.3     6.2      0.8    | -14.4     -8.0       -0.6
+                                       |
+FF Corner      VTL     VTG      VTH    |   VTL      VTG        VTH
+                                       |
+Ion   (uA/um) 1325    1040      618    |  -854     -699       -408
+Ioff  (nA/um)  229    21.8     0.38    |-205.4    -23.6      -0.39
+Igate (A/cm2)   32    13.1      1.5    | -28.9    -15.9       -1.1
+                                       |
+SS Corner      VTL     VTG      VTH    |   VTL      VTG        VTH
+                                       |
+Ion   (uA/um) 1161     905      521    |  -750     -604       -351
+Ioff  (nA/um) 43.1     4.6      0.1    |   -43     -4.4       -0.1
+Igate (A/cm2)  6.4     3.3      0.4    |  -7.1     -4.0       -0.3
+
+
+
+***** Please send all questions and comments to eda_help@ncsu.edu! *****
+

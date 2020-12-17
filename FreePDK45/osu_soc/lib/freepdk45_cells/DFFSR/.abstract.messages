@@ -1,0 +1,19 @@
+cUiAddMessageView {DFFSR} {abstract.pin} {514} {(ABS-514): Cell DFFSR: the prBoundary has been created successfully.}
+cUiAddMessageView {DFFSR} {abstract.pin} {515} {(ABS-515): Cell DFFSR: the prBoundary does not enclose all cellview geometries. This is because not all layers with geometry for calculating prBoundary have been specified in the "Using geometry on layers" field on the "Blocks" tab. Ensure that all the required layers have been specified in this field.}
+cUiAddMessageView {DFFSR} {abstract.pin} {505} {(ABS-505): Cell DFFSR:the pin CLK has been created for the label CLK at (760,2190).}
+cUiAddMessageView {DFFSR} {abstract.pin} {505} {(ABS-505): Cell DFFSR:the pin D has been created for the label D at (1140,1800).}
+cUiAddMessageView {DFFSR} {abstract.pin} {505} {(ABS-505): Cell DFFSR:the pin Q has been created for the label Q at (8030,1890).}
+cUiAddMessageView {DFFSR} {abstract.pin} {505} {(ABS-505): Cell DFFSR:the pin R has been created for the label R at (4815,3835).}
+cUiAddMessageView {DFFSR} {abstract.pin} {505} {(ABS-505): Cell DFFSR:the pin S has been created for the label S at (5335,1970).}
+cUiAddMessageView {DFFSR} {abstract.pin} {505} {(ABS-505): Cell DFFSR:the pin gnd has been created for the label gnd at (3480,575).}
+cUiAddMessageView {DFFSR} {abstract.pin} {505} {(ABS-505): Cell DFFSR:the pin vdd has been created for the label vdd at (4140,4420).}
+cUiAddMessageView {DFFSR} {abstract.pin} {503} {(ABS-503): Cell DFFSR: 7 pins have been created.}
+cUiAddMessageView {DFFSR} {abstract.ext} {602} {(ABS-602): Cell DFFSR: extracting 7 nets}
+cUiAddMessageView {DFFSR} {abstract.ext} {604} {(ABS-604): Cell DFFSR: extracting the net CLK, 1 of 7.}
+cUiAddMessageView {DFFSR} {abstract.ext} {604} {(ABS-604): Cell DFFSR: extracting the net D, 2 of 7.}
+cUiAddMessageView {DFFSR} {abstract.ext} {604} {(ABS-604): Cell DFFSR: extracting the net Q, 3 of 7.}
+cUiAddMessageView {DFFSR} {abstract.ext} {604} {(ABS-604): Cell DFFSR: extracting the net R, 4 of 7.}
+cUiAddMessageView {DFFSR} {abstract.ext} {604} {(ABS-604): Cell DFFSR: extracting the net S, 5 of 7.}
+cUiAddMessageView {DFFSR} {abstract.ext} {605} {(ABS-605): Cell DFFSR: using preset pins on the net gnd, 6 of 7.}
+cUiAddMessageView {DFFSR} {abstract.ext} {605} {(ABS-605): Cell DFFSR: using preset pins on the net vdd, 7 of 7.}
+cUiAddMessageView {DFFSR} {abstract} {914} {(ABS-914): Cell DFFSR: predefined site CoreSite will be used}

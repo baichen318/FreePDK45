@@ -1,0 +1,24 @@
+* File: INVX8.pex.netlist
+* Created: Wed Jan  2 18:46:20 2008
+* Program "Calibre xRC"
+* Version "v2007.2_34.24"
+* 
+.subckt INVX8  A GND Y VDD
+* 
+MM4 GND A Y GND NMOS_VTL L=5e-08 W=6.675e-07
+MM5 GND A Y GND NMOS_VTL L=5e-08 W=6.675e-07
+MM7 GND A Y GND NMOS_VTL L=5e-08 W=6.65e-07
+MM0 VDD A Y VDD PMOS_VTL L=5e-08 W=1e-06
+MM1 VDD A Y VDD PMOS_VTL L=5e-08 W=1e-06
+MM2 VDD A Y VDD PMOS_VTL L=5e-08 W=1e-06
+MM3 VDD A Y VDD PMOS_VTL L=5e-08 W=1e-06
+c_4 A 0 0.394353f
+c_8 GND 0 0.137357f
+c_12 Y 0 0.168809f
+c_16 VDD 0 0.210511f
+*
+.include "INVX8.pex.netlist.INVX8.pxi"
+*
+.ends
+*
+*

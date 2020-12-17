@@ -1,0 +1,32 @@
+* File: LATCH.pex.netlist
+* Created: Wed Jan  2 18:48:08 2008
+* Program "Calibre xRC"
+* Version "v2007.2_34.24"
+* 
+.subckt LATCH  D CLK GND VDD Q
+* 
+MM5 GND CLK a_2_6# GND NMOS_VTL L=5e-08 W=5e-07
+MM7 a_18_6# D GND GND NMOS_VTL L=5e-08 W=2.5e-07
+MM8 a_23_6# CLK a_18_6# GND NMOS_VTL L=5e-08 W=2.5e-07
+MM9 a_35_6# a_2_6# a_23_6# GND NMOS_VTL L=5e-08 W=2.5e-07
+MM10 GND Q a_35_6# GND NMOS_VTL L=5e-08 W=2.5e-07
+MM11 Q a_23_6# GND GND NMOS_VTL L=5e-08 W=5e-07
+MM0 VDD CLK a_2_6# VDD PMOS_VTL L=5e-08 W=1e-06
+MM1 a_18_74# D VDD VDD PMOS_VTL L=5e-08 W=5e-07
+MM2 a_23_6# a_2_6# a_18_74# VDD PMOS_VTL L=5e-08 W=5e-07
+MM3 a_35_84# CLK a_23_6# VDD PMOS_VTL L=5e-08 W=2.5e-07
+MM4 VDD Q a_35_84# VDD PMOS_VTL L=5e-08 W=2.5e-07
+MM6 Q a_23_6# VDD VDD PMOS_VTL L=5e-08 W=1e-06
+c_7 a_2_6# 0 0.251522f
+c_13 D 0 0.0718974f
+c_20 CLK 0 0.233896f
+c_27 a_23_6# 0 0.212567f
+c_33 GND 0 0.158887f
+c_39 VDD 0 0.187285f
+c_45 Q 0 0.153168f
+*
+.include "LATCH.pex.netlist.LATCH.pxi"
+*
+.ends
+*
+*

@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Create Synopsys .lib file (has no area information yet)
+alf2lib -alf gscl45nm.alf -lib gscl45nm_noarea.lib -def footprint.def
+
+# Insert area information from .area file for library compiler
+rm -rf gscl45nm.lib
+./mergearea -v "areafile=./cell.area" gscl45nm_noarea.lib  > gscl45nm.lib
+
+rm -rf gscl45nm_noarea.lib
+
+# Create a Verilog Simulation Library
+alf2veri -alf gscl45nm.alf -verilog gscl45nm.v
+
+# Create a VHDL Simulation Library
+alf2vhdl -alf gscl45nm.alf -vhdl gscl45nm.vhdl
+ 
+lc_shell -f lc_script
+
+syn2tlf gscl45nm.lib -format 4.3 -ir 50 -if 50 -dr 50 -df 50 -sr 10 -sf 10 -tr 90 -tf 90 -slew_measure_lower_rise 20 -slew_measure_lower_fall 20 -slew_measure_upper_rise 80 -slew_measure_upper_fall 80 -o gscl45nm.tlf
+
+rm -rf ../html
+alf2html -alf gscl45nm.alf -dir ../html

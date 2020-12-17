@@ -1,0 +1,10 @@
+cUiAddMessageView {FILL} {abstract.pin} {514} {(ABS-514): Cell FILL: the prBoundary has been created successfully.}
+cUiAddMessageView {FILL} {abstract.pin} {515} {(ABS-515): Cell FILL: the prBoundary does not enclose all cellview geometries. This is because not all layers with geometry for calculating prBoundary have been specified in the "Using geometry on layers" field on the "Blocks" tab. Ensure that all the required layers have been specified in this field.}
+cUiAddMessageView {FILL} {abstract.pin} {501} {(ABS-501): Cell FILL:there are  2 existing terminals and no pins will be added for them.}
+cUiAddMessageView {FILL} {abstract.pin} {502} {(ABS-502): Cell FILL: no terminals created}
+cUiAddMessageView {FILL} {abstract.pin} {1088} {(ABS-1088): Cell FILL: has no input terminals}
+cUiAddMessageView {FILL} {abstract.pin} {1089} {(ABS-1089): Cell FILL: has no output terminals}
+cUiAddMessageView {FILL} {abstract.ext} {602} {(ABS-602): Cell FILL: extracting 2 nets}
+cUiAddMessageView {FILL} {abstract.ext} {605} {(ABS-605): Cell FILL: using preset pins on the net gnd, 1 of 2.}
+cUiAddMessageView {FILL} {abstract.ext} {605} {(ABS-605): Cell FILL: using preset pins on the net vdd, 2 of 2.}
+cUiAddMessageView {FILL} {abstract} {914} {(ABS-914): Cell FILL: predefined site CoreSite will be used}

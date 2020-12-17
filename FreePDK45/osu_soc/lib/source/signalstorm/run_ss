@@ -1,0 +1,4 @@
+clean
+
+#Run signalstorm
+slc -S ss_script

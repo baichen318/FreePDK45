@@ -1,0 +1,22 @@
+* File: XNOR2X1.pex.netlist.XNOR2X1.pxi
+* Created: Wed Jan  2 19:01:52 2008
+* 
+cc_1 Y B 9.45178e-19
+cc_2 a_12_41# B 0.0882513f
+cc_3 A B 0.0362524f
+cc_4 GND B 0.00906885f
+cc_5 VDD B 0.00661119f
+cc_6 a_2_6# B 0.0164149f
+cc_7 a_12_41# Y 0.22888f
+cc_8 A Y 0.0351984f
+cc_9 GND Y 0.0199951f
+cc_10 a_2_6# Y 0.0333201f
+cc_11 A a_12_41# 0.0728819f
+cc_12 GND a_12_41# 0.0585439f
+cc_13 VDD a_12_41# 0.0795616f
+cc_14 a_2_6# a_12_41# 0.0837809f
+cc_15 GND A 0.00797164f
+cc_16 VDD A 0.00980212f
+cc_17 a_2_6# A 0.179323f
+cc_18 a_2_6# GND 0.0764298f
+cc_19 a_2_6# VDD 0.0459287f

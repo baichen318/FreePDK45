@@ -1,0 +1,17 @@
+* File: TBUFX2.pex.netlist.TBUFX2.pxi
+* Created: Wed Jan  2 19:00:28 2008
+* 
+cc_1 a_9_6# EN 0.0523278f
+cc_2 Y EN 0.00668577f
+cc_3 A EN 0.117544f
+cc_4 GND EN 0.0477161f
+cc_5 VDD EN 0.00772676f
+cc_6 Y a_9_6# 0.048975f
+cc_7 A a_9_6# 0.0838825f
+cc_8 GND a_9_6# 0.0594033f
+cc_9 VDD a_9_6# 0.0746064f
+cc_10 A Y 0.0932661f
+cc_11 VDD Y 0.0389446f
+cc_12 GND A 0.218308f
+cc_13 VDD A 0.0318485f
+cc_14 VDD GND 0.00127947f

@@ -1,0 +1,11 @@
+cell BUF* {
+footprint buf;
+};
+
+cell CLKBUF* {
+footprint buf;
+};
+
+cell INV* {
+footprint inv;
+};

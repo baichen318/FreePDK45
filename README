@@ -1,0 +1,13 @@
+
+
+This tarball contains two files.  The distribution files are in
+the file named ncsu-FreePDK45-1.4.tar.gz 
+
+You can check the integrity of this file using the detached
+signature file ncsu-FreePDK45-1.4.tar.gz.sig using this command:
+
+gpg --verify ncsu-FreePDK45-1.4.tar.gz.sig
+
+For complete information on verification see this page:
+
+http://www.eda.ncsu.edu/wiki/NCSU_EDA_Wiki:Kit_verification

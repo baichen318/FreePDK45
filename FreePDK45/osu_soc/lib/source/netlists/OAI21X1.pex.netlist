@@ -1,0 +1,26 @@
+* File: OAI21X1.pex.netlist
+* Created: Wed Jan  2 18:54:58 2008
+* Program "Calibre xRC"
+* Version "v2007.2_34.24"
+* 
+.subckt OAI21X1  A B GND C Y VDD
+* 
+MM3 GND A a_2_6# GND NMOS_VTL L=5e-08 W=5e-07
+MM4 a_2_6# B GND GND NMOS_VTL L=5e-08 W=5e-07
+MM5 Y C a_2_6# GND NMOS_VTL L=5e-08 W=5e-07
+MM0 a_9_54# A VDD VDD PMOS_VTL L=5e-08 W=1e-06
+MM1 Y B a_9_54# VDD PMOS_VTL L=5e-08 W=1e-06
+MM2 VDD C Y VDD PMOS_VTL L=5e-08 W=5e-07
+c_6 A 0 0.12581f
+c_13 B 0 0.0969534f
+c_19 GND 0 0.083241f
+c_26 a_2_6# 0 0.0565173f
+c_32 C 0 0.103215f
+c_39 Y 0 0.0631946f
+c_45 VDD 0 0.1632f
+*
+.include "OAI21X1.pex.netlist.OAI21X1.pxi"
+*
+.ends
+*
+*

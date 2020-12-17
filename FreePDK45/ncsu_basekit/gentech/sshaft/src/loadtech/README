@@ -1,0 +1,13 @@
+loadtech - SSHAFT technology file parser
+6/2/2005 Rhett Davis (rhett_davis@ncsu.edu)
+
+To compile this code at NCSU, use the following commands:
+  add gnu
+  add gcc295 (solaris only)
+  make
+
+You can also clean up the directory with
+  make clean
+
+You can also install in the ../../../bin directory with
+  make install

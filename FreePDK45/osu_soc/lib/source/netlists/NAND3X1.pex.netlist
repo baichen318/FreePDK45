@@ -1,0 +1,25 @@
+* File: NAND3X1.pex.netlist
+* Created: Wed Jan  2 18:51:28 2008
+* Program "Calibre xRC"
+* Version "v2007.2_34.24"
+* 
+.subckt NAND3X1  A GND B C VDD Y
+* 
+MM3 a_9_6# A GND GND NMOS_VTL L=5e-08 W=7.5e-07
+MM4 a_14_6# B a_9_6# GND NMOS_VTL L=5e-08 W=7.5e-07
+MM5 Y C a_14_6# GND NMOS_VTL L=5e-08 W=7.5e-07
+MM0 Y A VDD VDD PMOS_VTL L=5e-08 W=5e-07
+MM1 VDD B Y VDD PMOS_VTL L=5e-08 W=5e-07
+MM2 Y C VDD VDD PMOS_VTL L=5e-08 W=5e-07
+c_5 A 0 0.120904f
+c_10 GND 0 0.091831f
+c_16 B 0 0.0790037f
+c_21 C 0 0.116252f
+c_26 VDD 0 0.155618f
+c_32 Y 0 0.0986923f
+*
+.include "NAND3X1.pex.netlist.NAND3X1.pxi"
+*
+.ends
+*
+*

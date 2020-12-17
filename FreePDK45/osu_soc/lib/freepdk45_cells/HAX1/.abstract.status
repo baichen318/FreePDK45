@@ -1,0 +1,7 @@
+cUiSelectCellP {HAX1}
+cUiSetViewStatus {HAX1} {layout} {1}
+cUiSetViewStatus {HAX1} {logical} {0}
+cUiSetViewStatus {HAX1} {abstract.pin} {3}
+cUiSetViewStatus {HAX1} {abstract.ext} {1}
+cUiSetViewStatus {HAX1} {abstract} {1}
+cUiSetViewStatus {HAX1} {abstract.ver} {0}

@@ -1,0 +1,29 @@
+* File: AOI22X1.pex.netlist
+* Created: Wed Jan  2 18:27:25 2008
+* Program "Calibre xRC"
+* Version "v2007.2_34.24"
+* 
+.subckt AOI22X1  C D Y B VDD A GND
+* 
+MM7 GND C a_28_6# GND NMOS_VTL L=5e-08 W=5e-07
+MM6 a_28_6# D Y GND NMOS_VTL L=5e-08 W=5e-07
+MM5 Y B a_11_6# GND NMOS_VTL L=5e-08 W=5e-07
+MM4 a_11_6# A GND GND NMOS_VTL L=5e-08 W=5e-07
+MM3 a_2_54# C Y VDD PMOS_VTL L=5e-08 W=1e-06
+MM2 Y D a_2_54# VDD PMOS_VTL L=5e-08 W=1e-06
+MM1 a_2_54# B VDD VDD PMOS_VTL L=5e-08 W=1e-06
+MM0 VDD A a_2_54# VDD PMOS_VTL L=5e-08 W=1e-06
+c_6 C 0 0.140172f
+c_12 D 0 0.0878909f
+c_19 Y 0 0.0721643f
+c_26 B 0 0.0847939f
+c_31 VDD 0 0.111841f
+c_37 A 0 0.122357f
+c_45 a_2_54# 0 0.139553f
+c_52 GND 0 0.126903f
+*
+.include "AOI22X1.pex.netlist.AOI22X1.pxi"
+*
+.ends
+*
+*

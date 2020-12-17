@@ -1,0 +1,47 @@
+# SSHAFT Technology File
+#
+
+SSHAFT_HOME = 			/mlar/mlig/mloog
+
+namespace Sshaft {
+  SshaftTechDir =			$::SSHAFT_HOME/dist/tech/TSMC_CMOS020
+  namespace Cds {
+    SshaftCdsLibTemplate =		$::Sshaft::SshaftTechDir/cds.lib
+    SshaftCdsinitTemplate =		$::Sshaft::SshaftTechDir/cdsinit
+    SshaftOaLibTemplate =		$::Sshaft::SshaftTechDir/cds.lib.oa
+    SshaftCdsEtcDir = 		/tools/cds99/IC445/tools/dfII/etc
+  }
+  SshaftSynDCSetupTemplate =	$SshaftTechDir/synopsys_dc.setup
+  SshaftPdpLocalDPUXTemplate =	$SshaftTechDir/local.dpux
+  SshaftPdpHldLocalTemplate =	$SshaftTechDir/hldLocal.cl
+  SshaftPdpLibDirPrefix =		../../data/pillar
+  SshaftSynMCEnvTemplate = 	$SshaftTechDir/mc.env
+  SshaftGlobalSupplyNetName = 	vdd!
+  SshaftGlobalGroundNetName =	gnd!
+}
+
+
+
+# Techfile parser tests
+# test1 = "a b c"
+test1 = 			a b c  
+# test13 = "a $ { }  {} ${}"
+test13 = 			a $$ { }  {} $${} 
+namespace test {
+  # test1 = "a a b c.c" (test1 in root namespace)
+  test1 = 			a $::test1.c
+  # test2 = "a a a b c.c.c" (test1 in current namespace)
+  test2 = 			a $test1.c
+  namespace test {
+    # test1 = "a a a b c.c.c" (test1 in ::test namespace)
+    test1 = 			a $::test::test1.c
+    # test2 = "a a b c.c" (test1 in root namespace)
+    test2 = 			a $::test1.c
+    # test3 = "a a a a b c.c.c.c" (test1 in current namespace)
+    test3 = 			a $test1.c
+  }
+}
+#test14 = "a a a a b c.c.c.c"
+test14 = 			a $test::test::test1.c
+#test15 = "Works?"
+test15 = 			Works?

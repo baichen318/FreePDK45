@@ -1,0 +1,31 @@
+;; BEGIN FreePDK Customizations
+
+if( getShellEnvVar( "PDK_DIR" ) then
+  loadi(strcat( getShellEnvVar( "PDK_DIR" ) "/ncsu_basekit/cdssetup/cdsinit" ) )
+else
+  printf("ERROR: PDK_DIR environment variable not set.\n")
+  printf("Please source the SSHAFT setup script and restart the Cadence Design Framework\n")
+) ;if
+
+;; END FreePDK Customizations
+
+;; BEGIN SSHAFT Customizations
+
+if( getShellEnvVar( "SSHAFT_SKILL" ) then
+  loadi(strcat( getShellEnvVar( "SSHAFT_SKILL" ) "/loadsshaft.il" ) )
+else
+  printf("ERROR: SSHAFT_SKILL environment variable not set.\n")
+  printf("Please source the SSHAFT setup script and restart the Cadence Design Framework\n")
+) ;if
+printf("Done loading SSHAFT customizations.\n")
+
+;; END SSHAFT Customizations
+
+printf("Done Loading User's Init File\n")
+
+;
+; END OF USER CUSTOMIZATION
+;
+
+
+

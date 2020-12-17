@@ -1,0 +1,104 @@
+==================================================================
+Process: Generic 45 nm
+Contents: FreePDK45 Manual
+File: FreePDK45_Release_Notes.txt
+==================================================================
+
+Release Notes for FreePDK45 1.4 (2011-04-07)
+(Subversion Repository revision 173)
+
+New in this release:
+ - HSPICE models have been significantly re-worked to more closely
+   match commercial technologies.  See section VI of the 
+   FreePDK45_Manual.txt file for details.
+ - Schematic entry of transistors in NCSU_Devices_FreePDK45 now
+   has callbacks for default values of source/drain perimeter
+   and area, for more convenient modeling of parasitics.
+
+Bug fixes in this release:
+ - Fixed layout bug in vtg and vth P-Cells (vtl was correct)
+
+Design rule changes in this release:
+ - Antenna Rules Added to calibreDRC.rul file
+
+Release Notes for FreePDK45 1.3 (2009-3-4)
+(Subversion Repository revision 149)
+
+Release Notes for FreePDK45 1.2 (2008-3-10) 
+(Subversion Repository revision 132)
+
+New in this release:
+ - Changed license from GPL to Apache
+ - Bundled with OSU-SOC Standard-Cell kit (PDK_DIR environment variable
+   now points to the root directory of combined distribution)
+ - Updated Calibre DRC rules (see rule changes below)
+ - Updated Calibre LVS rules to extract source & drain capacitances
+ - Updated Calibre xRC rules to include all metal layers
+ - Updated P-Cells to Ciranova PyCell 4.2.0
+ - New custom vias added to technology library to be compatible
+   with Cadence abstract generator (no additional functionality)
+ - Updated HSPICE models for VTG and VTH devices to reflect a thicker
+   gate oxide (more realistic leakage currents)
+
+Design Rule Changes in this release:
+ - Added IMPLANT.5 to prohibit overlap of nimplant & pimplant
+ - Removed rule CONTACT.7 and made CONTACT.6 apply to all contacts to poly
+ - Removed minimum area rules for metal straddling contact (METAL1.4,
+   METALINT.4, METALSMG.4, METALTNG.4, and METALG.4)
+ - Changed minimum enclosure of metal around contact/via to be enclosure on
+   two opposite sides (METAL1.3-4, METALINT.3-4, METALSMG.3, METALTNG.3, 
+   and METALG.3)
+ - Added width-dependent spacing rules (METAL1.5-9, METALINT.5-9, 
+   METALSMG.6-9, METALTNG.7-9, and METALG.8-9)
+ - Added GRID rule to ensure shapes are aligned to manufacturing grid
+
+Future Design Rule Changes:
+ - Rules for poly are likely to adopt limitations for reduced variability,
+   including restricted pitch of poly lines to be a multiple of the 
+   wavelength of the exposing light source (193 nm) and increased poly
+   width for one leg of a jog.  We're currently trying to figure out
+   the best way to write these rules.
+ - A new gate oxide thickness layer may be added.  Currently, the layer
+   "thkox" is currently used to denote a thick oxide for IO devices 
+   (high off-chip voltages), but conversations with some engineers imply
+   that multiple core oxide thicknesses are common.  This may also affect
+   the range of devices in the NCSU_Devices_FreePDK45 library.
+ - POLY.3 (poly extension beyond active) is likely to increase, in order to 
+   more closely match commercial technologies.  Thanks to Graham Petley
+   at www.vlsitechnology.org for suggesting this change.
+ - Currently no antenna rule checks.  These need to be added but will likely
+   not affect existing rules.
+ - Active spacing may be overly conservative.  This rule may shrink.
+
+
+Release Notes for FreePDK45 1.1 (2007-9-19)
+
+New in this release:
+ - Calibre DRC, LVS, and xRC rules
+ - VTL, VTH, VTG, and THKOX P-Cells for the CiraNova PyCell 4.1.1 plugin
+ - Nominal, Fast, and Slow HSPICE simulation models (based on 45nm PTM) 
+ - NCSU_Devices_FreePDK45 library, with supported device symbols
+ - Support for Schematic simulation with HSPICE
+
+Removed in this release:
+ - Diva Design Rules
+
+Known issues with this release:
+ - Calibre extraction currently does not extract source and drain
+   areas and perimeters.  This will be fixed in a future release.
+
+Release Notes for FreePDK45 1.0 (2007-6-4)
+
+Included in this release:
+ - Technology library and display resources for Cadence Virtuoso 5.2.51
+ - Diva Design Rules for layers up to and including metal 1
+ - Low-Vt NMOS and PMOS P-Cells for the CiraNova PyCell 3.2.1 plugin
+
+Planned for the next release:
+ - Calibre Design Rules for layers up to and including metal 10
+   (Diva support will be dropped)
+ - Support for General-Vt and High-Vt NMOS and PMOS P-Cells
+ - Support for schematic simulation with HSPICE
+ - Calibre LVS Rules
+
+

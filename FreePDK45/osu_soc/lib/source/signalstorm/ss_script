@@ -1,0 +1,39 @@
+db_open gscl45nm
+db_install -subckt ../netlists/AND2X1.pex.netlist   -model gpdk45nm.m
+db_install -subckt ../netlists/AND2X2.pex.netlist   -model gpdk45nm.m
+db_install -subckt ../netlists/AOI21X1.pex.netlist  -model gpdk45nm.m
+db_install -subckt ../netlists/AOI22X1.pex.netlist  -model gpdk45nm.m
+db_install -subckt ../netlists/BUFX2.pex.netlist    -model gpdk45nm.m
+db_install -subckt ../netlists/BUFX4.pex.netlist    -model gpdk45nm.m
+db_install -subckt ../netlists/CLKBUF1.pex.netlist  -model gpdk45nm.m
+db_install -subckt ../netlists/CLKBUF2.pex.netlist  -model gpdk45nm.m
+db_install -subckt ../netlists/CLKBUF3.pex.netlist  -model gpdk45nm.m
+db_install -subckt ../netlists/DFFNEGX1.pex.netlist -model gpdk45nm.m
+db_install -subckt ../netlists/DFFPOSX1.pex.netlist -model gpdk45nm.m
+db_install -subckt ../netlists/DFFSR.pex.netlist    -model gpdk45nm.m
+db_install -subckt ../netlists/FAX1.pex.netlist     -model gpdk45nm.m
+db_install -subckt ../netlists/HAX1.pex.netlist     -model gpdk45nm.m
+db_install -subckt ../netlists/INVX1.pex.netlist    -model gpdk45nm.m
+db_install -subckt ../netlists/INVX2.pex.netlist    -model gpdk45nm.m
+db_install -subckt ../netlists/INVX4.pex.netlist    -model gpdk45nm.m
+db_install -subckt ../netlists/INVX8.pex.netlist    -model gpdk45nm.m
+db_install -subckt ../netlists/LATCH.pex.netlist    -model gpdk45nm.m
+db_install -subckt ../netlists/MUX2X1.pex.netlist   -model gpdk45nm.m
+db_install -subckt ../netlists/NAND2X1.pex.netlist  -model gpdk45nm.m
+db_install -subckt ../netlists/NAND3X1.pex.netlist  -model gpdk45nm.m
+db_install -subckt ../netlists/NOR2X1.pex.netlist   -model gpdk45nm.m
+db_install -subckt ../netlists/NOR3X1.pex.netlist   -model gpdk45nm.m
+db_install -subckt ../netlists/OAI21X1.pex.netlist  -model gpdk45nm.m
+db_install -subckt ../netlists/OAI22X1.pex.netlist  -model gpdk45nm.m
+db_install -subckt ../netlists/OR2X1.pex.netlist    -model gpdk45nm.m
+db_install -subckt ../netlists/OR2X2.pex.netlist    -model gpdk45nm.m
+db_install -subckt ../netlists/TBUFX1.pex.netlist   -model gpdk45nm.m
+db_install -subckt ../netlists/TBUFX2.pex.netlist   -model gpdk45nm.m
+db_install -subckt ../netlists/XNOR2X1.pex.netlist  -model gpdk45nm.m
+db_install -subckt ../netlists/XOR2X1.pex.netlist   -model gpdk45nm.m
+db_gsim
+db_setup -s setup.ss
+db_spice -p typical -force
+db_output -r gscl45nm.rep -alf gscl45nm.alf -p typical
+db_close
+exit

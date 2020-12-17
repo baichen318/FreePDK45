@@ -1,0 +1,17 @@
+cUiAddMessageView {MUX2X1} {abstract.pin} {514} {(ABS-514): Cell MUX2X1: the prBoundary has been created successfully.}
+cUiAddMessageView {MUX2X1} {abstract.pin} {515} {(ABS-515): Cell MUX2X1: the prBoundary does not enclose all cellview geometries. This is because not all layers with geometry for calculating prBoundary have been specified in the "Using geometry on layers" field on the "Blocks" tab. Ensure that all the required layers have been specified in this field.}
+cUiAddMessageView {MUX2X1} {abstract.pin} {505} {(ABS-505): Cell MUX2X1:the pin A has been created for the label A at (1190,1460).}
+cUiAddMessageView {MUX2X1} {abstract.pin} {505} {(ABS-505): Cell MUX2X1:the pin B has been created for the label B at (2545,1830).}
+cUiAddMessageView {MUX2X1} {abstract.pin} {505} {(ABS-505): Cell MUX2X1:the pin S has been created for the label S at (1460,1380).}
+cUiAddMessageView {MUX2X1} {abstract.pin} {505} {(ABS-505): Cell MUX2X1:the pin Y has been created for the label Y at (1900,2060).}
+cUiAddMessageView {MUX2X1} {abstract.pin} {505} {(ABS-505): Cell MUX2X1:the pin gnd has been created for the label gnd at (1695,0).}
+cUiAddMessageView {MUX2X1} {abstract.pin} {505} {(ABS-505): Cell MUX2X1:the pin vdd has been created for the label vdd at (810,3665).}
+cUiAddMessageView {MUX2X1} {abstract.pin} {503} {(ABS-503): Cell MUX2X1: 6 pins have been created.}
+cUiAddMessageView {MUX2X1} {abstract.ext} {602} {(ABS-602): Cell MUX2X1: extracting 6 nets}
+cUiAddMessageView {MUX2X1} {abstract.ext} {604} {(ABS-604): Cell MUX2X1: extracting the net A, 1 of 6.}
+cUiAddMessageView {MUX2X1} {abstract.ext} {604} {(ABS-604): Cell MUX2X1: extracting the net B, 2 of 6.}
+cUiAddMessageView {MUX2X1} {abstract.ext} {604} {(ABS-604): Cell MUX2X1: extracting the net S, 3 of 6.}
+cUiAddMessageView {MUX2X1} {abstract.ext} {604} {(ABS-604): Cell MUX2X1: extracting the net Y, 4 of 6.}
+cUiAddMessageView {MUX2X1} {abstract.ext} {605} {(ABS-605): Cell MUX2X1: using preset pins on the net gnd, 5 of 6.}
+cUiAddMessageView {MUX2X1} {abstract.ext} {605} {(ABS-605): Cell MUX2X1: using preset pins on the net vdd, 6 of 6.}
+cUiAddMessageView {MUX2X1} {abstract} {914} {(ABS-914): Cell MUX2X1: predefined site CoreSite will be used}

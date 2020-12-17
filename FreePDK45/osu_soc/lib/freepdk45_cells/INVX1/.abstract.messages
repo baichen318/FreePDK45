@@ -1,0 +1,13 @@
+cUiAddMessageView {INVX1} {abstract.pin} {514} {(ABS-514): Cell INVX1: the prBoundary has been created successfully.}
+cUiAddMessageView {INVX1} {abstract.pin} {515} {(ABS-515): Cell INVX1: the prBoundary does not enclose all cellview geometries. This is because not all layers with geometry for calculating prBoundary have been specified in the "Using geometry on layers" field on the "Blocks" tab. Ensure that all the required layers have been specified in this field.}
+cUiAddMessageView {INVX1} {abstract.pin} {505} {(ABS-505): Cell INVX1:the pin A has been created for the label A at (415,1110).}
+cUiAddMessageView {INVX1} {abstract.pin} {505} {(ABS-505): Cell INVX1:the pin Y has been created for the label Y at (760,2030).}
+cUiAddMessageView {INVX1} {abstract.pin} {505} {(ABS-505): Cell INVX1:the pin gnd has been created for the label gnd at (390,490).}
+cUiAddMessageView {INVX1} {abstract.pin} {505} {(ABS-505): Cell INVX1:the pin vdd has been created for the label vdd at (390,3670).}
+cUiAddMessageView {INVX1} {abstract.pin} {503} {(ABS-503): Cell INVX1: 4 pins have been created.}
+cUiAddMessageView {INVX1} {abstract.ext} {602} {(ABS-602): Cell INVX1: extracting 4 nets}
+cUiAddMessageView {INVX1} {abstract.ext} {604} {(ABS-604): Cell INVX1: extracting the net A, 1 of 4.}
+cUiAddMessageView {INVX1} {abstract.ext} {604} {(ABS-604): Cell INVX1: extracting the net Y, 2 of 4.}
+cUiAddMessageView {INVX1} {abstract.ext} {605} {(ABS-605): Cell INVX1: using preset pins on the net gnd, 3 of 4.}
+cUiAddMessageView {INVX1} {abstract.ext} {605} {(ABS-605): Cell INVX1: using preset pins on the net vdd, 4 of 4.}
+cUiAddMessageView {INVX1} {abstract} {914} {(ABS-914): Cell INVX1: predefined site CoreSite will be used}

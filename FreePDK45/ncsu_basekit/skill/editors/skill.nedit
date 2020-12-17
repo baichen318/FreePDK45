@@ -1,0 +1,42 @@
+! Syntax Highlighting Patterns for SKILL-Code (script-language of the Cadence
+! Design System).
+!
+! These are written for the "c" type syntax vs the lisp syntax.  In these
+! patterns a procedure call, "function(" will be highlighted differently from
+! a variable + paren, "function ("  so you can tell if you have a white space
+! error.
+!
+! Contributed by Andrew Stanaski
+!
+! In NEdit Version 5.0.1 and beyond, load this pattern by starting nedit with:
+!
+!     nedit -import <name of this file>
+!
+! Then, check that the patterns were loaded correctly, and choose Save Defaults
+! from the Preferences menu.  The new patterns will now be incorporated into
+! your own .nedit file, so the next time you start NEdit, you will no longer
+! need to use -import.
+!
+! In version 5.0, without -import, you must edit your .nedit file by hand and
+! add the contents of each resource below to the corresponding list in your
+! .nedit file.  Be sure to separate new entries with \n, and continue resource
+! strings by escaping all newlines within a resource value with \ (backslash),
+! leaving only the last line of the resource value not ending in \.
+!
+nedit.highlightPatterns:\       Skill:1:0{\n\
+		comment:"/\\*":"\\*/"::Escaped Items::\n\
+		skill comment:";":"$"::Escaped Items::\n\
+		string:"""":"""":"\\n":Storage Type::\n\
+		string escape chars:"\\\\(.|\\n)":::String:string:\n\
+		numeric constant:"<((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f)?>":::Preprocessor::D\n\
+		procedure calls:"<(procedure|return)\\(":::Plain::D\n\
+		procedure color:"\\1":""::Keyword:procedure calls:DC\n\
+		control calls:"<(if|when|unless|cond|case|caseq|while|for|foreach)\\(":::Plain::D\n\
+		control color:"\\1":""::Numeric Const:control calls:DC\n\
+		control then else:"<(then|else)>":::Numeric Const::D\n\
+		function calls:"<([a-zA-Z][a-zA-Z0-9_?]*)\\(":::Plain::D\n\
+		function color:"\\1":""::Double Quoted String:function calls:DC\n\
+		braces:"[{}]":::Comment::D\n\
+	}
+	
+nedit.languageModes: 	Skill:.il .tf::::4:4:\n\

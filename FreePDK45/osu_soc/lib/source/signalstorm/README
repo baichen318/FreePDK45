@@ -1,0 +1,23 @@
+Setting up the Daemon:
+
+1) ipsd (on as many stations as you want)
+2) ipsc -w 4
+3) ipsc -w4 -n hspice
+4) ipsstat
+5) ipsmon -s servername
+
+Running Signalstorm
+1) Setup daemon as shown above
+2) run_ss
+3) Go to files directory and copy all generated files ("cp ../gscl45nm.* .)
+4) finish_slc
+
+Notes
+The run_ss script runs SignalStorm with "ss_script" which:
+ - import netlists into signalstorm
+ - run dbgsim to create test vectors
+ - run db_setup to prepare Spice run
+ - the main step that runs spice (takes a while)
+ - Outputs the final .alf file
+
+The finish_slc script creates all the output files.

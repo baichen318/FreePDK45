@@ -1,0 +1,22 @@
+* File: NOR2X1.pex.netlist
+* Created: Wed Jan  2 18:52:38 2008
+* Program "Calibre xRC"
+* Version "v2007.2_34.24"
+* 
+.subckt NOR2X1  A VDD B Y GND
+* 
+MM2 Y A GND GND NMOS_VTL L=5e-08 W=2.5e-07
+MM3 GND B Y GND NMOS_VTL L=5e-08 W=2.5e-07
+MM0 a_9_54# A VDD VDD PMOS_VTL L=5e-08 W=1e-06
+MM1 Y B a_9_54# VDD PMOS_VTL L=5e-08 W=1e-06
+c_5 A 0 0.097464f
+c_9 VDD 0 0.137301f
+c_14 B 0 0.096444f
+c_19 Y 0 0.0708282f
+c_23 GND 0 0.0804266f
+*
+.include "NOR2X1.pex.netlist.NOR2X1.pxi"
+*
+.ends
+*
+*

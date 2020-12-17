@@ -1,0 +1,22 @@
+* File: LATCH.pex.netlist.LATCH.pxi
+* Created: Wed Jan  2 18:48:08 2008
+* 
+cc_1 D a_2_6# 0.027542f
+cc_2 CLK a_2_6# 0.114787f
+cc_3 a_23_6# a_2_6# 0.018493f
+cc_4 GND a_2_6# 0.119747f
+cc_5 VDD a_2_6# 0.072412f
+cc_6 Q a_2_6# 0.00936464f
+cc_7 CLK D 0.0897784f
+cc_8 a_23_6# D 9.42125e-19
+cc_9 GND D 0.012571f
+cc_10 VDD D 0.00391588f
+cc_11 a_23_6# CLK 0.0541849f
+cc_12 GND CLK 0.0157045f
+cc_13 VDD CLK 0.0154478f
+cc_14 Q CLK 0.0142705f
+cc_15 GND a_23_6# 0.0176297f
+cc_16 VDD a_23_6# 0.0350875f
+cc_17 Q a_23_6# 0.106706f
+cc_18 Q GND 0.0263118f
+cc_19 Q VDD 0.066069f

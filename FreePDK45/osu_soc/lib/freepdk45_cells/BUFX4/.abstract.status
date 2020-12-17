@@ -1,0 +1,7 @@
+cUiSelectCellP {BUFX4}
+cUiSetViewStatus {BUFX4} {layout} {1}
+cUiSetViewStatus {BUFX4} {logical} {0}
+cUiSetViewStatus {BUFX4} {abstract.pin} {3}
+cUiSetViewStatus {BUFX4} {abstract.ext} {1}
+cUiSetViewStatus {BUFX4} {abstract} {1}
+cUiSetViewStatus {BUFX4} {abstract.ver} {0}

@@ -1,0 +1,25 @@
+* File: NOR3X1.pex.netlist
+* Created: Wed Jan  2 18:53:50 2008
+* Program "Calibre xRC"
+* Version "v2007.2_34.24"
+* 
+.subckt NOR3X1  A VDD B C GND Y
+* 
+MM6 Y A GND GND NMOS_VTL L=5e-08 W=2.5e-07
+MM7 GND B Y GND NMOS_VTL L=5e-08 W=2.5e-07
+MM8 Y C GND GND NMOS_VTL L=5e-08 W=2.5e-07
+MM1 a_2_64# A VDD VDD PMOS_VTL L=5e-08 W=1.5e-06
+MM3 a_2_64# B a_25_64# VDD PMOS_VTL L=5e-08 W=1.5e-06
+MM5 a_25_64# C Y VDD PMOS_VTL L=5e-08 W=1.5e-06
+c_5 A 0 0.139787f
+c_10 VDD 0 0.143815f
+c_16 B 0 0.0941146f
+c_21 C 0 0.130836f
+c_26 GND 0 0.0877871f
+c_32 Y 0 0.118517f
+*
+.include "NOR3X1.pex.netlist.NOR3X1.pxi"
+*
+.ends
+*
+*

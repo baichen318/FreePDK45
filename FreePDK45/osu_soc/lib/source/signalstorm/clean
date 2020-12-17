@@ -1,0 +1,10 @@
+echo Cleaning up...
+rm -rf slc.log
+rm -rf sigstormlc.log
+rm -rf slc_cmd.log
+rm -rf sigstormlc.work
+rm -rf signalstorm.error
+rm -rf signalstorm.log
+rm -rf gscl45nm.ipdb
+rm -rf gscl45nm.alf
+rm -rf gscl45nm.rep

@@ -1,0 +1,25 @@
+* File: AND2X1.pex.netlist
+* Created: Wed Jan  2 18:23:33 2008
+* Program "Calibre xRC"
+* Version "v2007.2_34.24"
+* 
+.subckt AND2X1  A B VDD GND Y
+* 
+MM3 a_9_6# A a_2_6# GND NMOS_VTL L=5e-08 W=5e-07
+MM4 GND B a_9_6# GND NMOS_VTL L=5e-08 W=5e-07
+MM5 Y a_2_6# GND GND NMOS_VTL L=5e-08 W=2.5e-07
+MM0 a_2_6# A VDD VDD PMOS_VTL L=5e-08 W=5e-07
+MM1 VDD B a_2_6# VDD PMOS_VTL L=5e-08 W=5e-07
+MM2 Y a_2_6# VDD VDD PMOS_VTL L=5e-08 W=5e-07
+c_5 A 0 0.103545f
+c_10 B 0 0.0927726f
+c_16 a_2_6# 0 0.166441f
+c_21 VDD 0 0.141663f
+c_26 GND 0 0.127034f
+c_30 Y 0 0.0559375f
+*
+.include "AND2X1.pex.netlist.AND2X1.pxi"
+*
+.ends
+*
+*

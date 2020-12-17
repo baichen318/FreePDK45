@@ -1,0 +1,29 @@
+* File: TBUFX2.pex.netlist
+* Created: Wed Jan  2 19:00:28 2008
+* Program "Calibre xRC"
+* Version "v2007.2_34.24"
+* 
+.subckt TBUFX2  EN Y A GND VDD
+* 
+MM5 a_9_6# EN GND GND NMOS_VTL L=5e-08 W=5e-07
+MM8 a_18_6#__2 A GND GND NMOS_VTL L=5e-08 W=5e-07
+MM6 a_18_6#__2 EN Y GND NMOS_VTL L=5e-08 W=5e-07
+MM7 a_18_6# EN Y GND NMOS_VTL L=5e-08 W=5e-07
+MM9 a_18_6# A GND GND NMOS_VTL L=5e-08 W=5e-07
+MM0 a_9_6# EN VDD VDD PMOS_VTL L=5e-08 W=1e-06
+MM3 a_18_54#__2 A VDD VDD PMOS_VTL L=5e-08 W=1e-06
+MM1 a_18_54#__2 a_9_6# Y VDD PMOS_VTL L=5e-08 W=1e-06
+MM2 a_18_54# a_9_6# Y VDD PMOS_VTL L=5e-08 W=1e-06
+MM4 a_18_54# A VDD VDD PMOS_VTL L=5e-08 W=1e-06
+c_6 EN 0 0.207528f
+c_12 a_9_6# 0 0.194903f
+c_17 Y 0 0.0640995f
+c_23 A 0 0.247217f
+c_28 GND 0 0.134249f
+c_34 VDD 0 0.170782f
+*
+.include "TBUFX2.pex.netlist.TBUFX2.pxi"
+*
+.ends
+*
+*

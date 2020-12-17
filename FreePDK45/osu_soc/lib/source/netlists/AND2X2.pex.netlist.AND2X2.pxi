@@ -1,0 +1,16 @@
+* File: AND2X2.pex.netlist.AND2X2.pxi
+* Created: Wed Jan  2 18:24:48 2008
+* 
+cc_1 a_2_6# A 0.0510838f
+cc_2 B A 0.0433521f
+cc_3 GND A 0.00177662f
+cc_4 VDD A 0.0106877f
+cc_5 B a_2_6# 0.0985019f
+cc_6 GND a_2_6# 0.0509479f
+cc_7 VDD a_2_6# 0.125663f
+cc_8 Y a_2_6# 0.0505764f
+cc_9 GND B 0.00646913f
+cc_10 VDD B 0.00732661f
+cc_11 Y B 0.00996647f
+cc_12 Y GND 0.0242878f
+cc_13 Y VDD 0.0341879f

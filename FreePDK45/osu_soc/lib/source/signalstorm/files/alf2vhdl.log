@@ -1,0 +1,142 @@
+------------------------------------------------------------------------
+SignalStorm - LC/DC - Version v04.10-s042_1 32-bit (10/22/2004 20:42:41)
+------------------------------------------------------------------------
+[2000-2004] Cadence Design Systems, Inc. All rights reserved.
+This work may not be copied, modified, re-published, uploaded, executed, or
+distributed in any way, in any medium, whether in whole or in part, without
+prior written permission from Cadence Design Systems, Inc.
+Checked out license : SignalStorm_Lib_Characterizer
+Convert: "gscl45nm.alf" (ALF) ==> "gscl45nm.vhdl" (VHDL)
+
+Library: gscl45nm
+---------------------------------------------------------------
+CELL AND2X1:
+  now reading
+  now converting
+  ***** successful *****
+CELL AND2X2:
+  now reading
+  now converting
+  ***** successful *****
+CELL AOI21X1:
+  now reading
+  now converting
+  ***** successful *****
+CELL AOI22X1:
+  now reading
+  now converting
+  ***** successful *****
+CELL BUFX2:
+  now reading
+  now converting
+  ***** successful *****
+CELL BUFX4:
+  now reading
+  now converting
+  ***** successful *****
+CELL CLKBUF1:
+  now reading
+  now converting
+  ***** successful *****
+CELL CLKBUF2:
+  now reading
+  now converting
+  ***** successful *****
+CELL CLKBUF3:
+  now reading
+  now converting
+  ***** successful *****
+CELL DFFNEGX1:
+  now reading
+  now converting
+  ***** successful *****
+CELL DFFPOSX1:
+  now reading
+  now converting
+  ***** successful *****
+CELL DFFSR:
+  now reading
+  now converting
+  ***** successful *****
+CELL FAX1:
+  now reading
+  now converting
+  ***** successful *****
+CELL HAX1:
+  now reading
+  now converting
+  ***** successful *****
+CELL INVX1:
+  now reading
+  now converting
+  ***** successful *****
+CELL INVX2:
+  now reading
+  now converting
+  ***** successful *****
+CELL INVX4:
+  now reading
+  now converting
+  ***** successful *****
+CELL INVX8:
+  now reading
+  now converting
+  ***** successful *****
+CELL LATCH:
+  now reading
+  now converting
+  ***** successful *****
+CELL MUX2X1:
+  now reading
+  now converting
+  ***** successful *****
+CELL NAND2X1:
+  now reading
+  now converting
+  ***** successful *****
+CELL NAND3X1:
+  now reading
+  now converting
+  ***** successful *****
+CELL NOR2X1:
+  now reading
+  now converting
+  ***** successful *****
+CELL NOR3X1:
+  now reading
+  now converting
+  ***** successful *****
+CELL OAI21X1:
+  now reading
+  now converting
+  ***** successful *****
+CELL OAI22X1:
+  now reading
+  now converting
+  ***** successful *****
+CELL OR2X1:
+  now reading
+  now converting
+  ***** successful *****
+CELL OR2X2:
+  now reading
+  now converting
+  ***** successful *****
+CELL TBUFX1:
+  now reading
+  now converting
+  ***** successful *****
+CELL TBUFX2:
+  now reading
+  now converting
+  ***** successful *****
+CELL XNOR2X1:
+  now reading
+  now converting
+  ***** successful *****
+CELL XOR2X1:
+  now reading
+  now converting
+  ***** successful *****
+---
+Total : 32 cells ( successful : 32  failed : 0 )

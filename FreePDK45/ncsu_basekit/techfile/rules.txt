@@ -1,0 +1,66 @@
+RuleNo	RuleType	Desc	Type	Layers	Value	Rel	Layers2	Extra	DerLayerName
+Well	com				Well Rules				
+Well.1	saveDerived	no overlap	geomAnd	nwell			pwell		
+Well.2	drc	min spacing	sep	"nwell,pwell"	0.225	<			
+Well.3	com	min spacing	sep	"nwell,pwell"	0.135	<		sameNet	
+Well.4	drc	min width	width	"nwell,pwell"	0.2	<			
+Vt	com				Vt Adjust Rules				
+Vt.1	saveDerived	adjust must coincide with	geomAndNot	vt			well		
+Vt.2	saveDerived	adjust must coincide with	geomStraddle	vt			well		
+Vt.3	saveDerived	adjust must coincide with	geomStraddle	well			vt		
+Poly	com				Poly Rules				
+Poly.1	drc	min width	width	poly	0.05	<			
+Poly.2	drc	min spacing over active	sep	gate	0.14	<			
+Poly.3	drc	min extension past	enc	polyEdge	0.05	<	activeEdge		
+Poly.4	drc	min enclosure of	enc	active	0.07	<	poly		
+Poly.5	drc	min spacing to	sep	poly	0.05	<	active		
+Poly.6	drc	min spacing	sep	fieldpoly	0.05	<	
+Active	com				Active Rules		
+Active.1	drc	min width	width	active	0.09	<	
+Active.2	drc	min spacing	sep	active	0.08	<	
+Active.3	drc	min enclosure of	enc	"nwell,pwell"	0.055	<	"active,active"
+Active.4	saveDerived		geomAndNot	active		<	well
+Implant	com				Implant Rules		
+Implant.1	drc	min spacing to	sep	implant	0.07	<	gate
+Implant.2	drc	min spacing to	sep	implant	0.025	<	contact
+Implant.3	drc	min spacing	sep	implant	0.045	<	
+Contact	com				Contact Rules		
+Contact.1	drc	min width	width	contact	0.065	<	
+Contact.2	drc	min spacing	sep	contact	0.075	<	
+Contact.3	saveDerived	not inside	geomAndNot	contact			geomOr( active poly metal1 )
+Contact.4	drc	min active enclosure around contact	enc	active	0.005	<	contact
+Contact.5	drc	min poly enclosure around contact	enc	poly	0.005	<	contact
+Contact.6	drc	min spacing to	sep	contact	0.035	<	gate
+Contact.7	com	min spacing to	sep	contact	0.09	<	fieldpoly
+Metal1	com				Metal1 Rules		
+Metal1.1	drc	min width	width	metal1	0.065	<	
+Metal1.2	drc	min spacing	sep	metal1	0.065	<	
+Metal1.3	saveDerived	must be covered by	geomStraddle	contact			metal1
+Metal1.4	drc	min area	area	metal1	0.00845	<	
+Metal2	com				MetalInt Rules		
+Metal2.1	drc	min width	width	metal2	0.07	<	
+Metal2.2	drc	min spacing	sep	metal2	0.07	<	
+Metal3	com				MetalInt Rules		
+Metal3.1	drc	min width	width	metal3	0.07	<	
+Metal3.2	drc	min spacing	sep	metal3	0.07	<	
+Metal4	com				MetalSMG Rules		
+Metal4.1	drc	min width	width	metal4	0.14	<	
+Metal4.2	drc	min spacing	sep	metal4	0.14	<	
+Metal5	com				MetalSMG Rules	
+Metal5.1	drc	min width	width	metal5	0.14	<
+Metal5.2	drc	min spacing	sep	metal5	0.14	<
+Metal6	com				MetalSMG Rules	
+Metal6.1	drc	min width	width	metal6	0.14	<
+Metal6.2	drc	min spacing	sep	metal6	0.14	<
+Metal7	com				MetalTNG Rules	
+Metal7.1	drc	min width	width	metal7	0.4	<
+Metal7.2	drc	min spacing	sep	metal7	0.4	<
+Metal8	com				MetalTNG Rules	
+Metal8.1	drc	min width	width	metal8	0.4	<
+Metal8.2	drc	min spacing	sep	metal8	0.4	<
+Metal9	com				MetalG Rules	
+Metal9.1	drc	min width	width	metal9	0.8	<
+Metal9.2	drc	min spacing	sep	metal9	0.8	<
+Metal10	com				MetalG Rules	
+Metal10.1	drc	min width	width	metal10	0.8	<
+Metal10.2	drc	min spacing	sep	metal10	0.8	<

@@ -1,0 +1,49 @@
+#!/bin/awk -f
+# Read area information from an area file
+# and insert in .lib file that is streamed in
+#
+# invoke as
+# mergeara -v "areafile=filename.area" file.lib > filenew.lib
+#
+# Johannes Grad, IIT
+#
+
+
+# Create arrays with cellnames and cell area
+# from the specified file
+function getCellInfo(cellnames,area){
+  i=1;
+  while((getline var < areafile)>0){
+    split(var, cellinfo, " ");
+    cellnames[i]=cellinfo[1];
+    cellarea[i]=cellinfo[2];
+    i=i+1;
+  }
+  return i-1;
+}
+
+function getArea(cellname,cellnames,cellarea){
+  i=1;
+  while(i<10000)
+    if(cellnames[i]==cellname) return cellarea[i]; else i++;
+}
+
+BEGIN {
+  cellnames[1]="Test";
+  cellarea[1]=20;
+  count=getCellInfo(cellnames,cellarea);
+}
+
+{
+  if ($1 == "cell"){
+    cellname=substr($2,2,length($2)-2);
+    area=getArea(cellname,cellnames,cellarea);
+    print $0
+  }
+  else
+    if ($1 == "area"){
+      printf("area : %f;\n",area);
+    }
+    else 
+      print $0;
+}

@@ -1,0 +1,15 @@
+cUiAddMessageView {DFFNEGX1} {abstract.pin} {514} {(ABS-514): Cell DFFNEGX1: the prBoundary has been created successfully.}
+cUiAddMessageView {DFFNEGX1} {abstract.pin} {515} {(ABS-515): Cell DFFNEGX1: the prBoundary does not enclose all cellview geometries. This is because not all layers with geometry for calculating prBoundary have been specified in the "Using geometry on layers" field on the "Blocks" tab. Ensure that all the required layers have been specified in this field.}
+cUiAddMessageView {DFFNEGX1} {abstract.pin} {505} {(ABS-505): Cell DFFNEGX1:the pin CLK has been created for the label CLK at (4310,4250).}
+cUiAddMessageView {DFFNEGX1} {abstract.pin} {505} {(ABS-505): Cell DFFNEGX1:the pin D has been created for the label D at (5320,2210).}
+cUiAddMessageView {DFFNEGX1} {abstract.pin} {505} {(ABS-505): Cell DFFNEGX1:the pin Q has been created for the label Q at (195,2610).}
+cUiAddMessageView {DFFNEGX1} {abstract.pin} {505} {(ABS-505): Cell DFFNEGX1:the pin gnd has been created for the label gnd at (2745,880).}
+cUiAddMessageView {DFFNEGX1} {abstract.pin} {505} {(ABS-505): Cell DFFNEGX1:the pin vdd has been created for the label vdd at (2745,4450).}
+cUiAddMessageView {DFFNEGX1} {abstract.pin} {503} {(ABS-503): Cell DFFNEGX1: 5 pins have been created.}
+cUiAddMessageView {DFFNEGX1} {abstract.ext} {602} {(ABS-602): Cell DFFNEGX1: extracting 5 nets}
+cUiAddMessageView {DFFNEGX1} {abstract.ext} {604} {(ABS-604): Cell DFFNEGX1: extracting the net CLK, 1 of 5.}
+cUiAddMessageView {DFFNEGX1} {abstract.ext} {604} {(ABS-604): Cell DFFNEGX1: extracting the net D, 2 of 5.}
+cUiAddMessageView {DFFNEGX1} {abstract.ext} {604} {(ABS-604): Cell DFFNEGX1: extracting the net Q, 3 of 5.}
+cUiAddMessageView {DFFNEGX1} {abstract.ext} {605} {(ABS-605): Cell DFFNEGX1: using preset pins on the net gnd, 4 of 5.}
+cUiAddMessageView {DFFNEGX1} {abstract.ext} {605} {(ABS-605): Cell DFFNEGX1: using preset pins on the net vdd, 5 of 5.}
+cUiAddMessageView {DFFNEGX1} {abstract} {914} {(ABS-914): Cell DFFNEGX1: predefined site CoreSite will be used}

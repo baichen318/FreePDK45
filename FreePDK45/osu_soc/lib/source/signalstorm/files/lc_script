@@ -1,0 +1,10 @@
+/* Compile Script for Synopsys            */
+/* Johannes Grad, IIT                     */
+/******************************************/
+
+read_lib gscl45nm.lib
+write_lib gscl45nm
+quit
+
+
+

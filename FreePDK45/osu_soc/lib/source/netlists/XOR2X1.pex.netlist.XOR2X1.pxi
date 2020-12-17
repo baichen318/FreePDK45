@@ -1,0 +1,21 @@
+* File: XOR2X1.pex.netlist.XOR2X1.pxi
+* Created: Wed Jan  2 19:04:36 2008
+* 
+cc_1 Y B 0.00466903f
+cc_2 a_13_43# B 0.0742195f
+cc_3 GND B 0.0225754f
+cc_4 VDD B 0.0249261f
+cc_5 A B 0.0249138f
+cc_6 a_2_6# B 0.0342788f
+cc_7 a_13_43# Y 0.0389808f
+cc_8 A Y 0.24282f
+cc_9 a_2_6# Y 0.0367231f
+cc_10 GND a_13_43# 0.100459f
+cc_11 VDD a_13_43# 0.111193f
+cc_12 A a_13_43# 0.118296f
+cc_13 a_2_6# a_13_43# 0.0297622f
+cc_14 A GND 0.0815039f
+cc_15 a_2_6# GND 0.0144129f
+cc_16 A VDD 0.0157042f
+cc_17 a_2_6# VDD 0.021718f
+cc_18 a_2_6# A 0.193503f

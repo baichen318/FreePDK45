@@ -1,0 +1,17 @@
+cUiAddMessageView {OAI21X1} {abstract.pin} {514} {(ABS-514): Cell OAI21X1: the prBoundary has been created successfully.}
+cUiAddMessageView {OAI21X1} {abstract.pin} {515} {(ABS-515): Cell OAI21X1: the prBoundary does not enclose all cellview geometries. This is because not all layers with geometry for calculating prBoundary have been specified in the "Using geometry on layers" field on the "Blocks" tab. Ensure that all the required layers have been specified in this field.}
+cUiAddMessageView {OAI21X1} {abstract.pin} {505} {(ABS-505): Cell OAI21X1:the pin A has been created for the label A at (425,2210).}
+cUiAddMessageView {OAI21X1} {abstract.pin} {505} {(ABS-505): Cell OAI21X1:the pin B has been created for the label B at (775,2210).}
+cUiAddMessageView {OAI21X1} {abstract.pin} {505} {(ABS-505): Cell OAI21X1:the pin C has been created for the label C at (1460,2270).}
+cUiAddMessageView {OAI21X1} {abstract.pin} {505} {(ABS-505): Cell OAI21X1:the pin Y has been created for the label Y at (1220,1975).}
+cUiAddMessageView {OAI21X1} {abstract.pin} {505} {(ABS-505): Cell OAI21X1:the pin gnd has been created for the label gnd at (680,810).}
+cUiAddMessageView {OAI21X1} {abstract.pin} {505} {(ABS-505): Cell OAI21X1:the pin vdd has been created for the label vdd at (1440,3670).}
+cUiAddMessageView {OAI21X1} {abstract.pin} {503} {(ABS-503): Cell OAI21X1: 6 pins have been created.}
+cUiAddMessageView {OAI21X1} {abstract.ext} {602} {(ABS-602): Cell OAI21X1: extracting 6 nets}
+cUiAddMessageView {OAI21X1} {abstract.ext} {604} {(ABS-604): Cell OAI21X1: extracting the net A, 1 of 6.}
+cUiAddMessageView {OAI21X1} {abstract.ext} {604} {(ABS-604): Cell OAI21X1: extracting the net B, 2 of 6.}
+cUiAddMessageView {OAI21X1} {abstract.ext} {604} {(ABS-604): Cell OAI21X1: extracting the net C, 3 of 6.}
+cUiAddMessageView {OAI21X1} {abstract.ext} {604} {(ABS-604): Cell OAI21X1: extracting the net Y, 4 of 6.}
+cUiAddMessageView {OAI21X1} {abstract.ext} {605} {(ABS-605): Cell OAI21X1: using preset pins on the net gnd, 5 of 6.}
+cUiAddMessageView {OAI21X1} {abstract.ext} {605} {(ABS-605): Cell OAI21X1: using preset pins on the net vdd, 6 of 6.}
+cUiAddMessageView {OAI21X1} {abstract} {914} {(ABS-914): Cell OAI21X1: predefined site CoreSite will be used}

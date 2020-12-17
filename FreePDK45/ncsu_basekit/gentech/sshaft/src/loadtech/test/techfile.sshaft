@@ -1,0 +1,216 @@
+# SSHAFT Technology File
+# created 8/12/04 by Rhett Davis
+#
+
+
+SSHAFT_HOME = 			/mlah/mloh/mlee
+MDLLIB =			$SSHAFT_HOME/dist/lib/icmake/mdl/R11
+
+namespace Sshaft {
+  SshaftTechDir =			$::SSHAFT_HOME/dist/tech/TSMC_CMOS020
+  namespace Cds {
+    SshaftCdsLibTemplate =		$::Sshaft::SshaftTechDir/cds.lib
+    SshaftCdsinitTemplate =		$::Sshaft::SshaftTechDir/cdsinit
+    SshaftOaLibTemplate =		$::Sshaft::SshaftTechDir/cds.lib.oa
+    SshaftCdsEtcDir = 		/tools/cds99/IC445/tools/dfII/etc
+  }
+  SshaftSynDCSetupTemplate =	$SshaftTechDir/synopsys_dc.setup
+  SshaftPdpLocalDPUXTemplate =	$SshaftTechDir/local.dpux
+  SshaftPdpHldLocalTemplate =	$SshaftTechDir/hldLocal.cl
+  SshaftPdpLibDirPrefix =		../../data/pillar
+  SshaftSynMCEnvTemplate = 	$SshaftTechDir/mc.env
+  SshaftGlobalSupplyNetName = 	vdd!
+  SshaftGlobalGroundNetName =	gnd!
+  SshaftSiGlobalMapFile = 	run/si/ihnl/globalmap
+  SshaftArcadiaRCControlFile = 	$SshaftTechDir/verify/rc_ctrl
+  SshaftArcadiaNetlisterControlFile = 	$SshaftTechDir/verify/netlister_ctrl
+  SshaftSynTechDir = 		/tools/vendor/tech/synopsys
+  SshaftEpicModelDir =		/tools/vendor/tech/epic
+  SshaftArcadiaEmpDir = 		/tools/vendor/tech/arcadia
+  SshaftLocalLibDir =		/tools/local/tech/TMPL025
+}
+
+IitStdcellDir =			/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/iit/iit_stdcells/tsmc018
+
+CdsDir =			/tools/cds/IC445
+CdsEdifInProg =			$CdsDir/tools/dfII/bin/edifin
+CdsTechLib =			tmpl025
+CdsNcsuCdkTechData = 		TSMC_CMOS020
+CdsVerilogInRefLibs = 		IIT_stdcells_tsmc018, basic
+CdsEncounterGDSLayerTable =	$IitStdcellDir/main/gds2_icfb.map
+CdsEncounterGDSRefLibs =	IIT_stdcells_tsmc018 NCSU_TechLib_tsmc02
+
+EncounterCellLibrary =		
+EncounterTimingLibrary = 	$IitStdcellDir/main/iit018_stdcells.tlf
+EncounterTechFile =		
+EncounterLefFile = 		$IitStdcellDir/main/iit018_stdcells.lef
+
+EpicNetlistMOSReplacePairs = 	(nmos n) (nmos4 n) (pmos p) (pmos4 p)
+EpicPathMillSinkNodePairs = 
++ (fd1ll m1) (fd1llp m1) (fd1qll m1) (fd1qllp m1) (fd1qllx4 m1)
++ (fd1sll m1) (fd1sllp m1) (fd1sqll m1) (fd1sqllp m1) (fd1sqllx4 m1)
++ (fd1tll m1) (fd1tllp m1) (fd1tqll m1) (fd1tqllp m1) (fd1tqllx4 m1)
++ (f_fd1ll mn) (f_fd1llp mn) (f_fd1qll mn) (f_fd1qllp mn) (f_fd1qllx4 mn)
++ (f_fd1sll mn) (f_fd1sllp mn) (f_fd1sqll mn) (f_fd1sqllp mn) (f_fd1sqllx4 mn)
+
+ElaborateTypes =		
++   ( "fundamental.Add" 
++     ( "1" skill_step bjcVHDLSynth( ?gen "vhdGenAdd.pl" ?entity "Add" ) )
++   )
++   ( "fundamental.Sub" 
++     ( "1" skill_step bjcVHDLSynth( ?gen "vhdGenSub.pl" ?entity "Sub" ) )
++   )
++   ( "fundamental.MUX" 
++     ( "1" skill_step bjcVHDLSynth( ?gen "vhdGenMUX.pl" ?entity "MUX" ) )
++     ( "2" skill_step bjcVHDLSynth( ?gen "vhdGenMUX.pl" ?entity "MUX" ) )
++   )
++   ( "fundamental.Reg" 
++     ( "1" skill_step 
++       bjcVHDLSynth( ?gen "vhdGenReg.pl" ?entity "Reg" ?clk "BCLK" ) 
++     )
++   )
++   ( "fundamental.AND" 
++     ( "1" skill_step bjcMakeSingleGate( ?type "AND" ) )
++   )
++   ( "fundamental.NAND" 
++     ( "1" skill_step bjcMakeSingleGate( ?type "NAND" ) )
++   )
++   ( "fundamental.OR" 
++     ( "1" skill_step bjcMakeSingleGate( ?type "OR" ) )
++   )
++   ( "fundamental.NOR" 
++     ( "1" skill_step bjcMakeSingleGate( ?type "NOR" ) )
++   )
++   ( "fundamental.XOR" 
++     ( "1" skill_step bjcMakeSingleGate( ?type "XOR" ) )
++   )
++   ( "fundamental.XNOR" 
++     ( "1" skill_step bjcMakeSingleGate( ?type "XNOR" ) )
++   )
++   ( "fundamental.NOT" 
++     ( "1" skill_step bjcMakeSingleGate( ?type "NOT" ) )
++   )
+ElaborateStateflowTopResetPort = 	SFRESET
+ElaborateStateflowGlobalResetNet = 	SFRESET!
+ElaborateStateflowResetPort =		SFRESET
+ElaborateStateflowClockPort = 		BCLK
+ElaborateSingleGateLib =		CORELIB
+ElaborateSingleGateAndCell =		AND2
+ElaborateSingleGateNandCell =		NAND2
+ElaborateSingleGateOrCell =		OR2
+ElaborateSingleGateNorCell =		NOR2
+ElaborateSingleGateXorCell =		XOR
+ElaborateSingleGateXnorCell =		XNOR
+ElaborateSingleGateNotCell =		INV
+
+
+StitchTopScanInPort =			SI
+StitchTopScanOutPort =			SO
+StitchTopScanEnablePort = 		SEN
+StitchScanEnableGlobalNetName =		SEN!
+
+LogicCTGenTopClockPortName =		ClkPri
+LogicCTGenTopClockNetName =		ClkPri
+LogicCTGenSecClockNetPrefix =		ClkSec
+LogicCTGenClockGaterPrefix =		lctgEN
+
+PhysCTGenClockGaterLib =		SYNTHLIB
+PhysCTGenClockGaterCell =		CLKBUF
+PhysCTGenClockGaterENPort =		E
+PhysCTGenClockGaterSENPort =		SE
+PhysCTGenClockGaterICLKPort =		CK
+PhysCTGenClockGaterOCLKPort =		G
+PhysCTGenTreeDrTechfile = 		$Sshaft::SshaftTechDir/techfile.tdr
+PhysCTGenTopClockNetPrefix =		tdrClkPri
+PhysCTGenTopClockBufferPrefix =		tdrClkPri
+PhysCTGenSecClockNetPrefix =		tdrClkSec
+PhysCTGenSecClockBufferPrefix =		tdrClkSec 
+
+FloorplanPRBoundaryLayerName =		prBoundary
+FloorplanPRBoundaryLayerPurpose =	boundary
+FloorplanPinLayerPurpose =		pin
+FloorplanPinLabelPurpose =		pintext
+FloorplanPinTBLayerName =		metal3
+FloorplanPinLRLayerName =		metal4
+FloorplanStdCellSiteX =			1.08
+FloorplanStdCellSiteY =			10.8
+FloorplanStdCellSiteName =		CORE
+FloorplanPinDim = 			0.6
+FloorplanMinGrid =			0.06
+FloorplanViaNames = 			M2_M1 M3_M2 M4_M3 M5_M4 M6_M5
+FloorplanFillercellLibrary =            SYNTHLIB
+FloorplanFillercells =			FILLERCELL16 FILLERCELL8 FILLERCELL4
++  FILLERCELL2 FILLERCELL
+FloorplanIOCellSiteName =		IOPADSITE
+FloorplanIOFillercellLibrary =		IOLIB
+FloorplanIOFillercells = 		IOFILLER32 IOFILLER16 IOFILLER8
++ IOFILLER4 IOFILLER2 IOFILLER1
+FloorplanIOCornercell =			CORNER
+FloorplanICCBoundaryClearance =		0.2
+FloorplanICCLayers = 			( metal1 0.6 0.48 ) ( metal2 0.6 0.48 ) 
++					( metal3 0.6 0.48 ) ( metal4 0.6 0.48 )
++					( metal5 1.2 1.2 ) ( metal6 1.2 1.2 )
+FloorplanAbgenRules =			$Sshaft::SshaftTechDir/abgen.rul
+FloorplanAbgenObstructionPurpose = 	boundary
+FloorplanPadRingGlobalNets =		gndsub! vdd3! vdd5!
+
+VerifyGDS2LayerTable =			/tools/vendor/tech/gds2_layer_map
+VerifyCalibreDRCRuleFile =		$Sshaft::SshaftLocalLibDir/verify/calibre_drc.rules
+VerifyCalibreDRCControlFile =		$Sshaft::SshaftTechDir/verify/drc.ctrl
+VerifyCalibreLVSRuleFile = 		$Sshaft::SshaftLocalLibDir/verify/calibre_lvs.rules
+VerifyCalibreLVSControlFile =		$Sshaft::SshaftTechDir/verify/lvs.ctrl
+VerifyCalibreExtractLVSRuleFile =	$Sshaft::SshaftLocalLibDir/verify/calibre_arcadia_lvs.rules
+VerifyCalibreExtractLVSControlFile =	$Sshaft::SshaftTechDir/verify/ext_lvs.ctrl
+VerifyArcadiaTechfile = 		$Sshaft::SshaftLocalLibDir/verify/arcadia.tech
+VerifyNetlistMOSReplacePairs = 		(nmos n) (nmos4 n) (pmos p) (pmos4 p)
+
+VerifySpectreModelReplacePairs =	(n NMOS) (p PMOS)
+VerifySpectreModelFile = 		$Sshaft::SshaftTechDir/tmpl025.scs
+VerifySpectreQuantityFile = 		/tools/cds/IC443/tools/dfII/samples/artist/ahdlLib/quantity.spectre
+
+# Techfile parser tests
+# test1 = "a b c"
+test1 = 			a b c  
+# test2 = "a b c"
+test2 =				a b
++				c
+# test3 = "a b c"
+ test3 =			a 
+				+ b c 
+# test4 = "a b c"
+test4=				a
+				+ b c
+# test5 = "a b c"
+test5 =				$test1
+# test6 = "aa b cc"
+ test6=				a${test1}c
+# test7 = "a $ c"
+test7 = 			a $$ c
+# test8 = "a ${} c"
+test8 =				a $${} c
+# test9 = "a a b c.c"
+test9 = 			a $test1.c
+# test10 = ""
+test10 =
+# test11 = "/ncsu/wdavis/mlah"
+test11 =			$HOME/mlah
+# test12 = "$HOME/mlah"
+test12 =			$$HOME/mlah
+# test13 = "a $ { }  {} ${}"
+test13 = 			a $$ { }  {} $${} 
+namespace test {
+  # test1 = "a a b c.c" (test1 in root namespace)
+  test1 = 			a $::test1.c
+  # test2 = "a a a b c.c.c" (test1 in current namespace)
+  test2 = 			a $test1.c
+  namespace test {
+    # test1 = "a a a b c.c.c" (test1 in ::test namespace)
+    test1 = 			a $::test::test1.c
+    # test2 = "a a b c.c" (test1 in root namespace)
+    test2 = 			a $::test1.c
+    # test3 = "a a a a b c.c.c.c" (test1 in current namespace)
+    test3 = 			a $test1.c
+  }
+}
+#test14 = "a a a a b c.c.c.c"
+test14 = 			a $test::test::test1.c

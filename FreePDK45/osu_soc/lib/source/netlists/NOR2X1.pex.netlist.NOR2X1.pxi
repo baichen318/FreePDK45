@@ -1,0 +1,12 @@
+* File: NOR2X1.pex.netlist.NOR2X1.pxi
+* Created: Wed Jan  2 18:52:38 2008
+* 
+cc_1 VDD A 0.0286873f
+cc_2 B A 0.0424093f
+cc_3 Y A 0.0283747f
+cc_4 GND A 0.0218786f
+cc_5 B VDD 0.0012073f
+cc_6 Y VDD 0.0230653f
+cc_7 Y B 0.0642447f
+cc_8 GND B 0.0216323f
+cc_9 GND Y 0.0537983f

@@ -1,0 +1,40 @@
+------------------------------------------------------------------------
+SignalStorm - LC/DC - Version v04.10-s042_1 32-bit (10/22/2004 20:42:23)
+------------------------------------------------------------------------
+[2000-2004] Cadence Design Systems, Inc. All rights reserved.
+This work may not be copied, modified, re-published, uploaded, executed, or
+distributed in any way, in any medium, whether in whole or in part, without
+prior written permission from Cadence Design Systems, Inc.
+
+Cell: AND2X1          Cell Type: Combination
+Cell: AND2X2          Cell Type: Combination
+Cell: AOI21X1         Cell Type: Combination
+Cell: AOI22X1         Cell Type: Combination
+Cell: BUFX2           Cell Type: Combination
+Cell: BUFX4           Cell Type: Combination
+Cell: CLKBUF1         Cell Type: Combination
+Cell: CLKBUF2         Cell Type: Combination
+Cell: CLKBUF3         Cell Type: Combination
+Cell: DFFNEGX1        Cell Type: Sequential
+Cell: DFFPOSX1        Cell Type: Sequential
+Cell: DFFSR           Cell Type: Sequential
+Cell: FAX1            Cell Type: Combination
+Cell: HAX1            Cell Type: Combination
+Cell: INVX1           Cell Type: Combination
+Cell: INVX2           Cell Type: Combination
+Cell: INVX4           Cell Type: Combination
+Cell: INVX8           Cell Type: Combination
+Cell: LATCH           Cell Type: Sequential
+Cell: MUX2X1          Cell Type: Combination
+Cell: NAND2X1         Cell Type: Combination
+Cell: NAND3X1         Cell Type: Combination
+Cell: NOR2X1          Cell Type: Combination
+Cell: NOR3X1          Cell Type: Combination
+Cell: OAI21X1         Cell Type: Combination
+Cell: OAI22X1         Cell Type: Combination
+Cell: OR2X1           Cell Type: Combination
+Cell: OR2X2           Cell Type: Combination
+Cell: TBUFX1          Cell Type: Combination
+Cell: TBUFX2          Cell Type: Combination
+Cell: XNOR2X1         Cell Type: Combination
+Cell: XOR2X1          Cell Type: Combination

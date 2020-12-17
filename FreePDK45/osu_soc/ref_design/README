@@ -1,0 +1,53 @@
+FreePDK Standard Cell library
+
+Author: Ivan Castellanos
+e-mail: ivan.castellanos@okstate.edu
+
+The purpose of this design is to showcase the FreePDK 45nm Standard
+Cell library.
+
+Two main steps are necessary: Synthesis and Place & Route.
+All steps are script based and therefore mostly automatic.
+___________________________________________
+
+Three different programs can be used for Synthesis: Cadence's BuildGates,
+RTL Compiler and Synopsys Design Compiler
+
+The HDL files of the design are found inside the Synthesis folder. The
+script file used by Build Gates for synthesis is compile_bgx.scr. The
+script for RTL Compiler is rc.tcl and for Synopsys Design Compiler
+compile_dc.tcl.
+The output files we need from Synthesis are .sdc and .vh
+
+To run Synthesis through BuildGates type:
+
+> bgx_shell -f compile_bgx.scr
+
+To run Synthesis through RTL Compiler type:
+
+> rc < rc.tcl
+
+To run Synthesis through Design Compiler type:
+
+> dc_shell-t -f compile_dc.tcl
+___________________________________________
+
+The second step is Place & Route. Copy the .vh and .sdc files from the
+Synthesis folder into the Encounter folder.
+The script files for Encounter are encounter.conf and
+encounter.tcl. Encounter will output a .gds file with the resulting layout.
+
+To run Place & Route type:
+
+> encounter -init encounter.tcl
+___________________________________________
+
+In order to run your own design the scripts should be modified very slightly
+to tell the tools the name of your design, main module, etc.
+
+Edit the following files as shown inside each one:
+
+encounter.conf, encounter.tcl and compile_bgx.scr or
+compile_dc.tcl or rc.tcl.
+
+Replace the hdl files in the Synthesis folder with your own.

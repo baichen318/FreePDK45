@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      icastel
+HostName                       starsha.ecen.okstate.edu
+ProcessIdentifier              1006
+ProcessCreationTime_UTC        0
+ProcessCreationTime_Readable   Wed Dec 31 18:00:00 1969 CST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/icastel/work/freepdk/virtuoso2/gscl45nm/LATCH/layout/layout.oa.cdslck
+TimeEditLocked                 Wed Jan  2 18:46:39 2008 CST

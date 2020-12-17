@@ -1,0 +1,22 @@
+* File: BUFX2.pex.netlist
+* Created: Wed Jan  2 18:28:41 2008
+* Program "Calibre xRC"
+* Version "v2007.2_34.24"
+* 
+.subckt BUFX2  Y GND VDD A
+* 
+MM3 Y a_2_6# GND GND NMOS_VTL L=5e-08 W=5e-07
+MM2 GND A a_2_6# GND NMOS_VTL L=5e-08 W=2.5e-07
+MM1 Y a_2_6# VDD VDD PMOS_VTL L=5e-08 W=1e-06
+MM0 VDD A a_2_6# VDD PMOS_VTL L=5e-08 W=5e-07
+c_4 Y 0 0.117784f
+c_8 GND 0 0.0661014f
+c_12 VDD 0 0.0922986f
+c_16 A 0 0.0837548f
+c_21 a_2_6# 0 0.240126f
+*
+.include "BUFX2.pex.netlist.BUFX2.pxi"
+*
+.ends
+*
+*

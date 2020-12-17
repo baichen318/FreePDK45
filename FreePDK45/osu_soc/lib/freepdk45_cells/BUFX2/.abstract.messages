@@ -1,0 +1,13 @@
+cUiAddMessageView {BUFX2} {abstract.pin} {514} {(ABS-514): Cell BUFX2: the prBoundary has been created successfully.}
+cUiAddMessageView {BUFX2} {abstract.pin} {515} {(ABS-515): Cell BUFX2: the prBoundary does not enclose all cellview geometries. This is because not all layers with geometry for calculating prBoundary have been specified in the "Using geometry on layers" field on the "Blocks" tab. Ensure that all the required layers have been specified in this field.}
+cUiAddMessageView {BUFX2} {abstract.pin} {505} {(ABS-505): Cell BUFX2:the pin A has been created for the label A at (1175,1930).}
+cUiAddMessageView {BUFX2} {abstract.pin} {505} {(ABS-505): Cell BUFX2:the pin Y has been created for the label Y at (260,2365).}
+cUiAddMessageView {BUFX2} {abstract.pin} {505} {(ABS-505): Cell BUFX2:the pin gnd has been created for the label gnd at (760,640).}
+cUiAddMessageView {BUFX2} {abstract.pin} {505} {(ABS-505): Cell BUFX2:the pin vdd has been created for the label vdd at (760,3760).}
+cUiAddMessageView {BUFX2} {abstract.pin} {503} {(ABS-503): Cell BUFX2: 4 pins have been created.}
+cUiAddMessageView {BUFX2} {abstract.ext} {602} {(ABS-602): Cell BUFX2: extracting 4 nets}
+cUiAddMessageView {BUFX2} {abstract.ext} {604} {(ABS-604): Cell BUFX2: extracting the net A, 1 of 4.}
+cUiAddMessageView {BUFX2} {abstract.ext} {604} {(ABS-604): Cell BUFX2: extracting the net Y, 2 of 4.}
+cUiAddMessageView {BUFX2} {abstract.ext} {605} {(ABS-605): Cell BUFX2: using preset pins on the net gnd, 3 of 4.}
+cUiAddMessageView {BUFX2} {abstract.ext} {605} {(ABS-605): Cell BUFX2: using preset pins on the net vdd, 4 of 4.}
+cUiAddMessageView {BUFX2} {abstract} {914} {(ABS-914): Cell BUFX2: predefined site CoreSite will be used}

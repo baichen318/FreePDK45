@@ -1,0 +1,30 @@
+* File: MUX2X1.pex.netlist
+* Created: Wed Jan  2 18:49:16 2008
+* Program "Calibre xRC"
+* Version "v2007.2_34.24"
+* 
+.subckt MUX2X1  A Y S B GND VDD
+* 
+MM5 GND S a_2_10# GND NMOS_VTL L=5e-08 W=2.5e-07
+MM9 GND A a_30_10# GND NMOS_VTL L=5e-08 W=5e-07
+MM8 a_30_10# S Y GND NMOS_VTL L=5e-08 W=5e-07
+MM7 Y a_2_10# a_17_10# GND NMOS_VTL L=5e-08 W=5e-07
+MM6 a_17_10# B GND GND NMOS_VTL L=5e-08 W=5e-07
+MM0 VDD S a_2_10# VDD PMOS_VTL L=5e-08 W=5e-07
+MM4 VDD A a_30_54# VDD PMOS_VTL L=5e-08 W=1e-06
+MM3 a_30_54# a_2_10# Y VDD PMOS_VTL L=5e-08 W=1e-06
+MM2 Y S a_17_50# VDD PMOS_VTL L=5e-08 W=1e-06
+MM1 a_17_50# B VDD VDD PMOS_VTL L=5e-08 W=1e-06
+c_6 A 0 0.12188f
+c_13 a_2_10# 0 0.16457f
+c_19 Y 0 0.0637084f
+c_26 S 0 0.261188f
+c_32 B 0 0.132279f
+c_37 GND 0 0.148553f
+c_43 VDD 0 0.193017f
+*
+.include "MUX2X1.pex.netlist.MUX2X1.pxi"
+*
+.ends
+*
+*

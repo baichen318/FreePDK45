@@ -1,0 +1,71 @@
+#**************************************************/
+#* Compile Script for Cadence BuildGates          */
+#*                                                */
+#* bgx_shell -f compile_bgx.scr                   */
+#*                                                */
+#**************************************************/
+
+# All verilog files, separated by spaces
+set my_verilog_files      {basic_components.v cla16.v multi.v multiplyadd.v}
+
+# Top-level Module
+set my_toplevel_module    multiplyadd
+
+# The name of the clock pin. If no clock-pin
+# exists, pick anything
+set my_clock_pin          clk
+
+# Target frequency in MHz for optimization
+set my_clock_freq_MHz     100
+
+# Delay of input signals (Clock-to-Q, Package etc.)
+set my_input_delay_ns     0
+
+# Reserved time for output signals (Holdtime etc.)
+set my_output_delay_ns    0
+
+#**************************************************
+# No changes necessary beyond this point
+#**************************************************
+
+set OSU_FREEPDK $env(PDK_DIR)/osu_soc
+
+read_tlf $OSU_FREEPDK/lib/files/gscl45nm.tlf
+
+read_verilog $my_verilog_files
+
+set_global target_technology gscl45nm
+set_global fix_multiport_nets true
+set_global hdl_verilog_out_unconnected_style full
+set_global hdl_write_multi_line_port_maps false
+
+do_build_generic -module $my_toplevel_module
+
+set_current_module $my_toplevel_module
+set_top_timing_module $my_toplevel_module
+
+set period [expr 1000.0/$my_clock_freq_MHz]
+set_clock vclk -period $period
+if {[get_names [find -inputs $my_clock_pin]] == $my_clock_pin} {
+    set_clock_root -clock vclk $my_clock_pin
+}
+
+set_input_delay -clock vclk $my_input_delay_ns [get_names [find -inputs -no_clocks *]]
+set_external_delay -clock vclk $my_output_delay_ns [get_names [find -outputs *]]
+set_drive_cell -cell INVX8 [get_names [find -inputs *]]
+
+# Disable this command to skip flattening
+do_dissolve_hierarchy -hierarchical
+
+do_optimize
+
+write_verilog -hier $my_toplevel_module.vh
+
+# Write SDC file
+write_sdc $my_toplevel_module.sdc
+
+report_timing > timing.rep
+report_area   > cell.rep
+report_power  > power.rep
+
+exit

@@ -1,0 +1,6 @@
+This directory contains helpful files for doing SKILL text editing.
+
+skill.vim - SKILL/DFII syntax highlighting for vim (http:///www.vim.org)
+diva.vim - Diva rules syntax highlighting for vim
+skill.nedit - SKILL syntax highlighting for nedit
+(http://fnpspa.fnal.gov/nirvana/nedit.html)
