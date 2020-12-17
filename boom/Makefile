@@ -15,7 +15,6 @@ all: src/$(long_name).top.v \
 	 src/SimSerial.v \
 	 src/SimUART.v \
 	 src/TestDriver.v
-	bash setup.sh
 	dc_shell-t -f compile_dc.tcl
 
 .PHONY: clean

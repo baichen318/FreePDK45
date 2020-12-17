@@ -12,16 +12,16 @@ set tb_prefix TestHarness.dut
 
 #/* All verilog files, separated by spaces         */
 set my_verilog_files [list src/$long_name.top.v \
-                           src/$long_name.top.mems.v \
-						   src/$long_name.harness.v \
-						   src/$long_name.harness.mems.v \
-						   src/EICG_wrapper.v \
-						   src/IOCell.v \
-						   src/plusarg_reader.v \
-						   src/SimDRAM.v \
-						   src/SimSerial.v \
-						   src/SimUART.v \
-						   src/TestDriver.v]
+                      src/$long_name.top.mems.v \
+                      src/$long_name.harness.v \
+                      src/$long_name.harness.mems.v \
+                      src/EICG_wrapper.v \
+                      src/IOCell.v \
+                      src/plusarg_reader.v \
+                      src/SimDRAM.v \
+                      src/SimSerial.v \
+                      src/SimUART.v \
+                      src/TestDriver.v]
 
 #/* Top-level Module                               */
 set my_toplevel ChipTop
