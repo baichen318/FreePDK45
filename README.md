@@ -19,15 +19,15 @@ $ cd ../boom
 - Push BOOM to the synthesis stage with DC
 
 ```bash
-make
+$ make
 ```
 
-- Check the result
+- Check the results
 
 Please view results in reports/
 
 - Clean the workstation (optional)
 
 ```bash
-make clean
+$ make clean
 ```
