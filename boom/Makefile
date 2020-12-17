@@ -2,6 +2,7 @@
 
 default: all
 
+log_dir ?= logs
 long_name ?= chipyard.TestHarness.SmallBoomConfig
 
 all: src/$(long_name).top.v \
@@ -15,8 +16,8 @@ all: src/$(long_name).top.v \
 	 src/SimSerial.v \
 	 src/SimUART.v \
 	 src/TestDriver.v
-	dc_shell-t -f compile_dc.tcl
+	dc_shell-t -f compile_dc.tcl | tee -i $(log_dir)/dc.log
 
 .PHONY: clean
 clean:
-	rm -rf command.log default.svf reports WORK filenames.log
+	rm -rf command.log default.svf reports WORK filenames.log $(log_dir)
