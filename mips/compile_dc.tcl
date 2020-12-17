@@ -63,6 +63,7 @@ set_driving_cell  -lib_cell INVX1  [all_inputs]
 set_input_delay $my_input_delay_ns -clock $clk_name [remove_from_collection [all_inputs] $my_clock_pin]
 set_output_delay $my_output_delay_ns -clock $clk_name [all_outputs]
 
+#/* You can execute this command instead of `compile` to see the difference */
 # compile_ultra -gate_clock -no_autoungroup
 compile
 

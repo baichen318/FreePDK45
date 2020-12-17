@@ -7,4 +7,4 @@ all: mips.v
 
 .PHONY: clean
 clean:
-	rm -rf command.log default.svf report WORK
+	rm -rf command.log default.svf reports WORK
