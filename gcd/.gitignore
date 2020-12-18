@@ -1,0 +1,11 @@
+build*/
+dc/current
+csrc/
+simv.daidir/
+simv
+timestamp
+ucli.key
+*.vpd
+*.vcd
+*.saif
+
