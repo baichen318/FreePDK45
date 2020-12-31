@@ -40,7 +40,7 @@ cells_verilog = $(pdk_dir)/gscl45nm.v
 
 VCS      := vcs -full64
 VCS_OPTS := -notice -PP -line +lint=all,noVCDE,noTFIPC,noIWU,noOUDPE +v2k \
-	-timescale=1ns/1ps -P ../dc/current/access.tab -debug \
+	-timescale=1ns/1ps -P ../dc/current/access.tab -debug -debug_access+all \
 
 #--------------------------------------------------------------------
 # Build the simulator
