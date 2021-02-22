@@ -31,3 +31,6 @@ Please view results in reports/
 ```bash
 $ make clean
 ```
+
+## TODO
+- Add SRAM maros
